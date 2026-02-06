@@ -1,27 +1,16 @@
 title: B.L MOTORSPORT
 email: contact@bl-motorsport.com
 description: "Atelier de mécanique de précision."
-# IMPORTANT : baseurl doit correspondre au nom de ton dépôt
 baseurl: "/bl-motorsport"
 url: "https://duvaldvl.github.io"
 
-theme: jekyll-theme-prime
-
-# Configuration Multilingue
-languages: ["fr", "en", "de", "it"]
-default_lang: "fr"
+# On retire le theme pour utiliser ton layout custom
+# theme: jekyll-theme-prime 
 
 markdown: kramdown
 permalink: pretty
 
-# Exclusions pour accélérer le build
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/
-
-# Données Entreprise
+# Données Entreprise (Indispensable pour tes templates)
 company:
   name: "B.L MOTORSPORT"
   address: "679 route de Plan Mouillé"
@@ -30,5 +19,8 @@ company:
   phone: "+33 6 60 82 51 57"
   whatsapp_link: "https://wa.me/33660825157"
 
-sass:
-  style: compressed
+# Exclusion pour éviter les erreurs de build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
