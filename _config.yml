@@ -11,6 +11,15 @@ permalink: pretty
 # INDISPENSABLE : On dit à Jekyll qu'on n'utilise pas de thème pré-fait
 theme: null
 
+# DONNÉES ENTREPRISE (Indispensables pour tes templates et le SEO)
+company:
+  name: "B.L MOTORSPORT"
+  address: "679 route de Plan Mouillé"
+  zip: "74920"
+  city: "Combloux"
+  phone: "+33 6 60 82 51 57"
+  whatsapp_link: "https://wa.me/33660825157"
+
 # On exclut les fichiers qui peuvent gêner le build
 exclude:
   - Gemfile
