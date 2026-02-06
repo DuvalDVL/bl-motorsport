@@ -1,8 +1,11 @@
 title: B.L MOTORSPORT
 email: contact@bl-motorsport.com
 description: "Atelier de mécanique de précision et restauration de véhicules de collection. Service conciergerie Megève, Chamonix, Genève."
-baseurl: "" # Laisser vide pour un domaine personnalisé (ex: bl-motorsport-montblanc.com)
-url: "https://www.bl-motorsport-montblanc.com" # À changer quand tu auras le NDD final
+# Mettre le nom de ton repo GitHub ici (avec le slash devant)
+baseurl: "/bl-motorsport" 
+
+# Laisse l'url comme ça pour l'instant
+url: "https://duvaldvl.github.io"
 
 # --- Configuration Multilingue ---
 languages: ["fr", "en", "de", "it"]
