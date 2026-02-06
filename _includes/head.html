@@ -6,6 +6,8 @@
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -18,9 +20,7 @@
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/fr{{ page.url | replace: '/fr/', '/' }}" />
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
-
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,7 +30,7 @@
     "url": "{{ site.url }}",
     "telephone": "{{ site.company.phone }}",
     "priceRange": "$$$$",
-    "description": "Atelier spécialisé véhicules de prestige et compétition. Expert WEC. Entretien Porsche, Ferrari, Lamborghini, McLaren.",
+    "description": "Atelier spécialisé véhicules de prestige et compétition. Expert WEC.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "{{ site.company.address }}",
@@ -49,11 +49,11 @@
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "00:00",
         "closes": "00:00",
-        "description": "Sur rendez-vous uniquement / By Appointment Only"
+        "description": "Sur rendez-vous uniquement"
       }
     ],
-    "areaServed": ["Megève", "Chamonix", "Combloux", "Sallanches", "Genève", "Annecy"],
-    "makesOffer": "Porsche, Ferrari, Lamborghini, McLaren, Aston Martin, Maserati, Jaguar, Lotus, Bentley, Land Rover, Audi, BMW, Mercedes-Benz",
+    "areaServed": ["Megève", "Chamonix", "Combloux", "Sallanches", "Genève"],
+    "makesOffer": "Porsche, Ferrari, Lamborghini, McLaren, Aston Martin, Bentley",
     "paymentAccepted": "Cash, Credit Card, Wire Transfer"
   }
   </script>
