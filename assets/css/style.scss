@@ -1,10 +1,38 @@
 ---
 ---
 
-/* --- Variables (À adapter selon ton jaune exact) --- */
-$color-brand-yellow: #FFD700; /* Jaune or/logo */
+/* --- Variables --- */
+$color-brand-yellow: #FFD700;
 $color-brand-black: #050505;
+$color-text-white: #ffffff;
+$color-bg-dark: #050505;
+$header-height: 80px;
 $z-index-sticky: 9999;
+
+/* --- GLOBAL RESET --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: $color-bg-dark;
+  color: #ccc;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* --- Sticky WhatsApp Button --- */
 .sticky-whatsapp {
@@ -24,37 +52,26 @@ $z-index-sticky: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 
-  /* L'icne */
   svg {
     width: 32px;
     height: 32px;
-    fill: $color-brand-black; /* Icône noire sur fond jaune */
+    fill: $color-brand-black;
   }
 
-  /* Effet au survol */
   &:hover {
-    transform: scale(1.1); /* Grossit légèrement */
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3); /* Lueur jaune */
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
   }
 
-  /* Animation "Pulse" subtile pour capter l'attention */
   animation: pulse-border 2s infinite;
 }
 
-/* Keyframes pour l'animation */
 @keyframes pulse-border {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
 }
 
-/* Adaptation Mobile (Plus petit et moins de marge) */
 @media (max-width: 768px) {
   .sticky-whatsapp {
     width: 50px;
@@ -69,11 +86,6 @@ $z-index-sticky: 9999;
   }
 }
 
-/* --- Header Variables --- */
-$header-height: 80px;
-$color-text-white: #ffffff;
-$color-bg-dark: #050505;
-
 /* --- Header Base --- */
 .site-header {
   position: fixed;
@@ -85,12 +97,9 @@ $color-bg-dark: #050505;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
   display: flex;
   align-items: center;
-  
-  /* État initial : Transparent pour laisser voir le Hero */
   background: transparent; 
   
   &.scrolled {
-    /* État scrollé : Fond noir semi-transparent + Flou */
     background: rgba(5, 5, 5, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -102,25 +111,23 @@ $color-bg-dark: #050505;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Largeur standard */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 /* --- Logo --- */
 .site-logo {
-  font-family: 'Oswald', sans-serif; /* Police "Garage" */
+  font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: $color-text-white;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-decoration: none;
   
   img {
-    height: 50px; /* Taille logo */
+    height: 50px;
     width: auto;
-    /* Astuce temporaire pour rendre le logo noir visible : contour blanc */
     filter: drop-shadow(0 0 1px white); 
   }
 }
@@ -128,7 +135,7 @@ $color-bg-dark: #050505;
 /* --- Desktop Nav --- */
 .desktop-nav {
   @media (max-width: 768px) {
-    display: none; /* Caché sur mobile */
+    display: none;
   }
 
   ul {
@@ -140,14 +147,12 @@ $color-bg-dark: #050505;
 
     li a {
       color: $color-text-white;
-      text-decoration: none;
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       position: relative;
       transition: color 0.3s;
 
-      /* Petit effet de soulignement jaune au survol */
       &::after {
         content: '';
         position: absolute;
@@ -169,7 +174,7 @@ $color-bg-dark: #050505;
   }
 }
 
-/* --- Header Actions (Langue + Mobile) --- */
+/* --- Header Actions --- */
 .header-actions {
   display: flex;
   align-items: center;
@@ -181,8 +186,6 @@ $color-bg-dark: #050505;
   color: rgba(255, 255, 255, 0.6);
   
   a {
-    color: inherit;
-    text-decoration: none;
     transition: color 0.3s;
     &:hover, &.active {
       color: $color-brand-yellow;
@@ -212,7 +215,6 @@ $color-bg-dark: #050505;
     transition: 0.3s;
   }
   
-  /* Animation Burger -> Croix quand actif */
   &.active {
     .bar:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
     .bar:nth-child(2) { opacity: 0; }
@@ -244,6 +246,7 @@ $color-bg-dark: #050505;
   ul {
     list-style: none;
     text-align: center;
+    padding: 0;
     li {
       margin: 20px 0;
       a {
@@ -251,7 +254,6 @@ $color-bg-dark: #050505;
         font-size: 1.5rem;
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
-        text-decoration: none;
         &:hover { color: $color-brand-yellow; }
       }
     }
@@ -261,7 +263,7 @@ $color-bg-dark: #050505;
 /* --- HERO SECTION --- */
 .hero-section {
   position: relative;
-  height: 90vh; /* Prend presque tout l'écran */
+  height: 90vh;
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -277,11 +279,17 @@ $color-bg-dark: #050505;
   left: 0;
   width: 100%;
   height: 100%;
+  /* ICI : J'ai remis le lien vers l'image avec le bon chemin */
+  background-image: url('../img/hero-bg.jpg'); 
   background-size: cover;
   background-position: center;
   z-index: 0;
-  /* Effet de zoom lent (Ken Burns effect) */
   animation: zoomSlow 20s infinite alternate; 
+}
+
+@keyframes zoomSlow {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
 }
 
 .hero-overlay {
@@ -302,7 +310,7 @@ $color-bg-dark: #050505;
 
 .hero-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 4rem; /* Très gros */
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -314,7 +322,6 @@ $color-bg-dark: #050505;
 }
 
 .text-gradient {
-  /* Effet dégradé blanc vers gris pour effet métal */
   background: linear-gradient(to right, #ffffff, #a0a0a0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -325,7 +332,6 @@ $color-bg-dark: #050505;
   color: rgba(255,255,255,0.8);
   margin-bottom: 40px;
   font-weight: 300;
-  
   strong { color: $color-brand-yellow; }
 }
 
@@ -336,10 +342,10 @@ $color-bg-dark: #050505;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-  text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.9rem;
-  margin: 0 10px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -364,7 +370,7 @@ $color-bg-dark: #050505;
   }
 }
 
-/* --- BRAND STRIP (Marques) --- */
+/* --- BRAND STRIP --- */
 .brand-strip {
   background-color: #0a0a0a;
   border-bottom: 1px solid #222;
@@ -376,31 +382,24 @@ $color-bg-dark: #050505;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    
     @media (max-width: 768px) {
       justify-content: center;
     }
   }
 }
 
-.brand-label {
-  color: #666;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 .brand-logos {
   display: flex;
   gap: 40px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   
   img {
     height: 30px;
     opacity: 0.5;
     filter: grayscale(100%);
     transition: opacity 0.3s;
-    
     &:hover { opacity: 1; filter: grayscale(0%); }
   }
 }
@@ -412,11 +411,11 @@ $color-bg-dark: #050505;
 }
 
 .section-header h2 {
-  color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .divider-yellow {
@@ -463,7 +462,6 @@ $color-bg-dark: #050505;
 }
 
 .service-card h3 {
-  color: white;
   font-family: 'Oswald', sans-serif;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -478,7 +476,6 @@ $color-bg-dark: #050505;
 
 .text-link {
   color: $color-brand-yellow;
-  text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
   &:hover { text-decoration: underline; }
@@ -488,17 +485,16 @@ $color-bg-dark: #050505;
 .seo-text-section {
   background-color: #000;
   padding: 60px 0;
-  color: #444; /* Sombre pour ne pas distraire l'humain */
+  color: #444; 
   font-size: 0.9rem;
   text-align: justify;
-  
   h2 { color: #555; font-size: 1.2rem; margin-bottom: 15px; }
   strong { color: #666; }
 }
 
-/* --- CONTACT PAGE --- */
+/* --- CONTACT --- */
 .contact-header {
-  padding-top: 120px; /* Espace pour le header fixed */
+  padding-top: 120px;
   padding-bottom: 50px;
   text-align: center;
   background-color: #0a0a0a;
@@ -506,14 +502,9 @@ $color-bg-dark: #050505;
   .page-title {
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
-    color: white;
     margin-bottom: 10px;
   }
-  
-  .page-subtitle {
-    color: #888;
-    font-size: 1.1rem;
-  }
+  .page-subtitle { color: #888; font-size: 1.1rem; }
 }
 
 .contact-content {
@@ -525,16 +516,11 @@ $color-bg-dark: #050505;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr; /* Stacked sur mobile */
-  }
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
 }
 
-/* Infos Colonne Gauche */
 .info-block {
   margin-bottom: 40px;
-  
   h3 {
     color: $color-brand-yellow;
     font-family: 'Oswald', sans-serif;
@@ -542,77 +528,49 @@ $color-bg-dark: #050505;
     margin-bottom: 15px;
     letter-spacing: 1px;
   }
-  
-  p, li {
-    color: #ccc;
-    line-height: 1.6;
-  }
-  
-  .phone-link {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    &:hover { color: $color-brand-yellow; }
-  }
-  
-  .whatsapp-link a {
-    color: #25D366; /* Vert WhatsApp */
-    text-decoration: none;
-    font-weight: bold;
-    &:hover { text-decoration: underline; }
-  }
+  p, li { color: #ccc; line-height: 1.6; }
 }
 
-.hours-list {
-  list-style: none;
-  padding: 0;
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    max-width: 300px;
-    border-bottom: 1px solid #222;
-    padding: 8px 0;
-    
-    span { color: #666; font-weight: bold; }
-  }
+.phone-link {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  &:hover { color: $color-brand-yellow; }
+}
+
+.whatsapp-link a {
+  color: #25D366;
+  font-weight: bold;
+  &:hover { text-decoration: underline; }
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  border-bottom: 1px solid #222;
+  padding: 8px 0;
+  span { color: #666; font-weight: bold; }
 }
 
 .map-container {
   border: 1px solid #333;
-  filter: grayscale(100%) invert(90%); /* Astuce pour rendre la map "Dark" sans API Key */
+  filter: grayscale(100%) invert(90%);
   transition: filter 0.3s;
-  
-  &:hover {
-    filter: grayscale(0%); /* Revient en couleur au survol */
-  }
+  &:hover { filter: grayscale(0%); }
 }
 
-/* Formulaire Colonne Droite */
 .contact-form-wrapper {
   background-color: #111;
   padding: 40px;
   border: 1px solid #222;
-  
-  h3 {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 30px;
-  }
+  h3 { font-family: 'Oswald', sans-serif; margin-bottom: 30px; }
 }
 
 .dark-form {
   .form-group {
     margin-bottom: 20px;
-    
-    label {
-      display: block;
-      color: #888;
-      margin-bottom: 8px;
-      font-size: 0.9rem;
-    }
-    
+    label { display: block; color: #888; margin-bottom: 8px; font-size: 0.9rem; }
     input, textarea {
       width: 100%;
       background-color: #050505;
@@ -620,33 +578,22 @@ $color-bg-dark: #050505;
       color: white;
       padding: 12px 15px;
       font-family: sans-serif;
-      transition: border-color 0.3s;
-      
-      &:focus {
-        outline: none;
-        border-color: $color-brand-yellow;
-      }
+      box-sizing: border-box; /* Important pour ne pas déborder */
+      &:focus { outline: none; border-color: $color-brand-yellow; }
     }
   }
-  
-  .btn-block {
-    width: 100%;
-    margin-top: 10px;
-  }
+  .btn-block { width: 100%; margin-top: 10px; }
 }
 
 /* --- PAGE PRESTATIONS --- */
-
 .page-header-simple {
   padding-top: 150px;
   padding-bottom: 50px;
   background-color: #050505;
   text-align: center;
-  
   .page-title {
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
-    color: white;
     margin-bottom: 20px;
   }
 }
@@ -655,10 +602,7 @@ $color-bg-dark: #050505;
   padding: 80px 0;
   background-color: #0a0a0a;
   border-bottom: 1px solid #1a1a1a;
-  
-  &.bg-darker {
-    background-color: #050505; /* Alternance subtile de fond */
-  }
+  &.bg-darker { background-color: #050505; }
 }
 
 .service-grid-layout {
@@ -666,26 +610,16 @@ $color-bg-dark: #050505;
   align-items: center;
   gap: 60px;
   
-  /* Version Mobile : Colonne simple */
   @media (max-width: 900px) {
     flex-direction: column;
-    
-    /* Astuce : Sur mobile, on veut l'image au dessus du texte même si c'est inversé sur desktop */
-    &.reverse {
-      flex-direction: column; 
-      .service-image { order: -1; }
-    }
+    &.reverse { flex-direction: column; .service-image { order: -1; } }
   }
   
-  /* Version Desktop : Inversée (Image à gauche) */
-  &.reverse {
-    flex-direction: row-reverse;
-  }
+  &.reverse { flex-direction: row-reverse; }
 }
 
 .service-text {
   flex: 1;
-  
   .service-subtitle {
     color: $color-brand-yellow;
     font-size: 0.85rem;
@@ -695,41 +629,28 @@ $color-bg-dark: #050505;
     display: block;
     margin-bottom: 10px;
   }
-  
   h2 {
-    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 25px;
   }
-  
-  p {
-    color: #bbb;
-    line-height: 1.7;
-    margin-bottom: 30px;
-    font-size: 1rem;
-  }
+  p { color: #bbb; line-height: 1.7; margin-bottom: 30px; font-size: 1rem; }
 }
 
-/* Liste à puces "Luxe" */
 .check-list {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
-  
   li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 15px;
     color: #ccc;
     line-height: 1.5;
-    
     strong { color: white; }
-    
-    /* La puce jaune personnalisée */
     &::before {
-      content: '✓'; /* Ou un carré vide '' avec border */
+      content: '✓';
       position: absolute;
       left: 0;
       top: 0;
@@ -743,35 +664,25 @@ $color-bg-dark: #050505;
 .service-image {
   flex: 1;
   width: 100%;
-  
   .img-wrapper {
     overflow: hidden;
-    border-radius: 4px; /* Très léger arrondi */
+    border-radius: 4px;
     border: 1px solid #222;
     position: relative;
-    
-    /* Effet "Cadre" décalé (Design trend) */
     &::after {
       content: '';
       position: absolute;
-      top: 20px;
-      left: 20px;
-      right: -20px;
-      bottom: -20px;
+      top: 20px; left: 20px; right: -20px; bottom: -20px;
       border: 2px solid rgba(255, 255, 255, 0.1);
-      z-index: -1; /* Derrière l'image */
+      z-index: -1;
       pointer-events: none;
     }
-    
     img {
       width: 100%;
       height: auto;
       display: block;
       transition: transform 0.5s ease;
-      
-      &:hover {
-        transform: scale(1.03); /* Zoom léger au survol */
-      }
+      &:hover { transform: scale(1.03); }
     }
   }
 }
