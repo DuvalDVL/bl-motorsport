@@ -25,39 +25,31 @@ lang: fr
   </div>
 </section>
 
-<section class="bio-section" style="background: #080808; padding: 60px 0; border-bottom: 1px solid #222;">
-  <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+<section class="bio-section" style="background: #080808; padding: 80px 0; border-bottom: 1px solid #222;">
+  <div class="container" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
     <div class="bio-text" style="flex: 1; min-width: 300px;">
-      <span style="color: #FFD700; font-weight: bold; letter-spacing: 2px;">UN SAVOIR-FAIRE MONDIAL</span>
-      <h2 style="margin-top: 10px; font-size: 2.5rem;">DE LA PISTE À LA ROUTE</h2>
+      <span style="color: #FFD700; font-weight: bold; letter-spacing: 2px; font-size: 0.9rem;">UN SAVOIR-FAIRE MONDIAL</span>
+      <h2 style="margin-top: 15px; font-size: 2.5rem; line-height: 1.2;">DE LA PISTE <br>À LA ROUTE</h2>
       <p style="color: #ccc; margin-bottom: 20px;">
         Fort de <strong>10 années d'expérience dans le sport automobile</strong> de haut niveau, Bastien Lefebvre applique la rigueur de la compétition à votre véhicule personnel.
       </p>
-      <p style="color: #ccc;">
+      <p style="color: #999; line-height: 1.8;">
         Actuellement <strong>Car Chief en WEC (World Endurance Championship)</strong> au sein de teams officiels (expérience aux côtés de pilotes comme Valentino Rossi), l'atelier B.L Motorsport vous garantit une précision technique absolue, que ce soit pour une révision sur votre GT ou la préparation d'une voiture de course.
       </p>
     </div>
-    <div class="bio-stats" style="flex: 1; display: flex; gap: 20px; justify-content: center;">
-      <div style="text-align: center; border: 1px solid #333; padding: 20px; min-width: 120px;">
-        <span style="display: block; font-size: 3rem; font-weight: bold; color: white;">10+</span>
-        <span style="color: #888; font-size: 0.8rem; text-transform: uppercase;">Années Expérience</span>
+    
+    <div class="bio-stats" style="display: flex; gap: 30px;">
+      <div style="border: 1px solid #333; padding: 30px; text-align: center; background: #111;">
+        <span style="display: block; font-size: 3.5rem; font-weight: 700; color: white; line-height: 1;">10</span>
+        <span style="color: #FFD700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">Années Expérience</span>
       </div>
-      <div style="text-align: center; border: 1px solid #333; padding: 20px; min-width: 120px;">
-        <span style="display: block; font-size: 3rem; font-weight: bold; color: #FFD700;">WEC</span>
-        <span style="color: #888; font-size: 0.8rem; text-transform: uppercase;">World Endurance Champ.</span>
+      <div style="border: 1px solid #333; padding: 30px; text-align: center; background: #111;">
+        <span style="display: block; font-size: 3.5rem; font-weight: 700; color: white; line-height: 1;">WEC</span>
+        <span style="color: #FFD700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">World Endurance</span>
       </div>
     </div>
   </div>
 </section>
-
-<div class="brand-strip">
-  <div class="container">
-    <p class="brand-label">Expertise Multimarque & Supercars :</p>
-    <div class="brand-text-list" style="color: #555; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; text-align: center;">
-      Porsche &nbsp;•&nbsp; Ferrari &nbsp;•&nbsp; Lamborghini &nbsp;•&nbsp; McLaren &nbsp;•&nbsp; Aston Martin &nbsp;•&nbsp; Audi Sport &nbsp;•&nbsp; BMW M &nbsp;•&nbsp; AMG
-    </div>
-  </div>
-</div>
 
 <section class="services-section">
   <div class="container">
@@ -69,39 +61,87 @@ lang: fr
     <div class="services-grid">
       
       <div class="service-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C10.9 2 10 2.9 10 4V10C10 11.1 10.9 12 12 12C13.1 12 14 11.1 14 10V4C14 2.9 13.1 2 12 2M7 4V10C7 12.76 9.24 15 12 15C14.76 15 17 12.76 17 10V4H19V10C19 13.87 15.87 17 12 17C8.13 17 5 13.87 5 10V4H7M9 19H15V21H9V19Z"/></svg>
+        </div>
         <h3>MÉCANIQUE GÉNÉRALE & PRESTIGE</h3>
-        <p>Entretien courant, révision constructeur, freinage et pneumatiques pour vos véhicules sportifs et premiums.</p>
+        <p>Entretien constructeur rigoureux pour GT et Supercars modernes.</p>
         <ul class="check-list">
           <li>Révision & Vidange</li>
-          <li>Pneumatiques & Géométrie</li>
+          <li>Pneumatiques & Géométrie 3D</li>
           <li>Diagnostic Électronique</li>
         </ul>
-        <a href="{{ site.baseurl }}/fr/prestations" class="text-link">En savoir plus &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/prestations" class="btn-card">En savoir plus</a>
       </div>
 
       <div class="service-card featured">
         <div class="card-badge">EXPERTISE</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M22.7 19L13.6 9.9C14.5 7.6 14 4.9 12.1 3C10.1 1 7.1 0.6 4.7 1.7L9 6L6 9L1.6 4.7C0.4 7.1 0.9 10.1 2.9 12.1C4.8 14 7.5 14.5 9.8 13.6L18.9 22.7C19.3 23.1 19.9 23.1 20.3 22.7L22.6 20.4C23.1 20 23.1 19.3 22.7 19Z"/></svg>
+        </div>
         <h3>MÉCANIQUE DE PRÉCISION</h3>
-        <p>Interventions lourdes nécessitant un savoir-faire spécifique.</p>
+        <p>Interventions lourdes nécessitant un savoir-faire spécifique et complexe.</p>
         <ul class="check-list">
           <li>Réfection Moteur</li>
           <li>Réfection Boîte de Vitesses</li>
           <li>Remise en route Collection</li>
         </ul>
-        <a href="{{ site.baseurl }}/fr/prestations" class="text-link">Détails techniques &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/prestations" class="btn-card">Détails techniques</a>
       </div>
 
-      <div class="service-card" style="border-color: #FFD700;">
-        <h3>PRÉPARATION COMPÉTITION</h3>
-        <p>Développement de véhicules de course pour le trackday ou la compétition officielle.</p>
+      <div class="service-card racing-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.4 6L14 4H5V21H7V14H12.6L13 16H20V6H14.4Z"/></svg>
+        </div>
+        <h3>DÉPARTEMENT RACING</h3>
+        <p>Développement de véhicules de course pour le trackday ou la compétition.</p>
         <ul class="check-list">
           <li>Setup Châssis & Amortisseurs</li>
           <li>Optimisation Performance</li>
           <li>Assistance Circuit</li>
         </ul>
-        <a href="{{ site.baseurl }}/fr/competition" class="text-link" style="color: white;">Département Racing &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/competition" class="btn-card" style="border-color: #FFD700; color: #FFD700;">Département Racing</a>
       </div>
 
     </div>
+  </div>
+</section>
+
+<section class="process-section" style="padding: 80px 0; background: #050505;">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 style="font-size: 2rem; color: #888;">LA MÉTHODE <span style="color: white;">RACE TO ROAD</span></h2>
+      <p style="color: #666; max-width: 600px; margin: 0 auto;">Nous appliquons les procédures de contrôle du sport automobile à chaque véhicule entrant à l'atelier.</p>
+    </div>
+    
+    <div style="display: flex; justify-content: space-between; margin-top: 50px; flex-wrap: wrap; gap: 30px;">
+      
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <span style="display: inline-block; width: 50px; height: 50px; border: 1px solid #333; color: #FFD700; font-size: 1.5rem; line-height: 50px; border-radius: 50%; margin-bottom: 20px;">1</span>
+        <h4 style="color: white;">DIAGNOSTIC COMPLET</h4>
+        <p style="color: #888; font-size: 0.9rem;">Check-up visuel et électronique complet avant toute intervention.</p>
+      </div>
+
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <span style="display: inline-block; width: 50px; height: 50px; border: 1px solid #FFD700; background: #FFD700; color: black; font-size: 1.5rem; line-height: 50px; border-radius: 50%; margin-bottom: 20px;">2</span>
+        <h4 style="color: white;">INTERVENTION PRÉCISE</h4>
+        <p style="color: #888; font-size: 0.9rem;">Outillage spécifique et respect strict des couples de serrage constructeur.</p>
+      </div>
+
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <span style="display: inline-block; width: 50px; height: 50px; border: 1px solid #333; color: #FFD700; font-size: 1.5rem; line-height: 50px; border-radius: 50%; margin-bottom: 20px;">3</span>
+        <h4 style="color: white;">VALIDATION DYNAMIQUE</h4>
+        <p style="color: #888; font-size: 0.9rem;">Essai routier et double contrôle qualité avant restitution.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" style="padding: 100px 0; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('{{ '/assets/img/hero-bg.jpg' | relative_url }}'); background-size: cover; background-attachment: fixed; text-align: center;">
+  <div class="container">
+    <h2 style="font-size: 3rem; margin-bottom: 20px;">CONFIEZ-NOUS VOTRE MACHINE</h2>
+    <p style="font-size: 1.2rem; color: #ddd; margin-bottom: 40px;">L'atelier B.L Motorsport vous reçoit à Combloux pour un service sur-mesure.</p>
+    <a href="{{ site.baseurl }}/fr/contact" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.1rem;">Prendre Rendez-vous</a>
   </div>
 </section>
