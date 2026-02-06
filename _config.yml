@@ -1,26 +1,9 @@
-title: B.L MOTORSPORT
-email: contact@bl-motorsport.com
-description: "Atelier de mécanique de précision."
+title: BL Motorsport
+description: Atelier Mecanique
 baseurl: "/bl-motorsport"
 url: "https://duvaldvl.github.io"
-
-# On retire le theme pour utiliser ton layout custom
-# theme: jekyll-theme-prime 
-
 markdown: kramdown
 permalink: pretty
-
-# Données Entreprise (Indispensable pour tes templates)
-company:
-  name: "B.L MOTORSPORT"
-  address: "679 route de Plan Mouillé"
-  zip: "74920"
-  city: "Combloux"
-  phone: "+33 6 60 82 51 57"
-  whatsapp_link: "https://wa.me/33660825157"
-
-# Exclusion pour éviter les erreurs de build
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
+theme: jekyll-theme-prime
+plugins:
+  - jekyll-seo-tag
