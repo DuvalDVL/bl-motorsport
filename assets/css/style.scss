@@ -492,3 +492,142 @@ $color-bg-dark: #050505;
   h2 { color: #555; font-size: 1.2rem; margin-bottom: 15px; }
   strong { color: #666; }
 }
+
+/* --- CONTACT PAGE --- */
+.contact-header {
+  padding-top: 120px; /* Espace pour le header fixed */
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #0a0a0a;
+  
+  .page-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .page-subtitle {
+    color: #888;
+    font-size: 1.1rem;
+  }
+}
+
+.contact-content {
+  padding-bottom: 80px;
+  background-color: #0a0a0a;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr; /* Stacked sur mobile */
+  }
+}
+
+/* Infos Colonne Gauche */
+.info-block {
+  margin-bottom: 40px;
+  
+  h3 {
+    color: $color-brand-yellow;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  
+  p, li {
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .phone-link {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover { color: $color-brand-yellow; }
+  }
+  
+  .whatsapp-link a {
+    color: #25D366; /* Vert WhatsApp */
+    text-decoration: none;
+    font-weight: bold;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    border-bottom: 1px solid #222;
+    padding: 8px 0;
+    
+    span { color: #666; font-weight: bold; }
+  }
+}
+
+.map-container {
+  border: 1px solid #333;
+  filter: grayscale(100%) invert(90%); /* Astuce pour rendre la map "Dark" sans API Key */
+  transition: filter 0.3s;
+  
+  &:hover {
+    filter: grayscale(0%); /* Revient en couleur au survol */
+  }
+}
+
+/* Formulaire Colonne Droite */
+.contact-form-wrapper {
+  background-color: #111;
+  padding: 40px;
+  border: 1px solid #222;
+  
+  h3 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+  }
+}
+
+.dark-form {
+  .form-group {
+    margin-bottom: 20px;
+    
+    label {
+      display: block;
+      color: #888;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+    
+    input, textarea {
+      width: 100%;
+      background-color: #050505;
+      border: 1px solid #333;
+      color: white;
+      padding: 12px 15px;
+      font-family: sans-serif;
+      transition: border-color 0.3s;
+      
+      &:focus {
+        outline: none;
+        border-color: $color-brand-yellow;
+      }
+    }
+  }
+  
+  .btn-block {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
