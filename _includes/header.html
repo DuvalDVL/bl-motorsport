@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="container header-container">
+    
+    <a href="{{ site.baseurl }}/" class="site-logo" aria-label="Retour à l'accueil">
+      <img src="/assets/img/logo.png" alt="B.L Motorsport" class="logo-img">
+    </a>
+
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="{{ site.baseurl }}/fr/" class="nav-link">Accueil</a></li>
+        <li><a href="{{ site.baseurl }}/fr/prestations" class="nav-link">Prestations</a></li>
+        <li><a href="{{ site.baseurl }}/fr/restauration" class="nav-link">Restauration</a></li>
+        <li><a href="{{ site.baseurl }}/fr/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch">
+        <a href="/fr/" class="active">FR</a>
+        <span class="sep">|</span>
+        <a href="/en/">EN</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Ouvrir le menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="mobile-nav-overlay">
+    <nav>
+      <ul>
+        <li><a href="{{ site.baseurl }}/fr/">Accueil</a></li>
+        <li><a href="{{ site.baseurl }}/fr/prestations">Prestations</a></li>
+        <li><a href="{{ site.baseurl }}/fr/restauration">Restauration Collection</a></li>
+        <li><a href="{{ site.baseurl }}/fr/contact">Contact & Accès</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
