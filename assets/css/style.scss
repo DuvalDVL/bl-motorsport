@@ -370,7 +370,7 @@ img {
   }
 }
 
-/* --- SERVICES GRID --- */
+/* --- SERVICES GRID (CORRIGÉ & ALIGNÉ) --- */
 .services-section {
   padding: 80px 0;
   background-color: $color-bg-dark;
@@ -379,74 +379,108 @@ img {
 .section-header {
   text-align: center;
   margin-bottom: 60px;
-  
-  h2 {
-    font-size: 2.5rem;
-  }
+  h2 { font-size: 2.5rem; }
 }
 
 .divider-yellow {
-  width: 60px;
-  height: 4px;
-  background-color: $color-brand-yellow;
-  margin: 10px auto 0;
+  width: 60px; height: 4px; background-color: $color-brand-yellow; margin: 10px auto 0;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Cartes un peu plus larges */
   gap: 30px;
+  align-items: stretch; /* Force la même hauteur pour toutes les cartes */
 }
 
 .service-card {
-  background: #111;
+  background: #0f0f0f; /* Un poil plus clair que le fond */
   padding: 40px 30px;
   border: 1px solid #222;
-  transition: transform 0.3s, border-color 0.3s;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Pour l'alignement vertical */
+  position: relative;
   
+  /* L'effet de survol du cadre */
   &:hover {
     transform: translateY(-5px);
     border-color: $color-brand-yellow;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    
+    .card-icon svg { fill: $color-brand-yellow; transform: scale(1.1); }
+    .btn-card { background-color: $color-brand-yellow; color: black; border-color: $color-brand-yellow; }
   }
   
+  /* Carte Featured (Milieu) */
   &.featured {
-    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    background: linear-gradient(145deg, #151515, #0a0a0a);
     border: 1px solid #333;
-    position: relative;
   }
-  
-  h3 {
-    margin-top: 20px;
-    font-size: 1.3rem;
-  }
-  
-  p {
-    color: #999;
-    font-size: 0.95rem;
-    margin-bottom: 25px;
+
+  /* Carte Racing (Droite) - On enlève la bordure fixe, on la met juste au hover comme les autres */
+  &.racing-card {
+    h3 { color: $color-brand-yellow; } /* Titre jaune pour différencier */
   }
 }
 
 .card-badge {
-  position: absolute;
-  top: -10px;
-  right: 20px;
-  background: $color-brand-yellow;
-  color: black;
-  font-size: 0.7rem;
-  font-weight: bold;
-  padding: 4px 8px;
-  text-transform: uppercase;
+  position: absolute; top: -10px; right: 20px;
+  background: $color-brand-yellow; color: black;
+  font-size: 0.7rem; font-weight: bold; padding: 4px 8px; text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.text-link {
-  color: $color-brand-yellow;
-  font-weight: bold;
-  font-size: 0.9rem;
+.card-icon {
+  margin-bottom: 25px;
+  height: 50px;
   
-  &:hover {
-    text-decoration: underline;
+  svg {
+    width: 40px; height: 40px;
+    fill: #666; /* Gris par défaut */
+    transition: all 0.3s ease;
   }
+}
+
+.service-card h3 {
+  font-size: 1.4rem; margin-bottom: 15px; min-height: 60px; /* Force l'alignement des titres */
+  display: flex; align-items: center;
+}
+
+.service-card p {
+  color: #999; font-size: 0.95rem; margin-bottom: 25px;
+  flex-grow: 0;
+}
+
+.check-list {
+  list-style: none; padding: 0; margin-bottom: 30px;
+  flex-grow: 1; /* C'est LUI qui va pousser le bouton vers le bas */
+  
+  li {
+    position: relative; padding-left: 25px; margin-bottom: 12px; color: #ccc; font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05); /* Ligne de séparation subtile pour aligner visuellement */
+    padding-bottom: 12px;
+
+    &::before {
+      content: '›'; /* Puce plus clean que le check */
+      position: absolute; left: 0; top: 0;
+      color: $color-brand-yellow; font-weight: bold; font-size: 1.2rem; line-height: 1;
+    }
+    
+    &:last-child { border-bottom: none; }
+  }
+}
+
+/* Nouveau Bouton dans les cartes */
+.btn-card {
+  display: block; width: 100%; text-align: center;
+  padding: 12px 0;
+  border: 1px solid #444;
+  color: white;
+  text-transform: uppercase; font-size: 0.8rem; font-weight: bold; letter-spacing: 1px;
+  margin-top: auto; /* Colle le bouton tout en bas */
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 /* --- PRESTATIONS & CONTACT PAGE LAYOUT --- */
