@@ -631,3 +631,144 @@ $color-bg-dark: #050505;
     margin-top: 10px;
   }
 }
+
+/* --- PAGE PRESTATIONS --- */
+
+.page-header-simple {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-color: #050505;
+  text-align: center;
+  
+  .page-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+
+.service-detail-section {
+  padding: 80px 0;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #1a1a1a;
+  
+  &.bg-darker {
+    background-color: #050505; /* Alternance subtile de fond */
+  }
+}
+
+.service-grid-layout {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  
+  /* Version Mobile : Colonne simple */
+  @media (max-width: 900px) {
+    flex-direction: column;
+    
+    /* Astuce : Sur mobile, on veut l'image au dessus du texte même si c'est inversé sur desktop */
+    &.reverse {
+      flex-direction: column; 
+      .service-image { order: -1; }
+    }
+  }
+  
+  /* Version Desktop : Inversée (Image à gauche) */
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.service-text {
+  flex: 1;
+  
+  .service-subtitle {
+    color: $color-brand-yellow;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  
+  p {
+    color: #bbb;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Liste à puces "Luxe" */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: #ccc;
+    line-height: 1.5;
+    
+    strong { color: white; }
+    
+    /* La puce jaune personnalisée */
+    &::before {
+      content: '✓'; /* Ou un carré vide '' avec border */
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $color-brand-yellow;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.service-image {
+  flex: 1;
+  width: 100%;
+  
+  .img-wrapper {
+    overflow: hidden;
+    border-radius: 4px; /* Très léger arrondi */
+    border: 1px solid #222;
+    position: relative;
+    
+    /* Effet "Cadre" décalé (Design trend) */
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: -20px;
+      bottom: -20px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      z-index: -1; /* Derrière l'image */
+      pointer-events: none;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+      
+      &:hover {
+        transform: scale(1.03); /* Zoom léger au survol */
+      }
+    }
+  }
+}
