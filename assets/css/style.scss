@@ -1,0 +1,67 @@
+/* --- Variables (À adapter selon ton jaune exact) --- */
+$color-brand-yellow: #FFD700; /* Jaune or/logo */
+$color-brand-black: #050505;
+$z-index-sticky: 9999;
+
+/* --- Sticky WhatsApp Button --- */
+.sticky-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: $color-brand-yellow;
+  color: $color-brand-black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: $z-index-sticky;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  /* L'icône */
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: $color-brand-black; /* Icône noire sur fond jaune */
+  }
+
+  /* Effet au survol */
+  &:hover {
+    transform: scale(1.1); /* Grossit légèrement */
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3); /* Lueur jaune */
+  }
+
+  /* Animation "Pulse" subtile pour capter l'attention */
+  animation: pulse-border 2s infinite;
+}
+
+/* Keyframes pour l'animation */
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+/* Adaptation Mobile (Plus petit et moins de marge) */
+@media (max-width: 768px) {
+  .sticky-whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
