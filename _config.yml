@@ -1,45 +1,34 @@
 title: B.L MOTORSPORT
 email: contact@bl-motorsport.com
-description: "Atelier de mécanique de précision et restauration de véhicules de collection. Service conciergerie Megève, Chamonix, Genève."
+description: "Atelier de mécanique de précision."
+# IMPORTANT : baseurl doit correspondre au nom de ton dépôt
 baseurl: "/bl-motorsport"
 url: "https://duvaldvl.github.io"
 
-# --- Configuration Multilingue ---
+theme: jekyll-theme-prime
+
+# Configuration Multilingue
 languages: ["fr", "en", "de", "it"]
 default_lang: "fr"
 
-# --- Performance & Build ---
 markdown: kramdown
-highlighter: rouge
 permalink: pretty
 
-# Exclusion des fichiers inutiles pour la prod (Vitesse max)
+# Exclusions pour accélérer le build
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .sass-cache
-  - .jekyll-cache
-  - README.md
-  - LICENSE
+  - vendor/
 
-# --- Données Entreprise (Injectées partout dans le site) ---
+# Données Entreprise
 company:
   name: "B.L MOTORSPORT"
   address: "679 route de Plan Mouillé"
   zip: "74920"
   city: "Combloux"
-  country: "France"
   phone: "+33 6 60 82 51 57"
   whatsapp_link: "https://wa.me/33660825157"
-  siret: "903 535 524 00024"
-  tva: "FR75 903 535 524"
-  map_link: "https://goo.gl/maps/placeholder" # On mettra le vrai lien Gmaps plus tard
 
-# --- Optimisation SASS ---
 sass:
-  style: compressed # Minifie le CSS automatiquement
+  style: compressed
