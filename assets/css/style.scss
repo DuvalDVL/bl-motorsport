@@ -65,3 +65,192 @@ $z-index-sticky: 9999;
     }
   }
 }
+
+/* --- Header Variables --- */
+$header-height: 80px;
+$color-text-white: #ffffff;
+$color-bg-dark: #050505;
+
+/* --- Header Base --- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  display: flex;
+  align-items: center;
+  
+  /* État initial : Transparent pour laisser voir le Hero */
+  background: transparent; 
+  
+  &.scrolled {
+    /* État scrollé : Fond noir semi-transparent + Flou */
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Largeur standard */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- Logo --- */
+.site-logo {
+  font-family: 'Oswald', sans-serif; /* Police "Garage" */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-text-white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  
+  img {
+    height: 50px; /* Taille logo */
+    width: auto;
+    /* Astuce temporaire pour rendre le logo noir visible : contour blanc */
+    filter: drop-shadow(0 0 1px white); 
+  }
+}
+
+/* --- Desktop Nav --- */
+.desktop-nav {
+  @media (max-width: 768px) {
+    display: none; /* Caché sur mobile */
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: $color-text-white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      transition: color 0.3s;
+
+      /* Petit effet de soulignement jaune au survol */
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: $color-brand-yellow;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: $color-brand-yellow;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* --- Header Actions (Langue + Mobile) --- */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang-switch {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover, &.active {
+      color: $color-brand-yellow;
+      font-weight: bold;
+    }
+  }
+}
+
+/* --- Mobile Menu Toggle --- */
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: $color-text-white;
+    transition: 0.3s;
+  }
+  
+  /* Animation Burger -> Croix quand actif */
+  &.active {
+    .bar:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
+    .bar:nth-child(2) { opacity: 0; }
+    .bar:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); }
+  }
+}
+
+/* --- Mobile Overlay --- */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-bg-dark;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      margin: 20px 0;
+      a {
+        color: $color-text-white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+        &:hover { color: $color-brand-yellow; }
+      }
+    }
+  }
+}
