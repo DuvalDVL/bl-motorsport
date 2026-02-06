@@ -743,3 +743,14 @@ footer {
   transition: all 0.3s ease;
   background-color: transparent;
 }
+
+/* --- CORRECTIONS --- */
+
+/* 1. Sticky Button : Icône Blanche */
+.sticky-whatsapp svg {
+  fill: #ffffff !important; /* Blanc pur */
+}
+
+/* 2. Suppression du style jaune forcé sur la carte Racing */
+/* J'ai supprimé la règle .service-card.racing-card h3 { color: yellow } */
+/* Le bouton Racing se comportera comme les autres grâce aux règles par défaut */
