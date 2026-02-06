@@ -1,9 +1,18 @@
-title: BL Motorsport
-description: Atelier Mecanique
+title: B.L Motorsport
+description: Atelier Mecanique de Prestige
+# Ton dossier GitHub actuel :
 baseurl: "/bl-motorsport"
+# Ton url utilisateur :
 url: "https://duvaldvl.github.io"
+
 markdown: kramdown
 permalink: pretty
-theme: jekyll-theme-prime
-plugins:
-  - jekyll-seo-tag
+
+# INDISPENSABLE : On dit à Jekyll qu'on n'utilise pas de thème pré-fait
+theme: null
+
+# On exclut les fichiers qui peuvent gêner le build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
