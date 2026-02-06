@@ -254,3 +254,241 @@ $color-bg-dark: #050505;
     }
   }
 }
+
+/* --- HERO SECTION --- */
+.hero-section {
+  position: relative;
+  height: 90vh; /* Prend presque tout l'écran */
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  /* Effet de zoom lent (Ken Burns effect) */
+  animation: zoomSlow 20s infinite alternate; 
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(5,5,5,0.3), rgba(5,5,5,0.9));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem; /* Très gros */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.text-gradient {
+  /* Effet dégradé blanc vers gris pour effet métal */
+  background: linear-gradient(to right, #ffffff, #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 40px;
+  font-weight: 300;
+  
+  strong { color: $color-brand-yellow; }
+}
+
+/* --- BOUTONS --- */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  margin: 0 10px;
+}
+
+.btn-primary {
+  background-color: $color-brand-yellow;
+  color: $color-brand-black;
+  border: 2px solid $color-brand-yellow;
+  
+  &:hover {
+    background-color: transparent;
+    color: $color-brand-yellow;
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  
+  &:hover {
+    background-color: white;
+    color: $color-brand-black;
+  }
+}
+
+/* --- BRAND STRIP (Marques) --- */
+.brand-strip {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #222;
+  padding: 30px 0;
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
+
+.brand-label {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.brand-logos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  
+  img {
+    height: 30px;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: opacity 0.3s;
+    
+    &:hover { opacity: 1; filter: grayscale(0%); }
+  }
+}
+
+/* --- SERVICES GRID --- */
+.services-section {
+  padding: 80px 0;
+  background-color: $color-bg-dark;
+}
+
+.section-header h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.divider-yellow {
+  width: 60px;
+  height: 4px;
+  background-color: $color-brand-yellow;
+  margin: 0 auto 50px auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #111;
+  padding: 40px 30px;
+  border: 1px solid #222;
+  transition: transform 0.3s, border-color 0.3s;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $color-brand-yellow;
+  }
+  
+  &.featured {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid #333;
+    position: relative;
+  }
+}
+
+.card-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: $color-brand-yellow;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.service-card h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.text-link {
+  color: $color-brand-yellow;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  &:hover { text-decoration: underline; }
+}
+
+/* --- SEO TEXT --- */
+.seo-text-section {
+  background-color: #000;
+  padding: 60px 0;
+  color: #444; /* Sombre pour ne pas distraire l'humain */
+  font-size: 0.9rem;
+  text-align: justify;
+  
+  h2 { color: #555; font-size: 1.2rem; margin-bottom: 15px; }
+  strong { color: #666; }
+}
