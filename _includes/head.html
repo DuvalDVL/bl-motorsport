@@ -1,0 +1,64 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}/fr{{ page.url | replace: '/fr/', '/' }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url | replace: '/fr/', '/' }}" />
+  <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ page.url | replace: '/fr/', '/' }}" />
+  <link rel="alternate" hreflang="it" href="{{ site.url }}/it{{ page.url | replace: '/fr/', '/' }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/fr{{ page.url | replace: '/fr/', '/' }}" />
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "{{ site.company.name }}",
+    "image": "{{ site.url }}/assets/img/og-image.jpg",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.company.phone }}",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.company.address }}",
+      "addressLocality": "{{ site.company.city }}",
+      "postalCode": "{{ site.company.zip }}",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.8956", 
+      "longitude": "6.6433"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "areaServed": ["Megève", "Chamonix", "Combloux", "Sallanches", "Genève"],
+    "makesOffer": "Porsche, Ferrari, Bentley, Jaguar, Land Rover",
+    "paymentAccepted": "Cash, Credit Card, Wire Transfer"
+  }
+  </script>
+</head>
