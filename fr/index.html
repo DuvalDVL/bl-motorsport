@@ -7,8 +7,10 @@ lang: fr
 ---
 
 <section class="hero-section">
-  <div class="hero-bg" style="background-image: url('/assets/img/hero-bg.jpg');"></div>
-  <div class="hero-overlay"></div> <div class="container hero-content">
+  <div class="hero-bg"></div>
+  
+  <div class="hero-overlay"></div> 
+  <div class="container hero-content">
     <h1 class="hero-title">
       L'EXCELLENCE MÉCANIQUE <br>
       <span class="text-gradient">AU PIED DU MONT-BLANC</span>
@@ -18,8 +20,8 @@ lang: fr
       Service Conciergerie <strong>Megève - Chamonix - Genève</strong>.
     </p>
     <div class="hero-actions">
-      <a href="/fr/contact" class="btn btn-primary">Demander un devis</a>
-      <a href="/fr/prestations" class="btn btn-outline">Découvrir l'atelier</a>
+      <a href="{{ site.baseurl }}/fr/contact" class="btn btn-primary">Demander un devis</a>
+      <a href="{{ site.baseurl }}/fr/prestations" class="btn btn-outline">Découvrir l'atelier</a>
     </div>
   </div>
 </section>
@@ -28,11 +30,11 @@ lang: fr
   <div class="container">
     <p class="brand-label">Expertise multimarque :</p>
     <div class="brand-logos">
-      <img src="/assets/img/brands/porsche.svg" alt="Spécialiste Porsche" loading="lazy">
-      <img src="/assets/img/brands/ferrari.svg" alt="Spécialiste Ferrari" loading="lazy">
-      <img src="/assets/img/brands/bentley.svg" alt="Spécialiste Bentley" loading="lazy">
-      <img src="/assets/img/brands/jaguar.svg" alt="Spécialiste Jaguar" loading="lazy">
-      <img src="/assets/img/brands/land-rover.svg" alt="Spécialiste Land Rover" loading="lazy">
+      <img src="{{ '/assets/img/brands/porsche.svg' | relative_url }}" alt="Spécialiste Porsche" loading="lazy">
+      <img src="{{ '/assets/img/brands/ferrari.svg' | relative_url }}" alt="Spécialiste Ferrari" loading="lazy">
+      <img src="{{ '/assets/img/brands/bentley.svg' | relative_url }}" alt="Spécialiste Bentley" loading="lazy">
+      <img src="{{ '/assets/img/brands/jaguar.svg' | relative_url }}" alt="Spécialiste Jaguar" loading="lazy">
+      <img src="{{ '/assets/img/brands/land-rover.svg' | relative_url }}" alt="Spécialiste Land Rover" loading="lazy">
     </div>
   </div>
 </div>
@@ -48,29 +50,30 @@ lang: fr
       
       <div class="service-card">
         <div class="card-icon">
-          <i class="icon-piston"></i> </div>
+          <i class="icon-piston">⚙️</i> 
+        </div>
         <h3>MÉCANIQUE DE PRÉCISION</h3>
         <p>Entretien constructeur, diagnostic électronique et optimisation moteur pour sportives modernes (GT, Supercars).</p>
-        <a href="/fr/prestations" class="text-link">En savoir plus &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/prestations" class="text-link">En savoir plus &rarr;</a>
       </div>
 
       <div class="service-card featured">
         <div class="card-badge">CŒUR DE MÉTIER</div>
         <div class="card-icon">
-          <i class="icon-classic"></i>
+          <i class="icon-classic">🏎️</i>
         </div>
         <h3>RESTAURATION COLLECTION</h3>
         <p>Remise en état concours, réfection moteur/boîte, et recherche de pièces rares pour véhicules historiques.</p>
-        <a href="/fr/restauration" class="text-link">Voir nos projets &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/restauration" class="text-link">Voir nos projets &rarr;</a>
       </div>
 
       <div class="service-card">
         <div class="card-icon">
-          <i class="icon-key"></i>
+          <i class="icon-key">🔑</i>
         </div>
         <h3>CONCIERGERIE & STOCKAGE</h3>
         <p>Hivernage sécurisé, maintien de charge, et service voiturier à domicile sur Megève et la vallée.</p>
-        <a href="/fr/prestations#conciergerie" class="text-link">Notre service VIP &rarr;</a>
+        <a href="{{ site.baseurl }}/fr/prestations#conciergerie" class="text-link">Notre service VIP &rarr;</a>
       </div>
 
     </div>
