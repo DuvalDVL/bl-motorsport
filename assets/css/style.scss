@@ -691,3 +691,55 @@ footer {
   font-size: 0.8rem;
   text-align: justify;
 }
+
+/* --- CORRECTIONS & AJOUTS --- */
+
+/* Correction Bouton Racing : Texte Noir au survol */
+.racing-btn {
+  border-color: $color-brand-yellow;
+  color: $color-brand-yellow;
+}
+
+.service-card:hover .racing-btn {
+  background-color: $color-brand-yellow;
+  color: $color-brand-black !important; /* Force le noir */
+  border-color: $color-brand-yellow;
+}
+
+/* Styles Section Process (Race to Road) */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  
+  &:hover .step-circle {
+    background-color: $color-brand-yellow;
+    color: $color-brand-black;
+    border-color: $color-brand-yellow;
+    transform: scale(1.1);
+  }
+  
+  h4 { color: white; margin-bottom: 10px; margin-top: 20px;}
+  p { color: #888; font-size: 0.9rem; }
+}
+
+.step-circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #333;
+  color: $color-brand-yellow;
+  font-size: 1.5rem;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
