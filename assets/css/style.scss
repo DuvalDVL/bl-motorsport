@@ -250,28 +250,35 @@ img { max-width: 100%; height: auto; display: block; }
 .page-header-simple { padding-top: 150px; padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
 .service-detail-section { padding: 80px 0; background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; &.bg-darker { background-color: #050505; } }
 
-/* --- SERVICE GRID LAYOUT (CORRIGÉ MOBILE REVERSE) --- */
+/* --- SERVICE GRID LAYOUT (CORRIGÉ MOBILE ORDRE) --- */
 .service-grid-layout {
   display: flex;
   align-items: center;
   gap: 60px;
-  
-  /* GESTION MOBILE */
+
+  /* GESTION MOBILE : ON VEUT TOUJOURS TEXTE AU-DESSUS, IMAGE EN DESSOUS */
   @media (max-width: 900px) {
-    flex-direction: column !important; /* On force l'empilement vertical */
+    flex-direction: column !important;
     gap: 30px;
-    
-    /* Cas spécifique pour la section inversée (Moteur) */
+
+    /* On force l'ordre d'affichage avec flexbox */
+    .service-text {
+      order: 1; /* Le texte en premier */
+    }
+
+    .service-image {
+      order: 2; /* L'image en deuxième */
+      width: 100%;
+      margin-top: 20px; /* Espace au-dessus de l'image */
+      margin-bottom: 0;
+    }
+
+    /* On nettoie l'ancienne règle .reverse qui ne sert plus à rien ici */
     &.reverse {
-      flex-direction: column !important; /* Force la colonne même si c'est "reverse" */
-      
-      .service-image {
-        order: -1; /* Place l'image EN HAUT du texte sur mobile */
-        margin-bottom: 20px;
-      }
+       flex-direction: column !important;
     }
   }
-  
+
   /* GESTION PC (Zig-Zag) */
   &.reverse {
     flex-direction: row-reverse; /* Image à gauche, Texte à droite sur PC uniquement */
