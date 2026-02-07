@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 1. Gestion du Scroll (Header transparent -> Header noir)
+    // 1. Gestion du Scroll (Header)
     const header = document.querySelector('.site-header');
     if(header) {
         window.addEventListener('scroll', () => {
@@ -23,16 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 3. EFFET "AUTO-HOVER" (UNIQUEMENT SUR MOBILE)
-    // On vérifie la largeur de l'écran avant de lancer le script
+    // 3. EFFET "AUTO-FOCUS" (MOBILE)
+    // S'applique aux Cartes Services ET à la Galerie Photo
     if (window.innerWidth < 900) {
         
-        const serviceCards = document.querySelectorAll('.service-card');
+        // C'EST ICI LA MODIFICATION : On sélectionne les cartes ET les images de galerie
+        const elementsToAnimate = document.querySelectorAll('.service-card, .gallery-item');
         
-        // Marge négative pour cibler le centre exact de l'écran
         const observerOptions = {
             root: null,
-            rootMargin: '-40% 0px -40% 0px', 
+            // Zone de déclenchement très étroite au centre de l'écran (45% de marge haut/bas)
+            // Cela force l'effet uniquement quand l'élément est VRAIMENT au milieu
+            rootMargin: '-45% 0px -45% 0px', 
             threshold: 0
         };
 
@@ -46,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        serviceCards.forEach(card => {
-            observer.observe(card);
+        elementsToAnimate.forEach(el => {
+            observer.observe(el);
         });
     }
 });
