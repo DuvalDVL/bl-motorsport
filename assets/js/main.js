@@ -14,8 +14,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.querySelector('.mobile-toggle');
     const overlay = document.querySelector('.mobile-nav-overlay');
     
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active'); // Transforme le burger en croix
-        overlay.classList.toggle('open');  // Affiche le menu plein écran
+    if (toggle && overlay) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            overlay.classList.toggle('open');
+        });
+    }
+
+    // 3. EFFET "AUTO-HOVER" SUR MOBILE (Pôles d'intervention)
+    // On utilise IntersectionObserver pour détecter quelle carte est au milieu de l'écran
+    
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    // Options : on déclenche quand l'élément est dans la zone centrale (marge de -40% en haut et en bas)
+    const observerOptions = {
+        root: null,
+        rootMargin: '-40% 0px -40% 0px', 
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // La carte est au milieu : on active l'effet
+                entry.target.classList.add('active-mobile');
+            } else {
+                // La carte sort du milieu : on désactive
+                entry.target.classList.remove('active-mobile');
+            }
+        });
+    }, observerOptions);
+
+    // On lance l'observation sur chaque carte
+    serviceCards.forEach(card => {
+        observer.observe(card);
     });
 });
