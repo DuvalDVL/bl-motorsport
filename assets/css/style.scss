@@ -419,3 +419,37 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
     &:hover { color: #888; }
   }
 }
+
+/* --- SOCIAL LINKS (FOOTER) --- */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px; /* Espace après l'email */
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fond gris transparent */
+    border-radius: 4px; /* Coins légèrement arrondis comme sur ta capture */
+    transition: all 0.3s ease;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #ccc; /* Gris clair par défaut */
+      transition: fill 0.3s ease;
+    }
+    
+    &:hover {
+      background-color: $color-brand-yellow;
+      transform: translateY(-3px); /* Petit saut au survol */
+      
+      svg {
+        fill: $color-brand-black; /* Icône devient noire sur fond jaune */
+      }
+    }
+  }
+}
