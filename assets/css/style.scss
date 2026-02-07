@@ -249,11 +249,35 @@ img { max-width: 100%; height: auto; display: block; }
 /* --- PAGE LAYOUTS --- */
 .page-header-simple { padding-top: 150px; padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
 .service-detail-section { padding: 80px 0; background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; &.bg-darker { background-color: #050505; } }
+
+/* --- SERVICE GRID LAYOUT (CORRIGÉ MOBILE REVERSE) --- */
 .service-grid-layout {
-  display: flex; align-items: center; gap: 60px;
-  @media (max-width: 900px) { flex-direction: column; &.reverse { flex-direction: column; .service-image { order: -1; } } }
-  &.reverse { flex-direction: row-reverse; }
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  
+  /* GESTION MOBILE */
+  @media (max-width: 900px) {
+    flex-direction: column !important; /* On force l'empilement vertical */
+    gap: 30px;
+    
+    /* Cas spécifique pour la section inversée (Moteur) */
+    &.reverse {
+      flex-direction: column !important; /* Force la colonne même si c'est "reverse" */
+      
+      .service-image {
+        order: -1; /* Place l'image EN HAUT du texte sur mobile */
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  /* GESTION PC (Zig-Zag) */
+  &.reverse {
+    flex-direction: row-reverse; /* Image à gauche, Texte à droite sur PC uniquement */
+  }
 }
+
 .service-text {
   flex: 1;
   .service-subtitle { color: $color-brand-yellow; font-size: 0.85rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 10px; }
@@ -261,10 +285,27 @@ img { max-width: 100%; height: auto; display: block; }
   p { color: #bbb; font-size: 1.05rem; margin-bottom: 30px; }
 }
 .service-image {
-  flex: 1; width: 100%;
+  flex: 1;
+  width: 100%; /* S'assure que l'image prend la largeur dispo */
+  
   .img-wrapper {
-    position: relative; border: 1px solid #333; border-radius: 4px; overflow: hidden;
-    &::after { content: ''; position: absolute; top: 20px; left: 20px; right: -20px; bottom: -20px; border: 2px solid rgba(255, 255, 255, 0.1); z-index: -1; }
+    position: relative;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    /* Ratio d'aspect pour éviter les sauts */
+    aspect-ratio: 4/3; 
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after { 
+      content: ''; position: absolute; top: 20px; left: 20px; right: -20px; bottom: -20px; 
+      border: 2px solid rgba(255, 255, 255, 0.1); z-index: -1; 
+    }
   }
 }
 
