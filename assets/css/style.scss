@@ -565,3 +565,19 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 .service-card.featured.active-mobile {
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
 }
+
+/* --- CSS pour le lien créateur dans le footer --- */
+
+/* Style par défaut du lien */
+.footer-bottom .creator-link {
+  color: #FFD700; /* Couleur dorée */
+  text-decoration: underline; /* Souligné */
+  font-weight: bold; /* Optionnel : en gras pour ressortir un peu plus */
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol (optionnel : devient blanc au survol) */
+.footer-bottom .creator-link:hover {
+  color: #ffffff;
+  text-decoration: none; /* Optionnel : retire le soulignement au survol */
+}
