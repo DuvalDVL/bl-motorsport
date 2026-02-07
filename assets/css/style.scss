@@ -99,7 +99,7 @@ img { max-width: 100%; height: auto; display: block; }
 .text-gradient { background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; strong { color: $color-brand-yellow; } }
 
-/* --- BIO SECTION (V2 : CARRÉS PC + MOBILE AJUSTÉ) --- */
+/* --- BIO SECTION (V3 : CENTRAGE PC FINAL) --- */
 .bio-section {
   background: #080808;
   padding: 80px 0;
@@ -133,7 +133,6 @@ img { max-width: 100%; height: auto; display: block; }
 .bio-desc {
   color: #999;
   line-height: 1.8;
-  /* Correction Mobile : on s'assure que le paragraphe ne pousse pas trop vers le bas */
   margin-bottom: 0; 
 }
 
@@ -141,13 +140,16 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   gap: 30px;
   width: 100%;
+  
+  /* LA CORRECTION EST ICI : On centre les boîtes horizontalement */
+  justify-content: center; 
 }
 
 /* MOBILE : Ajustements d'espacement */
 @media (max-width: 600px) {
   .bio-stats {
     gap: 15px;
-    margin-top: 20px; /* Réduit (était à 30px ou auto) pour remonter les boîtes */
+    margin-top: 20px; 
   }
 }
 
@@ -157,9 +159,9 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
   background: #111;
   
-  /* PC : On force le carré et on limite la largeur */
-  flex: 0 1 250px; /* Ne grandit pas plus que 250px */
-  aspect-ratio: 1 / 1; /* Force la forme CARRÉE exacte */
+  /* PC : On force le carré, on limite la largeur ET on centre le contenu interne */
+  flex: 0 1 250px; 
+  aspect-ratio: 1 / 1; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,9 +172,9 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 600px) {
   .stat-card {
     padding: 15px;
-    aspect-ratio: auto; /* On annule le carré sur mobile pour gagner de la place */
-    flex: 1; /* Prend toute la largeur dispo */
-    max-width: none; /* Saute la limite de 250px */
+    aspect-ratio: auto; 
+    flex: 1; 
+    max-width: none; 
   }
 }
 
