@@ -99,31 +99,94 @@ img { max-width: 100%; height: auto; display: block; }
 .text-gradient { background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; strong { color: $color-brand-yellow; } }
 
-/* --- BIO SECTION (NOUVEAU) --- */
-.bio-section { background: #080808; padding: 80px 0; border-bottom: 1px solid #222; }
-.bio-container { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; }
-.bio-text { flex: 1; min-width: 300px; }
-.bio-label { color: $color-brand-yellow; font-weight: bold; letter-spacing: 2px; font-size: 0.9rem; }
-.bio-intro { color: #ccc; margin-bottom: 20px; }
-.bio-desc { color: #999; line-height: 1.8; }
+/* --- BIO SECTION (CORRIGÉ MOBILE) --- */
+.bio-section {
+  background: #080808;
+  padding: 80px 0;
+  border-bottom: 1px solid #222;
+}
 
-.bio-stats { 
-  display: flex; gap: 30px; 
-  /* Gestion Mobile : Si l'écran est petit, on réduit l'écart */
-  @media (max-width: 600px) { gap: 15px; width: 100%; }
+.bio-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bio-label {
+  color: #FFD700; /* Jaune en dur pour être sûr */
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.bio-intro {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.bio-desc {
+  color: #999;
+  line-height: 1.8;
+}
+
+.bio-stats {
+  display: flex;
+  gap: 30px;
+  width: 100%; /* Force la largeur */
+}
+
+/* On sépare la Media Query pour éviter les erreurs de compilation */
+@media (max-width: 600px) {
+  .bio-stats {
+    gap: 15px;
+    margin-top: 30px; /* Espace avec le texte au dessus */
+  }
 }
 
 .stat-card {
-  border: 1px solid #333; padding: 30px; text-align: center; background: #111;
-  /* Flex 1 permet aux cartes de se partager l'espace sans déborder */
-  flex: 1; 
-  min-width: 0; /* Empêche le débordement des flex items */
-  
-  @media (max-width: 600px) { padding: 15px; }
+  border: 1px solid #333;
+  padding: 30px;
+  text-align: center;
+  background: #111;
+  flex: 1;
+  min-width: 0;
 }
 
-.stat-number { display: block; font-size: 3.5rem; font-weight: 700; color: white; line-height: 1; @media (max-width: 600px) { font-size: 2.5rem; } }
-.stat-label { color: $color-brand-yellow; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+@media (max-width: 600px) {
+  .stat-card {
+    padding: 15px;
+  }
+}
+
+.stat-number {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+
+.stat-label {
+  color: #FFD700; /* Jaune en dur */
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
 
 /* --- BRAND STRIP --- */
 .brand-strip { background-color: #0a0a0a; border-bottom: 1px solid #222; padding: 30px 0; .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 40px; } }
