@@ -12,11 +12,15 @@ $z-index-sticky: 9999;
 /* --- GLOBAL RESET --- */
 * { box-sizing: border-box; }
 
-body {
+html, body {
   margin: 0; padding: 0;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   background-color: $color-bg-dark; color: #cccccc;
   line-height: 1.6;
+  /* CORRECTION SCROLL LATÉRAL : Indispensable sur mobile */
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -150,7 +154,7 @@ img { max-width: 100%; height: auto; display: block; }
   .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 40px; }
 }
 
-/* --- SERVICES GRID (CORRIGÉ) --- */
+/* --- SERVICES GRID --- */
 .services-section { padding: 80px 0; background-color: $color-bg-dark; }
 .section-header { text-align: center; margin-bottom: 60px; h2 { font-size: 2.5rem; } }
 .divider-yellow { width: 60px; height: 4px; background-color: $color-brand-yellow; margin: 10px auto 0; }
@@ -164,11 +168,11 @@ img { max-width: 100%; height: auto; display: block; }
   background: #0f0f0f; padding: 40px 30px; border: 1px solid #222;
   transition: all 0.3s ease; display: flex; flex-direction: column; position: relative;
   
-  &:hover {
+  /* L'effet Hover (Desktop) OU Active (Mobile Scroll) */
+  &:hover, &.active-mobile {
     transform: translateY(-5px); border-color: $color-brand-yellow; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     .card-icon svg { fill: $color-brand-yellow; transform: scale(1.1); }
     .btn-card { background-color: $color-brand-yellow; color: black; border-color: $color-brand-yellow; }
-    /* Cas spécifique pour Racing : texte noir au survol */
     .racing-btn { color: black !important; }
   }
   
@@ -202,7 +206,6 @@ img { max-width: 100%; height: auto; display: block; }
   text-transform: uppercase; font-size: 0.8rem; font-weight: bold; letter-spacing: 1px;
   margin-top: auto; transition: all 0.3s ease;
   
-  /* Bouton Racing Spécifique : Bordure jaune par défaut, texte blanc */
   &.racing-btn { border-color: $color-brand-yellow; color: white; }
 }
 
@@ -221,7 +224,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 1.5rem; line-height: 60px; border-radius: 50%; transition: all 0.3s ease; background-color: transparent;
 }
 
-/* --- PAGE LAYOUTS (Prestations, etc) --- */
+/* --- PAGE LAYOUTS --- */
 .page-header-simple { padding-top: 150px; padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
 .service-detail-section { padding: 80px 0; background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; &.bg-darker { background-color: #050505; } }
 .service-grid-layout {
@@ -263,16 +266,20 @@ img { max-width: 100%; height: auto; display: block; }
 footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0; text-align: center; font-size: 0.8rem; color: #555; p { margin: 10px 0; } }
 .seo-text-section { background: #000; padding: 40px 0; color: #333; font-size: 0.8rem; text-align: justify; }
 
-/* Sticky Whatsapp Blanc Pur */
+/* Sticky Whatsapp Blanc Pur - CORRIGÉ */
 .sticky-whatsapp {
   position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
   background-color: $color-brand-yellow; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5); z-index: 9999;
-  svg { width: 32px; height: 32px; fill: #ffffff !important; }
-  &:hover { transform: scale(1.1); }
   animation: pulse-border 2s infinite;
+  
+  /* C'est ICI qu'on force le blanc */
+  svg, svg path { fill: #ffffff !important; }
+  
+  &:hover { transform: scale(1.1); }
 }
+
 @keyframes pulse-border {
   0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
   70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
