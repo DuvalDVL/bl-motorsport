@@ -498,3 +498,22 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
     transform: translateY(0);
   }
 }
+
+/* --- CORRECTIFS FINAUX (Bordures & Galerie Mobile) --- */
+
+/* 1. FORCE LA BORDURE JAUNE SUR LA CARTE "FEATURED" */
+.service-card.featured:hover,
+.service-card.featured.active-mobile {
+  border-color: $color-brand-yellow !important; /* Le !important force le jaune */
+}
+
+/* 2. AUTOMATISATION GALERIE MOBILE */
+/* Quand le JS ajoute la classe .active-mobile, on affiche le texte */
+.gallery-item.active-mobile .gallery-caption {
+  transform: translateY(0); /* Fait remonter le texte */
+}
+
+/* Optionnel : Ajout d'une petite ombre dorée sur la carte 2 pour bien voir l'effet */
+.service-card.featured.active-mobile {
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
+}
