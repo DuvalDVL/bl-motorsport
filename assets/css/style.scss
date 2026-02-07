@@ -99,7 +99,7 @@ img { max-width: 100%; height: auto; display: block; }
 .text-gradient { background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; strong { color: $color-brand-yellow; } }
 
-/* --- BIO SECTION (CORRIGÉ MOBILE) --- */
+/* --- BIO SECTION (V2 : CARRÉS PC + MOBILE AJUSTÉ) --- */
 .bio-section {
   background: #080808;
   padding: 80px 0;
@@ -119,7 +119,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .bio-label {
-  color: #FFD700; /* Jaune en dur pour être sûr */
+  color: #FFD700;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 0.9rem;
@@ -133,19 +133,21 @@ img { max-width: 100%; height: auto; display: block; }
 .bio-desc {
   color: #999;
   line-height: 1.8;
+  /* Correction Mobile : on s'assure que le paragraphe ne pousse pas trop vers le bas */
+  margin-bottom: 0; 
 }
 
 .bio-stats {
   display: flex;
   gap: 30px;
-  width: 100%; /* Force la largeur */
+  width: 100%;
 }
 
-/* On sépare la Media Query pour éviter les erreurs de compilation */
+/* MOBILE : Ajustements d'espacement */
 @media (max-width: 600px) {
   .bio-stats {
     gap: 15px;
-    margin-top: 30px; /* Espace avec le texte au dessus */
+    margin-top: 20px; /* Réduit (était à 30px ou auto) pour remonter les boîtes */
   }
 }
 
@@ -154,13 +156,23 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 30px;
   text-align: center;
   background: #111;
-  flex: 1;
-  min-width: 0;
+  
+  /* PC : On force le carré et on limite la largeur */
+  flex: 0 1 250px; /* Ne grandit pas plus que 250px */
+  aspect-ratio: 1 / 1; /* Force la forme CARRÉE exacte */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* MOBILE : On repasse en rectangles souples */
 @media (max-width: 600px) {
   .stat-card {
     padding: 15px;
+    aspect-ratio: auto; /* On annule le carré sur mobile pour gagner de la place */
+    flex: 1; /* Prend toute la largeur dispo */
+    max-width: none; /* Saute la limite de 250px */
   }
 }
 
@@ -179,7 +191,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .stat-label {
-  color: #FFD700; /* Jaune en dur */
+  color: #FFD700;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
