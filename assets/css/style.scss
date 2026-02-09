@@ -764,3 +764,35 @@ input, textarea {
   visibility: visible;
   transform: translateX(-50%) translateY(0);
 }
+
+.mobile-nav-overlay {
+  background-color: rgba(5, 5, 5, 0.98);
+  backdrop-filter: blur(15px);
+  
+  .mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .mobile-menu-header { margin-bottom: 40px; text-align: center; .mobile-logo { height: 60px; margin: 0 auto; } }
+
+  nav ul {
+    li {
+      margin: 15px 0;
+      a { 
+        font-size: 1.8rem !important; 
+        &.sub-link { font-size: 1.3rem !important; color: #999; }
+      }
+    }
+    .mobile-sep { height: 1px; background: rgba(255,215,0,0.2); width: 50px; margin: 20px auto; }
+  }
+
+  .mobile-menu-footer {
+    margin-top: auto;
+    text-align: center;
+    .social-links { justify-content: center; margin-bottom: 20px; }
+    p { font-size: 0.8rem; color: #444; text-transform: uppercase; letter-spacing: 2px; }
+  }
+}
