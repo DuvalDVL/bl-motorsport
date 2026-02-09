@@ -146,19 +146,25 @@ img { max-width: 100%; height: auto; display: block; }
   flex-wrap: wrap; /* IMPORTANT : Permet le passage à la ligne */
 }
 
-/* MOBILE : Ajustements */
-@media (max-width: 900px) {
+/* MOBILE SPECIFIQUE : On force les box à rester carrées et centrées */
+@media (max-width: 600px) {
   .bio-stats {
-    gap: 15px;
-    margin-top: 30px;
-    flex-direction: column; /* CHANGÉ : Colonne dès 900px pour éviter le chevauchement */
-    align-items: center;
-  }
-  .stat-card {
+    flex-direction: column; 
+    align-items: center; /* Centre les box */
     width: 100%;
-    max-width: 350px; /* Limite la largeur sur tablette/mobile */
-    aspect-ratio: auto; /* Plus besoin du carré parfait sur mobile */
-    margin-bottom: 10px;
+  }
+
+  .stat-card {
+    width: 250px;       /* On fixe une largeur pour garder le carré */
+    height: 250px;      /* On fixe la hauteur */
+    aspect-ratio: 1 / 1; 
+    flex: none;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .stat-number {
+    font-size: 2.8rem; /* On réduit un peu pour que ça tienne bien */
   }
 }
 
