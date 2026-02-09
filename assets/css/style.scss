@@ -641,23 +641,28 @@ input, textarea {
 .brand-flex-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
-  
+  max-width: 900px;
+  margin: 0 auto;
+
   .brand-item {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
-    color: #444; /* Gris foncé par défaut */
+    color: #444;
     transition: all 0.3s ease;
-    cursor: default;
-    padding: 10px 20px;
-    border: 1px solid transparent;
+    padding: 10px;
 
     &:hover {
-      color: #FFD700; /* Devient Or au survol */
-      transform: scale(1.1);
-      text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      color: #FFD700;
+      transform: translateY(-3px);
     }
   }
+}
+
+/* On s'assure que le texte sous les marques ne déborde pas */
+.brand-flex-container + p {
+  clear: both;
+  display: block;
 }
