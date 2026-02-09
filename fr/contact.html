@@ -27,13 +27,17 @@ lang: fr
         <div class="info-block">
           <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px;">ADRESSE ATELIER</h4>
           <p style="color: #ccc; margin-bottom: 5px;">{{ site.company.name }}</p>
-          <p style="color: #999;">{{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}</p>
+          <p style="color: #999;">
+            <a href="https://www.google.com/maps/search/?api=1&query=679+route+de+Plan+Mouillé+74920+Combloux" target="_blank" style="text-decoration: none; color: inherit;">
+              {{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}
+            </a>
+          </p>
         </div>
 
         <div class="info-block" style="margin-top: 30px;">
           <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px;">COMMUNICATION</h4>
           <p style="color: #999; margin-bottom: 10px;">
-            <strong style="color: white;">Tél :</strong> <a href="tel:{{ site.company.phone | remove: ' ' }}">{{ site.company.phone }}</a>
+            <strong style="color: white;">WhatsApp :</strong> <a href="{{ site.company.whatsapp_link }}" style="color: #FFD700; font-weight: bold;">{{ site.company.phone }}</a>
           </p>
           <p style="color: #999;">
             <strong style="color: white;">Email :</strong> <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
@@ -42,7 +46,7 @@ lang: fr
 
         <div class="info-block" style="margin-top: 30px;">
           <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px;">HORAIRES</h4>
-          <p style="color: #999; font-style: italic;">Atelier privé, merci de nous contacter avant votre venue.</p>
+          <p style="color: #999; font-style: italic;">Atelier privé, merci de nous contacter avant votre venue pour convenir d'un rendez-vous.</p>
         </div>
       </div>
 
@@ -86,7 +90,7 @@ lang: fr
 
 <section class="map-section" style="height: 450px; width: 100%; position: relative;">
   <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.687486846548!2d6.645656715766346!3d45.90043507910862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478eb7f25b7271dd%3A0xfaeaef92b2134e04!2s679%20Rte%20de%20Plan%20Mouille%2C%2074920%20Combloux!5e0!3m2!1sfr!2sfr!4v1675865432109!5m2!1sfr!2sfr"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.63229864239!2d6.655845576856004!3d45.8787033710834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47898df25b7271dd%3A0xaa3a0492bf134e04!2s679%20Rte%20de%20Plan%20Mouille%2C%2074920%20Combloux!5e0!3m2!1sfr!2sfr!4v1715694321456!5m2!1sfr!2sfr" 
     width="100%" 
     height="100%" 
     style="border:0; filter: grayscale(100%) invert(90%);" 
