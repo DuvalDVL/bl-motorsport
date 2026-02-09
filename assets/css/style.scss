@@ -666,3 +666,68 @@ input, textarea {
   clear: both;
   display: block;
 }
+
+/* --- STYLES DROPDOWN NAV --- */
+
+.has-dropdown {
+  position: relative;
+  
+  .arrow {
+    font-size: 0.7rem;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .arrow {
+      transform: rotate(180deg);
+      color: $color-brand-yellow;
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* S'affiche juste en dessous du lien */
+  left: -20px;
+  width: 260px;
+  background-color: rgba(10, 10, 10, 0.98);
+  border: 1px solid #222;
+  border-top: 2px solid $color-brand-yellow; /* Rappel de la couleur marque */
+  padding: 15px 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 0 0 8px 8px;
+
+  li {
+    margin: 0 !important; /* Reset des marges li du header */
+    
+    a {
+      display: block;
+      padding: 12px 25px;
+      font-size: 0.85rem !important;
+      color: #999 !important;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.2s ease;
+
+      &::after { display: none; } /* On enlève la barre de soulignement pour le dropdown */
+
+      &:hover {
+        background-color: #151515;
+        color: $color-brand-yellow !important;
+        padding-left: 30px; /* Petit effet de décalage au survol */
+      }
+    }
+  }
+}
