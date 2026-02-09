@@ -243,8 +243,34 @@ img { max-width: 100%; height: auto; display: block; }
 .services-section { padding: 80px 0; background-color: $color-bg-dark; }
 .section-header { text-align: center; margin-bottom: 60px; h2 { font-size: 2.5rem; } }
 .divider-yellow { width: 60px; height: 4px; background-color: $color-brand-yellow; margin: 10px auto 0; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; align-items: stretch; }
+.services-grid {
+  display: grid;
+  gap: 25px;
+  
+  /* PC LARGE : 4 colonnes alignées */
+  grid-template-columns: repeat(4, 1fr);
 
+  /* PC MOYEN / TABLETTE (Entre 900px et 1200px) : 2x2 */
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* MOBILE (Moins de 700px) : 1 colonne */
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Optionnel : Ajustement des cartes pour le format 4 colonnes */
+.service-card {
+  padding: 30px 20px; /* On réduit un peu le padding latéral pour les écrans étroits */
+  
+  h3 {
+    font-size: 1.2rem; /* Un poil plus petit pour que les titres tiennent sur 2 lignes max */
+    min-height: 50px;
+  }
+}
 .service-card {
   background: #0f0f0f; padding: 40px 30px; border: 1px solid #222; transition: all 0.3s ease; display: flex; flex-direction: column; position: relative;
   border-radius: 12px !important; /* V2 */
