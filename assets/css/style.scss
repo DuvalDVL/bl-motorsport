@@ -898,3 +898,54 @@ input, textarea {
     p { font-size: 0.8rem; color: #444; text-transform: uppercase; letter-spacing: 2px; }
   }
 }
+
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 400px;
+  background: rgba(15, 15, 15, 0.95);
+  border: 1px solid #333;
+  border-left: 4px solid $color-brand-yellow;
+  padding: 20px;
+  z-index: 10000;
+  border-radius: 12px;
+  display: none; // Masqué par défaut
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+
+  .cookie-content {
+    p {
+      font-size: 0.85rem;
+      color: #ccc;
+      margin: 0 0 15px 0;
+      line-height: 1.4;
+      a { color: $color-brand-yellow; text-decoration: underline; }
+    }
+  }
+
+  .btn-cookie {
+    background: $color-brand-yellow;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover { transform: scale(1.05); }
+  }
+}
+
+// Tablette/Mobile : on le centre en bas
+@media (max-width: 600px) {
+  .cookie-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    max-width: none;
+  }
+}
