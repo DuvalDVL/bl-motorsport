@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Garage Porsche Combloux Megève | Contact & Accès B.L Motorsport
-description: "Contactez notre atelier spécialisé Porsche et prestige à Combloux (74). Prise de rendez-vous pour entretien, réfection moteur et préparation racing près de Megève."
+description: "Contactez notre atelier spécialisé Porsche et prestige à Combloux (74). Prise de rendez-vous pour entretien, réfection moteur et préparation racing."
 permalink: /fr/contact/
 lang: fr
 ---
@@ -11,7 +11,7 @@ lang: fr
     <h1 class="page-title">CONTACT & <span class="text-gradient">ACCÈS</span></h1>
     <div class="divider-yellow"></div>
     <p style="color: #999; margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
-      Pour garantir une qualité de service optimale et une confidentialité totale à nos clients, 
+      Pour garantir une qualité de service optimale et une confidentialité totale, 
       l'atelier reçoit <strong>exclusivement sur rendez-vous</strong>.
     </p>
   </div>
@@ -22,48 +22,48 @@ lang: fr
     <div class="contact-grid">
       
       <div class="contact-infos">
-        <h3 style="margin-bottom: 30px; color: white; font-family: 'Oswald';">COORDONNÉES ATELIER</h3>
+        <h3 style="margin-bottom: 30px; color: white;">COORDONNÉES</h3>
         
         <div class="info-block">
-          <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 1px;">LOCALISATION</h4>
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">ADRESSE ATELIER</h4>
           <p style="color: #ccc; margin-bottom: 5px; font-weight: bold;">{{ site.company.name }}</p>
           <p style="color: #999; line-height: 1.6;">
-            <a href="http://googleusercontent.com/maps.google.com/5" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+            <a href="https://www.google.com/maps?q=B.L+Motorsport+Combloux" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
               {{ site.company.address }}<br>
-              {{ site.company.zip }} {{ site.company.city }} (Haute-Savoie)
+              {{ site.company.zip }} {{ site.company.city }}
             </a>
           </p>
         </div>
 
         <div class="info-block" style="margin-top: 40px;">
-          <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 1px;">DIRECT CONTACT</h4>
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">COMMUNICATION</h4>
           <p style="color: #999; margin-bottom: 15px;">
             <strong style="color: white;">WhatsApp :</strong> <a href="{{ site.company.whatsapp_link }}" style="color: #FFD700; font-weight: bold;">{{ site.company.phone }}</a>
           </p>
           <p style="color: #999;">
-            <strong style="color: white;">Email :</strong> <a href="mailto:{{ site.company.email }}" style="transition: color 0.3s ease;">{{ site.company.email }}</a>
+            <strong style="color: white;">Email :</strong> <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
           </p>
         </div>
 
         <div class="info-block" style="margin-top: 40px;">
-          <h4 style="color: #FFD700; font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 1px;">MODALITÉS DE RÉCEPTION</h4>
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">HORAIRES</h4>
           <p style="color: #999; font-style: italic; line-height: 1.6;">
-            Atelier privé. Merci de nous contacter préalablement par téléphone ou via le formulaire pour convenir d'un créneau d'intervention ou d'expertise.
+            Atelier privé. Merci de nous contacter préalablement pour convenir d'un rendez-vous.
           </p>
         </div>
       </div>
 
       <div class="contact-form-wrapper">
-        <h3 style="margin-bottom: 30px; color: white; font-family: 'Oswald';">NOUS ÉCRIRE</h3>
+        <h3 style="margin-bottom: 30px; color: white;">NOUS ÉCRIRE</h3>
         
         <form action="https://formspree.io/f/xjgevoaj" method="POST" class="dark-form">
           <div class="form-group">
             <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
           </div>
 
           <div class="form-group">
-            <label for="email">Adresse Email</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="votre@email.com">
           </div>
 
@@ -74,22 +74,15 @@ lang: fr
 
           <div class="form-group">
             <label for="vehicle">Véhicule (Marque / Modèle)</label>
-            <input type="text" id="vehicle" name="vehicle" placeholder="Ex: Porsche 911 (991) GT3 RS">
+            <input type="text" id="vehicle" name="vehicle" placeholder="Ex: Porsche 911">
           </div>
 
           <div class="form-group">
-            <label for="message">Description de votre besoin</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Précisez ici la nature de l'intervention (Entretien, Moteur, Racing...)"></textarea>
+            <label for="message">Votre demande</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Comment pouvons-nous vous aider ?"></textarea>
           </div>
 
-          <div class="form-group" style="display: flex; align-items: flex-start; gap: 10px; margin-top: 10px;">
-            <input type="checkbox" id="rgpd" name="rgpd" required style="width: auto; margin-top: 5px;">
-            <label for="rgpd" style="font-size: 0.75rem; color: #666; line-height: 1.4;">
-              J'accepte que mes données soient traitées par B.L Motorsport pour répondre à ma demande, conformément à la <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/" style="color: #FFD700;">politique de confidentialité</a>.
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">Envoyer la demande d'expertise</button>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">Envoyer la demande</button>
         </form>
       </div>
 
@@ -99,12 +92,11 @@ lang: fr
 
 <section class="map-section" style="height: 450px; width: 100%; position: relative; border-top: 1px solid #222;">
   <iframe 
-    src="http://googleusercontent.com/maps.google.com/6" 
+    src="https://www.google.com/maps?q=B.L+Motorsport+Combloux&output=embed" 
     width="100%" 
     height="100%" 
     style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2);" 
     allowfullscreen="" 
-    loading="lazy"
-    title="Localisation de l'atelier B.L Motorsport à Combloux">
+    loading="lazy">
   </iframe>
 </section>
