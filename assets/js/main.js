@@ -53,3 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cookiePopup = document.getElementById("cookie-popup");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  // Vérifie si le consentement est déjà stocké
+  if (!localStorage.getItem("cookiesAccepted")) {
+    setTimeout(() => {
+      cookiePopup.style.display = "block";
+    }, 2000); // Apparaît après 2 secondes
+  }
+
+  acceptBtn.addEventListener("click", function() {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookiePopup.style.display = "none";
+  });
+});
