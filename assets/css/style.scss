@@ -146,25 +146,30 @@ img { max-width: 100%; height: auto; display: block; }
   flex-wrap: wrap; /* IMPORTANT : Permet le passage à la ligne */
 }
 
-/* MOBILE SPECIFIQUE : On force les box à rester carrées et centrées */
+/* MOBILE : On réduit la taille pour que ce ne soit plus "trop gros" */
 @media (max-width: 600px) {
   .bio-stats {
     flex-direction: column; 
-    align-items: center; /* Centre les box */
+    align-items: center; 
     width: 100%;
+    gap: 15px; /* Un peu moins d'espace entre les box */
   }
 
   .stat-card {
-    width: 250px;       /* On fixe une largeur pour garder le carré */
-    height: 250px;      /* On fixe la hauteur */
+    width: 200px !important;  /* Taille réduite */
+    height: 200px !important; /* On force le carré compact */
     aspect-ratio: 1 / 1; 
     flex: none;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 10px;
+    padding: 15px; /* On réduit le padding interne */
   }
   
   .stat-number {
-    font-size: 2.8rem; /* On réduit un peu pour que ça tienne bien */
+    font-size: 2.2rem !important; /* Chiffres plus petits pour tenir dans 200px */
+  }
+  
+  .stat-label {
+    font-size: 0.7rem !important;
   }
 }
 
