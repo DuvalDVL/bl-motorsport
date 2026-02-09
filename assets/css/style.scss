@@ -151,8 +151,14 @@ img { max-width: 100%; height: auto; display: block; }
   .bio-stats {
     gap: 15px;
     margin-top: 30px;
-    flex-direction: row; 
-    justify-content: center;
+    flex-direction: column; /* CHANGÉ : Colonne dès 900px pour éviter le chevauchement */
+    align-items: center;
+  }
+  .stat-card {
+    width: 100%;
+    max-width: 350px; /* Limite la largeur sur tablette/mobile */
+    aspect-ratio: auto; /* Plus besoin du carré parfait sur mobile */
+    margin-bottom: 10px;
   }
 }
 
@@ -180,24 +186,24 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 
-/* MOBILE SPECIFIQUE (Petits écrans) : On empile pour éviter le débordement */
+/* MOBILE SPECIFIQUE (Petits écrans) : On blinde l'empilement */
 @media (max-width: 600px) {
   .bio-stats {
-    flex-direction: column; /* Empile les cartes verticalement */
+    flex-direction: column; 
     align-items: center;
     width: 100%;
   }
 
   .stat-card {
     width: 100%;       /* Prend toute la largeur dispo */
-    max-width: 280px;  /* Mais pas trop large non plus */
-    aspect-ratio: auto; /* Hauteur automatique selon le texte */
+    max-width: 100%;   /* Ne dépasse jamais l'écran */
+    aspect-ratio: auto; 
     flex: none;
     margin-bottom: 15px;
   }
   
   .stat-number {
-    font-size: 2.5rem; /* Un peu plus petit sur mobile */
+    font-size: 2.5rem; 
   }
 }
 
@@ -287,8 +293,8 @@ img { max-width: 100%; height: auto; display: block; }
 
     .service-image {
       order: 2; /* L'image en deuxième */
-      width: 100%;
-      margin-top: 20px; /* Espace au-dessus de l'image */
+      width: 100% !important; /* CORRIGÉ : Largeur forcée pour l'image moteur */
+      margin-top: 20px; 
       margin-bottom: 0;
     }
 
