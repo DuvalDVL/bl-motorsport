@@ -35,6 +35,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 0.9rem;
   margin: 10px 10px 10px 0; border: 2px solid $color-brand-yellow;
   cursor: pointer; text-align: center;
+  border-radius: 12px !important; /* V2 */
 }
 .btn-primary {
   background-color: $color-brand-yellow; color: $color-brand-black;
@@ -48,7 +49,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- HEADER --- */
 .site-header {
-  position: fixed; top: 0; left: 0; width: 100%; height: $header-height;
+  position: fixed; top: 0; left: 0; width: 100%; height: 100px; /* Ajusté V2 */
   z-index: 1000; display: flex; align-items: center;
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -59,7 +60,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 .header-container { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.site-logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: $color-text-white; img { height: 50px; width: auto; filter: drop-shadow(0 0 1px white); } }
+.site-logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: $color-text-white; img { height: 70px !important; width: auto; filter: drop-shadow(0 0 1px white); } }
 .desktop-nav {
   @media (max-width: 900px) { display: none; }
   ul { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;
@@ -99,7 +100,7 @@ img { max-width: 100%; height: auto; display: block; }
 .text-gradient { background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; strong { color: $color-brand-yellow; } }
 
-/* --- BIO SECTION (V3 : CENTRAGE PC FINAL) --- */
+/* --- BIO SECTION (CORRIGÉ V4 : FLEX WRAP & MOBILE STACK) --- */
 .bio-section {
   background: #080808;
   padding: 80px 0;
@@ -136,45 +137,67 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 0; 
 }
 
+/* CONTENEUR DES 3 CARTES */
 .bio-stats {
   display: flex;
   gap: 30px;
   width: 100%;
-  
-  /* LA CORRECTION EST ICI : On centre les boîtes horizontalement */
-  justify-content: center; 
+  justify-content: center;
+  flex-wrap: wrap; /* IMPORTANT : Permet le passage à la ligne */
 }
 
-/* MOBILE : Ajustements d'espacement */
-@media (max-width: 600px) {
+/* MOBILE : Ajustements */
+@media (max-width: 900px) {
   .bio-stats {
     gap: 15px;
-    margin-top: 20px; 
+    margin-top: 30px;
+    flex-direction: row; 
+    justify-content: center;
   }
 }
 
+/* STYLE DES CARTES */
 .stat-card {
   border: 1px solid #333;
   padding: 30px;
   text-align: center;
   background: #111;
+  border-radius: 12px !important; /* V2 Bords arrondis */
   
-  /* PC : On force le carré, on limite la largeur ET on centre le contenu interne */
+  /* PC : Taille fixe carrée */
   flex: 0 1 250px; 
   aspect-ratio: 1 / 1; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #FFD700;
+  }
 }
 
-/* MOBILE : On repasse en rectangles souples */
+/* MOBILE SPECIFIQUE (Petits écrans) : On empile pour éviter le débordement */
 @media (max-width: 600px) {
+  .bio-stats {
+    flex-direction: column; /* Empile les cartes verticalement */
+    align-items: center;
+    width: 100%;
+  }
+
   .stat-card {
-    padding: 15px;
-    aspect-ratio: auto; 
-    flex: 1; 
-    max-width: none; 
+    width: 100%;       /* Prend toute la largeur dispo */
+    max-width: 280px;  /* Mais pas trop large non plus */
+    aspect-ratio: auto; /* Hauteur automatique selon le texte */
+    flex: none;
+    margin-bottom: 15px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem; /* Un peu plus petit sur mobile */
   }
 }
 
@@ -184,12 +207,6 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 700;
   color: white;
   line-height: 1;
-}
-
-@media (max-width: 600px) {
-  .stat-number {
-    font-size: 2.5rem;
-  }
 }
 
 .stat-label {
@@ -213,6 +230,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .service-card {
   background: #0f0f0f; padding: 40px 30px; border: 1px solid #222; transition: all 0.3s ease; display: flex; flex-direction: column; position: relative;
+  border-radius: 12px !important; /* V2 */
+  
   /* Hover desktop OU Active mobile */
   &:hover, &.active-mobile {
     transform: translateY(-5px); border-color: $color-brand-yellow; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
@@ -247,7 +266,7 @@ img { max-width: 100%; height: auto; display: block; }
 .step-circle { display: inline-block; width: 60px; height: 60px; border: 1px solid #333; color: $color-brand-yellow; font-size: 1.5rem; line-height: 60px; border-radius: 50%; transition: all 0.3s ease; background-color: transparent; }
 
 /* --- PAGE LAYOUTS --- */
-.page-header-simple { padding-top: 150px; padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
+.page-header-simple { padding-top: 180px; /* Ajusté V2 */ padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
 .service-detail-section { padding: 80px 0; background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; &.bg-darker { background-color: #050505; } }
 
 /* --- SERVICE GRID LAYOUT (CORRIGÉ MOBILE ORDRE) --- */
@@ -298,7 +317,7 @@ img { max-width: 100%; height: auto; display: block; }
   .img-wrapper {
     position: relative;
     border: 1px solid #333;
-    border-radius: 4px;
+    border-radius: 12px !important; /* V2 */
     overflow: hidden;
     /* Ratio d'aspect pour éviter les sauts */
     aspect-ratio: 4/3; 
@@ -318,7 +337,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- CONTACT --- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; @media (max-width: 900px) { grid-template-columns: 1fr; } }
-.contact-form-wrapper { background-color: #111; padding: 40px; border: 1px solid #222; }
+.contact-form-wrapper { background-color: #111; padding: 40px; border: 1px solid #222; border-radius: 12px !important; /* V2 */ }
 .dark-form {
   .form-group { margin-bottom: 20px; label { display: block; color: #888; margin-bottom: 8px; } input, textarea { width: 100%; background-color: #050505; border: 1px solid #333; color: white; padding: 12px 15px; font-family: inherit; &:focus { outline: none; border-color: $color-brand-yellow; } } }
 }
@@ -379,7 +398,7 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 /* Colonne 1 : Brand */
 .brand-col {
   .footer-logo img {
-    height: 40px;
+    height: 80px !important; /* V2 */
     margin-bottom: 20px;
     opacity: 0.8;
   }
@@ -483,6 +502,7 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
     background-color: rgba(255, 255, 255, 0.1); /* Fond gris transparent */
     border-radius: 4px; /* Coins légèrement arrondis comme sur ta capture */
     transition: all 0.3s ease;
+    border-radius: 12px !important; /* V2 */
     
     svg {
       width: 20px;
@@ -515,6 +535,7 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   overflow: hidden;
   border: 1px solid #222;
   aspect-ratio: 4/3; /* Format rectangulaire classique photo */
+  border-radius: 12px !important; /* V2 */
   
   img {
     width: 100%;
@@ -581,9 +602,8 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   color: #ffffff;
   text-decoration: none; /* Optionnel : retire le soulignement au survol */
 }
-/* --- MODIFICATIONS CLIENT V2 --- */
 
-/* 1. BORDS ARRONDIS (Global) */
+/* --- MODIFICATIONS CLIENT V2 (AJOUTS GLOBAUX DE SÉCURITÉ) --- */
 .btn, 
 .service-card, 
 .stat-card, 
@@ -595,25 +615,7 @@ input, textarea {
   border-radius: 12px !important; /* Arrondi plus doux et moderne */
 }
 
-/* 2. LOGO PLUS GRAND */
-.site-logo img {
-  height: 70px !important; /* Était à ~50px */
-  width: auto;
-}
-.footer-logo img {
-  height: 80px !important; /* Était à ~40px */
-  margin-bottom: 20px;
-}
-
-/* Ajustement Header pour le grand logo */
-.site-header {
-  height: 100px; /* On augmente un peu la hauteur du header */
-}
-.page-header-simple {
-  padding-top: 180px; /* On décale le contenu des pages pour pas que le header morde dessus */
-}
-
-/* 3. MASQUER HORAIRES (Si présents dans des listes spécifiques) */
+/* MASQUER HORAIRES (Si présents dans des listes spécifiques) */
 .schedule-hide {
   display: none !important;
 }
