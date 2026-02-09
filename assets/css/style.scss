@@ -581,3 +581,39 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   color: #ffffff;
   text-decoration: none; /* Optionnel : retire le soulignement au survol */
 }
+/* --- MODIFICATIONS CLIENT V2 --- */
+
+/* 1. BORDS ARRONDIS (Global) */
+.btn, 
+.service-card, 
+.stat-card, 
+.img-wrapper, 
+.contact-form-wrapper, 
+.social-links a,
+.gallery-item,
+input, textarea {
+  border-radius: 12px !important; /* Arrondi plus doux et moderne */
+}
+
+/* 2. LOGO PLUS GRAND */
+.site-logo img {
+  height: 70px !important; /* Était à ~50px */
+  width: auto;
+}
+.footer-logo img {
+  height: 80px !important; /* Était à ~40px */
+  margin-bottom: 20px;
+}
+
+/* Ajustement Header pour le grand logo */
+.site-header {
+  height: 100px; /* On augmente un peu la hauteur du header */
+}
+.page-header-simple {
+  padding-top: 180px; /* On décale le contenu des pages pour pas que le header morde dessus */
+}
+
+/* 3. MASQUER HORAIRES (Si présents dans des listes spécifiques) */
+.schedule-hide {
+  display: none !important;
+}
