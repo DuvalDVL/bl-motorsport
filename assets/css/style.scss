@@ -692,42 +692,54 @@ input, textarea {
   }
 }
 
+/* --- CORRECTIF DROPDOWN LARGEUR & ALIGNEMENT --- */
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* S'affiche juste en dessous du lien */
-  left: -20px;
-  width: 260px;
-  background-color: rgba(10, 10, 10, 0.98);
+  top: 100%;
+  left: 50%; /* On centre par rapport au mot "Prestations" */
+  transform: translateX(-50%) translateY(10px); /* Centrage parfait + petit décalage du haut */
+  width: 500px; /* Largeur suffisante pour les 2 colonnes */
+  display: flex; /* Aligne les LI (Entretien et Réfection) côte à côte */
+  background-color: rgba(5, 5, 5, 0.98);
   border: 1px solid #222;
-  border-top: 2px solid $color-brand-yellow; /* Rappel de la couleur marque */
-  padding: 15px 0;
+  border-top: 2px solid #FFD700;
+  padding: 10px;
   list-style: none;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
+  z-index: 1000;
 
   li {
-    margin: 0 !important; /* Reset des marges li du header */
+    flex: 1; /* Chaque service prend 50% de la largeur du menu */
+    margin: 0 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05); /* Séparation légère entre les deux */
     
+    &:last-child { border-right: none; }
+
     a {
       display: block;
-      padding: 12px 25px;
-      font-size: 0.85rem !important;
+      padding: 20px 15px;
+      font-size: 0.8rem !important;
+      line-height: 1.5;
+      text-align: center; /* Centre le texte dans chaque colonne */
       color: #999 !important;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: all 0.2s ease;
-
-      &::after { display: none; } /* On enlève la barre de soulignement pour le dropdown */
-
+      white-space: normal; /* Autorise le retour à la ligne si besoin */
+      
       &:hover {
-        background-color: #151515;
-        color: $color-brand-yellow !important;
-        padding-left: 30px; /* Petit effet de décalage au survol */
+        background: #111; /* Fond un peu plus clair au survol */
+        color: #FFD700 !important;
+        padding-left: 15px; /* On désactive le décalage à gauche pour garder le centrage */
       }
     }
   }
+}
+
+/* On ajuste l'état hover pour maintenir le centrage */
+.has-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
