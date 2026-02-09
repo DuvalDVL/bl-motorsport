@@ -949,3 +949,38 @@ input, textarea {
     max-width: none;
   }
 }
+
+.brand-strip {
+  background-color: #080808;
+  padding: 40px 0;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  
+  .brand-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    opacity: 0.6; // Effet discret par défaut
+  }
+
+  .brand-item-logo {
+    img {
+      height: 50px; // Taille uniforme
+      width: auto;
+      filter: grayscale(100%) brightness(2); // Logos en blanc/gris
+      transition: all 0.3s ease;
+      
+      &:hover {
+        filter: grayscale(0%) brightness(1); // Reprennent leur couleur au survol
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-strip .brand-grid { gap: 30px; }
+  .brand-item-logo img { height: 40px; }
+}
