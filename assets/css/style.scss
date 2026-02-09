@@ -636,3 +636,28 @@ input, textarea {
 .schedule-hide {
   display: none !important;
 }
+
+/* EFFET SUR LES MARQUES (PAGE SERVICE) */
+.brand-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+  .brand-item {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #444; /* Gris foncé par défaut */
+    transition: all 0.3s ease;
+    cursor: default;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: #FFD700; /* Devient Or au survol */
+      transform: scale(1.1);
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+  }
+}
