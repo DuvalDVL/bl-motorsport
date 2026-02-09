@@ -6,14 +6,22 @@
     </a>
 
     <nav class="desktop-nav">
-      <ul>
-        <li><a href="{{ site.baseurl }}/fr/">Accueil</a></li>
-        <li><a href="{{ site.baseurl }}/fr/prestations">Prestations</a></li>
-        <li><a href="{{ site.baseurl }}/fr/restauration">Restauration</a></li>
-        <li><a href="{{ site.baseurl }}/fr/competition">Racing</a></li>
-        <li><a href="{{ site.baseurl }}/fr/contact">Contact</a></li>
+  <ul>
+    <li><a href="{{ site.baseurl }}/fr/">Accueil</a></li>
+    
+    <li class="has-dropdown">
+      <a href="{{ site.baseurl }}/fr/prestations">Prestations <span class="arrow">▼</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ site.baseurl }}/fr/entretien-prestige-combloux/">Entretien & Révision</a></li>
+        <li><a href="{{ site.baseurl }}/fr/refection-moteur-boite-prestige/">Réfection Moteur & Boîte</a></li>
+        <li><a href="{{ site.baseurl }}/fr/competition-racing-trackday/">Département Racing</a></li>
+        <li><a href="{{ site.baseurl }}/fr/restauration-vehicules-collection/">Restauration Classic</a></li>
       </ul>
-    </nav>
+    </li>
+
+    <li><a href="{{ site.baseurl }}/fr/contact">Contact & Accès</a></li>
+  </ul>
+</nav>
 
     <div class="header-actions">
       <div class="lang-switch">
