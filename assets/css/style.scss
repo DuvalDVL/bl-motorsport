@@ -350,8 +350,8 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 30px; /* Espace entre les cartes */
   
   /* repeat(auto-fit, minmax(BASE, 1fr)) 
-     BASE à 260px garantit que 4 colonnes tiennent dans 1200px.
-     Le 1fr permet aux cartes (si elles sont 3) de s'étirer pour remplir tout le vide. */
+      BASE à 260px garantit que 4 colonnes tiennent dans 1200px.
+      Le 1fr permet aux cartes (si elles sont 3) de s'étirer pour remplir tout le vide. */
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   
   justify-content: center; /* Centre l'ensemble si nécessaire */
@@ -966,23 +966,24 @@ input, textarea {
   }
 
   .brand-item-logo {
-  display: block;
-  transition: transform 0.3s ease;
+    display: block;
+    transition: transform 0.3s ease;
 
-  img {
-    height: 50px; 
-    width: auto;
-    filter: grayscale(100%) brightness(1.5); // Ajusté à 1.5 pour éviter que ça soit trop blanc si déjà clair
-    opacity: 0.7;
-    transition: all 0.3s ease;
-  }
-
-  &:hover {
-    transform: scale(1.1); // Le logo grossit légèrement
-    
     img {
-      filter: grayscale(0%) brightness(1); // Reprend ses couleurs d'origine
-      opacity: 1;
+      height: 50px; 
+      width: auto;
+      filter: grayscale(100%) brightness(1.5); 
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      transform: scale(1.1); 
+      
+      img {
+        filter: grayscale(0%) brightness(1); 
+        opacity: 1;
+      }
     }
   }
 }
