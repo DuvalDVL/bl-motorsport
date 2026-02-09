@@ -89,8 +89,8 @@ img { max-width: 100%; height: auto; display: block; }
   left: 0; 
   width: 100vw; 
   height: 100vh; 
-  background-color: rgba(5, 5, 5, 0.98); // Légère transparence pour le style
-  backdrop-filter: blur(15px); // Effet de flou "iOS style" très haut de gamme
+  background-color: rgba(5, 5, 5, 0.98); 
+  backdrop-filter: blur(15px); 
   z-index: 999;
   display: flex; 
   align-items: center; 
@@ -104,15 +104,14 @@ img { max-width: 100%; height: auto; display: block; }
     pointer-events: all; 
   }
 
-  // Conteneur interne pour organiser Header / Nav / Footer
   .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // Pousse le logo en haut et les réseaux sociaux en bas
+    justify-content: space-between; 
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 80px 20px 40px; // Espace pour ne pas coller aux bords
+    padding: 80px 20px 40px; 
   }
 
   .mobile-menu-header {
@@ -133,7 +132,7 @@ img { max-width: 100%; height: auto; display: block; }
 
       a {
         color: white;
-        font-size: 1.8rem; // Taille pour les liens principaux (Accueil, Contact)
+        font-size: 1.8rem; 
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
         font-weight: bold;
@@ -143,19 +142,17 @@ img { max-width: 100%; height: auto; display: block; }
           color: $color-brand-yellow; 
         }
 
-        // Style spécifique pour les sous-pages de prestations
         &.sub-link {
           font-size: 1.1rem; 
           color: #999;
-          font-family: 'Inter', sans-serif; // Moins agressif que l'Oswald pour les détails
-          text-transform: none; // Plus lisible en minuscules
+          font-family: 'Inter', sans-serif; 
+          text-transform: none; 
           letter-spacing: 0;
           font-weight: 500;
         }
       }
     }
 
-    // Le petit trait de séparation doré
     .mobile-sep {
       height: 1px;
       background: rgba(255, 215, 0, 0.3);
@@ -202,7 +199,7 @@ img { max-width: 100%; height: auto; display: block; }
 .text-gradient { background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; strong { color: $color-brand-yellow; } }
 
-/* --- BIO SECTION (CORRIGÉ V4 : FLEX WRAP & MOBILE STACK) --- */
+/* --- BIO SECTION --- */
 .bio-section {
   background: #080808;
   padding: 80px 0;
@@ -239,35 +236,33 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 0; 
 }
 
-/* CONTENEUR DES 3 CARTES */
 .bio-stats {
   display: flex;
   gap: 30px;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap; /* IMPORTANT : Permet le passage à la ligne */
+  flex-wrap: wrap; 
 }
 
-/* MOBILE : On réduit la taille pour que ce ne soit plus "trop gros" */
 @media (max-width: 600px) {
   .bio-stats {
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-    gap: 15px; /* Un peu moins d'espace entre les box */
+    gap: 15px; 
   }
 
   .stat-card {
-    width: 200px !important;  /* Taille réduite */
-    height: 200px !important; /* On force le carré compact */
+    width: 200px !important;  
+    height: 200px !important; 
     aspect-ratio: 1 / 1; 
     flex: none;
     margin-bottom: 10px;
-    padding: 15px; /* On réduit le padding interne */
+    padding: 15px; 
   }
   
   .stat-number {
-    font-size: 2.2rem !important; /* Chiffres plus petits pour tenir dans 200px */
+    font-size: 2.2rem !important; 
   }
   
   .stat-label {
@@ -275,31 +270,25 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 
-/* STYLE DES CARTES */
 .stat-card {
   border: 1px solid #333;
   padding: 30px;
   text-align: center;
   background: #111;
-  border-radius: 12px !important; /* V2 Bords arrondis */
-  
-  /* PC : Taille fixe carrée */
+  border-radius: 12px !important; 
   flex: 0 1 250px; 
   aspect-ratio: 1 / 1; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
   transition: transform 0.3s ease, border-color 0.3s ease;
-  
   &:hover {
     transform: translateY(-5px);
     border-color: #FFD700;
   }
 }
 
-/* MOBILE SPECIFIQUE (Petits écrans) : On blinde l'empilement */
 @media (max-width: 600px) {
   .bio-stats {
     flex-direction: column; 
@@ -308,8 +297,8 @@ img { max-width: 100%; height: auto; display: block; }
   }
 
   .stat-card {
-    width: 100%;       /* Prend toute la largeur dispo */
-    max-width: 100%;   /* Ne dépasse jamais l'écran */
+    width: 100%;       
+    max-width: 100%;   
     aspect-ratio: auto; 
     flex: none;
     margin-bottom: 15px;
@@ -339,7 +328,18 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* --- BRAND STRIP --- */
-.brand-strip { background-color: #0a0a0a; border-bottom: 1px solid #222; padding: 30px 0; .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 40px; } }
+.brand-strip { 
+  background-color: #0a0a0a; 
+  border-bottom: 1px solid #222; 
+  padding: 30px 0; 
+  .container { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 40px; 
+  } 
+}
 
 /* --- SERVICES GRID --- */
 .services-section { padding: 80px 0; background-color: $color-bg-dark; }
@@ -347,32 +347,24 @@ img { max-width: 100%; height: auto; display: block; }
 .divider-yellow { width: 60px; height: 4px; background-color: $color-brand-yellow; margin: 10px auto 0; }
 .services-grid {
   display: grid;
-  gap: 30px; /* Espace entre les cartes */
-  
-  /* repeat(auto-fit, minmax(BASE, 1fr)) 
-      BASE à 260px garantit que 4 colonnes tiennent dans 1200px.
-      Le 1fr permet aux cartes (si elles sont 3) de s'étirer pour remplir tout le vide. */
+  gap: 30px; 
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  
-  justify-content: center; /* Centre l'ensemble si nécessaire */
-  align-items: stretch;    /* Force toutes les cartes à la même hauteur */
+  justify-content: center; 
+  align-items: stretch;    
 
-  /* Ajustement pour éviter que les cartes ne deviennent trop étroites sur petit PC */
   @media (max-width: 1200px) {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
 
-  /* Mobile : 1 seule colonne */
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
   }
 }
 .service-card {
   background: #0f0f0f; padding: 40px 30px; border: 1px solid #222; transition: all 0.3s ease; display: flex; flex-direction: column; position: relative;
-  border-radius: 12px !important; /* V2 */
+  border-radius: 12px !important; 
   
-  /* Hover desktop OU Active mobile */
   &:hover, &.active-mobile {
     transform: translateY(-5px); border-color: $color-brand-yellow; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     .card-icon svg { fill: $color-brand-yellow; transform: scale(1.1); }
@@ -406,41 +398,37 @@ img { max-width: 100%; height: auto; display: block; }
 .step-circle { display: inline-block; width: 60px; height: 60px; border: 1px solid #333; color: $color-brand-yellow; font-size: 1.5rem; line-height: 60px; border-radius: 50%; transition: all 0.3s ease; background-color: transparent; }
 
 /* --- PAGE LAYOUTS --- */
-.page-header-simple { padding-top: 180px; /* Ajusté V2 */ padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
+.page-header-simple { padding-top: 180px; padding-bottom: 50px; background-color: #080808; text-align: center; .page-title { font-size: 3rem; } }
 .service-detail-section { padding: 80px 0; background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; &.bg-darker { background-color: #050505; } }
 
-/* --- SERVICE GRID LAYOUT (CORRIGÉ MOBILE ORDRE) --- */
+/* --- SERVICE GRID LAYOUT --- */
 .service-grid-layout {
   display: flex;
   align-items: center;
   gap: 60px;
 
-  /* GESTION MOBILE : ON VEUT TOUJOURS TEXTE AU-DESSUS, IMAGE EN DESSOUS */
   @media (max-width: 900px) {
     flex-direction: column !important;
     gap: 30px;
 
-    /* On force l'ordre d'affichage avec flexbox */
     .service-text {
-      order: 1; /* Le texte en premier */
+      order: 1; 
     }
 
     .service-image {
-      order: 2; /* L'image en deuxième */
-      width: 100% !important; /* CORRIGÉ : Largeur forcée pour l'image moteur */
+      order: 2; 
+      width: 100% !important; 
       margin-top: 20px; 
       margin-bottom: 0;
     }
 
-    /* On nettoie l'ancienne règle .reverse qui ne sert plus à rien ici */
     &.reverse {
        flex-direction: column !important;
     }
   }
 
-  /* GESTION PC (Zig-Zag) */
   &.reverse {
-    flex-direction: row-reverse; /* Image à gauche, Texte à droite sur PC uniquement */
+    flex-direction: row-reverse; 
   }
 }
 
@@ -452,14 +440,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .service-image {
   flex: 1;
-  width: 100%; /* S'assure que l'image prend la largeur dispo */
+  width: 100%; 
   
   .img-wrapper {
     position: relative;
     border: 1px solid #333;
-    border-radius: 12px !important; /* V2 */
+    border-radius: 12px !important; 
     overflow: hidden;
-    /* Ratio d'aspect pour éviter les sauts */
     aspect-ratio: 4/3; 
     
     img {
@@ -477,7 +464,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- CONTACT --- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; @media (max-width: 900px) { grid-template-columns: 1fr; } }
-.contact-form-wrapper { background-color: #111; padding: 40px; border: 1px solid #222; border-radius: 12px !important; /* V2 */ }
+.contact-form-wrapper { background-color: #111; padding: 40px; border: 1px solid #222; border-radius: 12px !important; }
 .dark-form {
   .form-group { margin-bottom: 20px; label { display: block; color: #888; margin-bottom: 8px; } input, textarea { width: 100%; background-color: #050505; border: 1px solid #333; color: white; padding: 12px 15px; font-family: inherit; &:focus { outline: none; border-color: $color-brand-yellow; } } }
 }
@@ -492,7 +479,7 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 
 /* --- FOOTER STYLES --- */
 .site-footer {
-  background-color: #020202; /* Noir presque pur */
+  background-color: #020202; 
   border-top: 1px solid #222;
   padding-top: 80px;
   color: #888;
@@ -535,10 +522,9 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* Colonne 1 : Brand */
 .brand-col {
   .footer-logo img {
-    height: 80px !important; /* V2 */
+    height: 80px !important; 
     margin-bottom: 20px;
     opacity: 0.8;
   }
@@ -548,7 +534,6 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* Colonne 2 : Links */
 .links-col ul {
   list-style: none;
   padding: 0;
@@ -568,7 +553,6 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* Colonne 3 : Contact */
 .contact-item {
   display: flex;
   align-items: flex-start;
@@ -600,7 +584,6 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* Footer Bottom */
 .footer-bottom {
   background-color: #000;
   padding: 25px 0;
@@ -627,11 +610,10 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* --- SOCIAL LINKS (FOOTER) --- */
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 25px; /* Espace après l'email */
+  margin-top: 25px; 
   
   a {
     display: flex;
@@ -639,30 +621,29 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
     justify-content: center;
     width: 36px;
     height: 36px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fond gris transparent */
-    border-radius: 4px; /* Coins légèrement arrondis comme sur ta capture */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px; 
     transition: all 0.3s ease;
-    border-radius: 12px !important; /* V2 */
+    border-radius: 12px !important; 
     
     svg {
       width: 20px;
       height: 20px;
-      fill: #ccc; /* Gris clair par défaut */
+      fill: #ccc; 
       transition: fill 0.3s ease;
     }
     
     &:hover {
       background-color: $color-brand-yellow;
-      transform: translateY(-3px); /* Petit saut au survol */
+      transform: translateY(-3px); 
       
       svg {
-        fill: $color-brand-black; /* Icône devient noire sur fond jaune */
+        fill: $color-brand-black; 
       }
     }
   }
 }
 
-/* --- GALLERY SECTION (RESTAURATION) --- */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -674,8 +655,8 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   position: relative;
   overflow: hidden;
   border: 1px solid #222;
-  aspect-ratio: 4/3; /* Format rectangulaire classique photo */
-  border-radius: 12px !important; /* V2 */
+  aspect-ratio: 4/3; 
+  border-radius: 12px !important; 
   
   img {
     width: 100%;
@@ -708,42 +689,31 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   }
 }
 
-/* --- CORRECTIFS FINAUX (Bordures & Galerie Mobile) --- */
-
-/* 1. FORCE LA BORDURE JAUNE SUR LA CARTE "FEATURED" */
 .service-card.featured:hover,
 .service-card.featured.active-mobile {
-  border-color: $color-brand-yellow !important; /* Le !important force le jaune */
+  border-color: $color-brand-yellow !important; 
 }
 
-/* 2. AUTOMATISATION GALERIE MOBILE */
-/* Quand le JS ajoute la classe .active-mobile, on affiche le texte */
 .gallery-item.active-mobile .gallery-caption {
-  transform: translateY(0); /* Fait remonter le texte */
+  transform: translateY(0); 
 }
 
-/* Optionnel : Ajout d'une petite ombre dorée sur la carte 2 pour bien voir l'effet */
 .service-card.featured.active-mobile {
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
 }
 
-/* --- CSS pour le lien créateur dans le footer --- */
-
-/* Style par défaut du lien */
 .footer-bottom .creator-link {
-  color: #FFD700; /* Couleur dorée */
-  text-decoration: underline; /* Souligné */
-  font-weight: bold; /* Optionnel : en gras pour ressortir un peu plus */
+  color: #FFD700; 
+  text-decoration: underline; 
+  font-weight: bold; 
   transition: color 0.3s ease;
 }
 
-/* Effet au survol (optionnel : devient blanc au survol) */
 .footer-bottom .creator-link:hover {
   color: #ffffff;
-  text-decoration: none; /* Optionnel : retire le soulignement au survol */
+  text-decoration: none; 
 }
 
-/* --- MODIFICATIONS CLIENT V2 (AJOUTS GLOBAUX DE SÉCURITÉ) --- */
 .btn, 
 .service-card, 
 .stat-card, 
@@ -752,15 +722,13 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 .social-links a,
 .gallery-item,
 input, textarea {
-  border-radius: 12px !important; /* Arrondi plus doux et moderne */
+  border-radius: 12px !important; 
 }
 
-/* MASQUER HORAIRES (Si présents dans des listes spécifiques) */
 .schedule-hide {
   display: none !important;
 }
 
-/* EFFET SUR LES MARQUES (PAGE SERVICE) */
 .brand-flex-container {
   display: flex;
   justify-content: center;
@@ -784,13 +752,10 @@ input, textarea {
   }
 }
 
-/* On s'assure que le texte sous les marques ne déborde pas */
 .brand-flex-container + p {
   clear: both;
   display: block;
 }
-
-/* --- STYLES DROPDOWN NAV --- */
 
 .has-dropdown {
   position: relative;
@@ -815,14 +780,13 @@ input, textarea {
   }
 }
 
-/* --- CORRECTIF DROPDOWN LARGEUR & ALIGNEMENT --- */
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 50%; /* On centre par rapport au mot "Prestations" */
-  transform: translateX(-50%) translateY(10px); /* Centrage parfait + petit décalage du haut */
-  width: 500px; /* Largeur suffisante pour les 2 colonnes */
-  display: flex; /* Aligne les LI (Entretien et Réfection) côte à côte */
+  left: 50%; 
+  transform: translateX(-50%) translateY(10px); 
+  width: 500px; 
+  display: flex; 
   background-color: rgba(5, 5, 5, 0.98);
   border: 1px solid #222;
   border-top: 2px solid #FFD700;
@@ -836,9 +800,9 @@ input, textarea {
   z-index: 1000;
 
   li {
-    flex: 1; /* Chaque service prend 50% de la largeur du menu */
+    flex: 1; 
     margin: 0 !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.05); /* Séparation légère entre les deux */
+    border-right: 1px solid rgba(255, 255, 255, 0.05); 
     
     &:last-child { border-right: none; }
 
@@ -847,20 +811,19 @@ input, textarea {
       padding: 20px 15px;
       font-size: 0.8rem !important;
       line-height: 1.5;
-      text-align: center; /* Centre le texte dans chaque colonne */
+      text-align: center; 
       color: #999 !important;
-      white-space: normal; /* Autorise le retour à la ligne si besoin */
+      white-space: normal; 
       
       &:hover {
-        background: #111; /* Fond un peu plus clair au survol */
+        background: #111; 
         color: #FFD700 !important;
-        padding-left: 15px; /* On désactive le décalage à gauche pour garder le centrage */
+        padding-left: 15px; 
       }
     }
   }
 }
 
-/* On ajuste l'état hover pour maintenir le centrage */
 .has-dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -911,7 +874,7 @@ input, textarea {
   padding: 20px;
   z-index: 10000;
   border-radius: 12px;
-  display: none; // Masqué par défaut
+  display: none; 
   box-shadow: 0 10px 40px rgba(0,0,0,0.8);
   backdrop-filter: blur(10px);
 
@@ -940,7 +903,6 @@ input, textarea {
   }
 }
 
-// Tablette/Mobile : on le centre en bas
 @media (max-width: 600px) {
   .cookie-banner {
     left: 10px;
@@ -962,7 +924,7 @@ input, textarea {
     align-items: center;
     gap: 60px;
     flex-wrap: wrap;
-    opacity: 0.6; // Effet discret par défaut
+    opacity: 0.6; 
   }
 
   .brand-item-logo {
