@@ -966,21 +966,23 @@ input, textarea {
   }
 
   .brand-item-logo {
+  display: block;
+  transition: transform 0.3s ease;
+
+  img {
+    height: 50px; 
+    width: auto;
+    filter: grayscale(100%) brightness(1.5); // Ajusté à 1.5 pour éviter que ça soit trop blanc si déjà clair
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.1); // Le logo grossit légèrement
+    
     img {
-      height: 50px; // Taille uniforme
-      width: auto;
-      filter: grayscale(100%) brightness(2); // Logos en blanc/gris
-      transition: all 0.3s ease;
-      
-      &:hover {
-        filter: grayscale(0%) brightness(1); // Reprennent leur couleur au survol
-        transform: scale(1.05);
-      }
+      filter: grayscale(0%) brightness(1); // Reprend ses couleurs d'origine
+      opacity: 1;
     }
   }
-}
-
-@media (max-width: 768px) {
-  .brand-strip .brand-grid { gap: 30px; }
-  .brand-item-logo img { height: 40px; }
 }
