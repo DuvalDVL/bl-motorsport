@@ -74,16 +74,19 @@
   <div class="footer-bottom">
     <div class="container">
       <p>© {{ site.time | date: '%Y' }} {{ site.company.name }}. Tous droits réservés | Site créé par <a href="https://www.duvaldvl.com" class="creator-link" target="_blank">Duval DVL</a></p>
-      <p class="legal-links"><a href="{{ site.baseurl }}/fr/mentions-legales">Mentions Légales</a></p>
+      <p class="legal-links">
+        <a href="{{ site.baseurl }}/fr/mentions-legales">Mentions Légales</a> | 
+        <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">Politique de Confidentialité</a>
+      </p>
     </div>
   </div>
 
   <div id="cookie-popup" class="cookie-banner">
-  <div class="cookie-content">
-    <p>Ce site utilise des cookies pour optimiser votre expérience de navigation. 
-       <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">En savoir plus</a>
-    </p>
-    <button id="accept-cookies" class="btn-cookie">Accepter</button>
+    <div class="cookie-content">
+      <p>Ce site utilise des cookies pour optimiser votre expérience de navigation. 
+         <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">En savoir plus</a>
+      </p>
+      <button id="accept-cookies" class="btn-cookie">Accepter</button>
+    </div>
   </div>
-</div>
 </footer>
