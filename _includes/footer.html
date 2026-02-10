@@ -3,90 +3,50 @@
     <div class="footer-grid">
       
       <div class="footer-col brand-col">
-        <a href="{{ site.baseurl }}/fr/" class="footer-logo">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/" class="footer-logo">
           <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="B.L Motorsport">
         </a>
         <p class="footer-desc">
-          Atelier de mécanique de prestige et préparation compétition.
-          <br>L'exigence du Sport Automobile au service de votre véhicule.
+          {{ site.data.locales.footer.desc[page.lang] }}
+          <br><strong>{{ site.data.locales.footer.valet_info[page.lang] }}</strong>
         </p>
       </div>
 
       <div class="footer-col links-col">
-        <h3>NAVIGATION</h3>
+        <h3>{{ site.data.locales.header.home[page.lang] | upcase }}</h3>
         <ul>
-          <li><a href="{{ site.baseurl }}/fr/">Accueil</a></li>
-          <li><a href="{{ site.baseurl }}/fr/entretien-prestige-combloux/">Entretien & Révision</a></li>
-          <li><a href="{{ site.baseurl }}/fr/refection-moteur-boite-prestige/">Réfection Moteur & Boîte</a></li>
-          <li><a href="{{ site.baseurl }}/fr/restauration-vehicules-collection/">Restauration Classic</a></li>
-          <li><a href="{{ site.baseurl }}/fr/competition-racing-trackday/">Département Racing</a></li>
-          <li><a href="{{ site.baseurl }}/fr/contact">Contact & Accès</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/">{{ site.data.locales.header.home[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/entretien-prestige-combloux/">{{ site.data.locales.header.service_1[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/">{{ site.data.locales.header.service_2[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/galerie/">{{ site.data.locales.header.gallery[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/contact">{{ site.data.locales.header.contact[page.lang] }}</a></li>
         </ul>
       </div>
 
       <div class="footer-col contact-col">
         <h3>COORDONNÉES</h3>
-        
         <div class="contact-item">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2M12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg>
-          </div>
-          <p>
-            <a href="https://maps.google.com/?q=B.L+Motorsport+Combloux" target="_blank" rel="noopener">
-              {{ site.company.address }}<br>
-              {{ site.company.zip }} {{ site.company.city }}
-            </a>
-          </p>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2M12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg></div>
+          <p>{{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}</p>
         </div>
-
         <div class="contact-item">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
-          </div>
-          <p>
-            <a href="{{ site.company.whatsapp_link }}">{{ site.company.phone }}</a>
-          </p>
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg></div>
+          <p><a href="{{ site.company.whatsapp_link }}">{{ site.company.phone }}</a></p>
         </div>
-
-        <div class="contact-item">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4M20 8L12 13L4 8V6L12 11L20 6V8Z"/></svg>
-          </div>
-          <p><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
-        </div>
-
-        <div class="social-links">
-          <a href="https://www.instagram.com/blmotorsport_combloux/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2C22,19.4 19.4,22 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8C2,4.6 4.6,2 7.8,2M12,7C9.2,7 7,9.2 7,12C7,14.8 9.2,17 12,17C14.8,17 17,14.8 17,12C17,9.2 14.8,7 12,7M12,15C10.3,15 9,13.7 9,12C9,10.3 10.3,9 12,9C13.7,9 15,10.3 15,12C15,13.7 13.7,15 12,15M17.2,4.8C16.7,4.8 16.3,5.2 16.3,5.7C16.3,6.2 16.7,6.6 17.2,6.6C17.7,6.6 18.1,6.2 18.1,5.7C18.1,5.2 17.7,4.8 17.2,4.8Z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61587389083458" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
-          </a>
-          <a href="https://maps.google.com/?q=B.L+Motorsport+Combloux" target="_blank" rel="noopener" aria-label="Google Business">
-            <svg viewBox="0 0 24 24"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5.02,16.25 5.02,12C5.02,7.75 8.36,4.73 12.19,4.73C15.19,4.73 17.1,6.73 17.1,6.73L19.05,4.82C19.05,4.82 16.32,2 12.18,2C6.65,2 2.13,6.5 2.13,12C2.13,17.5 6.65,22 12.18,22C17.18,22 21.65,18.5 21.65,12C21.65,11.5 21.35,11.1 21.35,11.1V11.1Z"/></svg>
-          </a>
-        </div>
-
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container">
-      <p>© {{ site.time | date: '%Y' }} {{ site.company.name }}. Tous droits réservés | Site créé par <a href="https://www.duvaldvl.com" class="creator-link" target="_blank">Duval DVL</a></p>
-      <p class="legal-links">
-        <a href="{{ site.baseurl }}/fr/mentions-legales">Mentions Légales</a> | 
-        <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">Politique de Confidentialité</a>
-      </p>
+      <p>© {{ site.time | date: '%Y' }} {{ site.company.name }}. {{ site.data.locales.footer.rights[page.lang] }} | Duval DVL</p>
     </div>
   </div>
 
   <div id="cookie-popup" class="cookie-banner">
     <div class="cookie-content">
-      <p>Ce site utilise des cookies pour optimiser votre expérience de navigation. 
-         <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">En savoir plus</a>
-      </p>
-      <button id="accept-cookies" class="btn-cookie">Accepter</button>
+      <p>{{ site.data.locales.cookies.text[page.lang] }}</p>
+      <button id="accept-cookies" class="btn-cookie">{{ site.data.locales.cookies.btn[page.lang] }}</button>
     </div>
   </div>
 </footer>
