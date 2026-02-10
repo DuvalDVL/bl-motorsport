@@ -1,0 +1,31 @@
+# _data/locales.yml
+
+header:
+  home: { fr: "Accueil", en: "Home", it: "Home", de: "Startseite" }
+  services: { fr: "Prestations", en: "Services", it: "Servizi", de: "Leistungen" }
+  service_1: { fr: "Entretien & Révision", en: "Maintenance & Service", it: "Manutenzione", de: "Wartung" }
+  service_2: { fr: "Réfection Moteur & Boîte", en: "Engine & Gearbox Rebuild", it: "Revisione Motore", de: "Motorüberholung" }
+  restoration: { fr: "Restauration", en: "Restoration", it: "Restauro", de: "Restaurierung" }
+  racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
+  gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galerie" }
+  contact: { fr: "Contact", en: "Contact", it: "Contatti", de: "Kontakt" }
+
+footer:
+  desc:
+    fr: "Atelier de mécanique de prestige. L'exigence du Sport Automobile au service de votre véhicule."
+    en: "Prestige mechanical workshop. Motorsport excellence for your vehicle."
+    it: "Officina meccanica di prestigio. L'eccellenza del motorsport al servizio del vostro veicolo."
+    de: "Prestige-Mechanikwerkstatt. Motorsport-Exzellenz im Dienste Ihres Fahrzeugs."
+  valet_info:
+    fr: "Service voiturier par chauffeur (Megève, Chamonix, Sallanches)."
+    en: "Valet service by driver (Megève, Chamonix, Sallanches)."
+    it: "Servizio di valletto con autista (Megève, Chamonix, Sallanches)."
+    de: "Valet-Service durch Fahrer (Megève, Chamonix, Sallanches)."
+  rights: { fr: "Tous droits réservés", en: "All rights reserved", it: "Tutti i diritti riservati", de: "Alle Rechte vorbehalten" }
+
+cookies:
+  text: { fr: "Ce site utilise des cookies...", en: "This site uses cookies...", it: "Questo sito utilizza i cookie...", de: "Diese Website verwendet Cookies..." }
+  btn: { fr: "Accepter", en: "Accept", it: "Accetta", de: "Akzeptieren" }
+
+whatsapp:
+  message: { fr: "Bonjour Bastien, je souhaite un renseignement...", en: "Hello Bastien, I would like some information...", it: "Buongiorno Bastien, vorrei delle informazioni...", de: "Guten Tag Bastien, ich hätte gerne Informationen..." }
