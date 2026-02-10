@@ -1,0 +1,95 @@
+---
+layout: default
+title: Galerie Réalisations Porsche & Prestige | B.L Motorsport
+description: "Découvrez en images l'excellence technique de notre atelier à Combloux : réfection moteur Flat-6, préparation Racing WEC et restaurations Porsche Classic."
+permalink: /fr/galerie/
+lang: fr
+---
+
+<section class="page-header-simple">
+  <div class="container">
+    <h1 class="page-title">NOTRE <span class="text-gradient">GALERIE</span></h1>
+    <div class="divider-yellow"></div>
+    <p style="color: #999; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+      L'exigence de la compétition appliquée à chaque détail. Découvrez les coulisses de nos interventions sur les mécaniques les plus nobles.
+    </p>
+  </div>
+</section>
+
+<section class="gallery-filters-section" style="background: #050505; padding: 20px 0;">
+  <div class="container">
+    <div class="gallery-filter-bar">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="moteur">Moteur & Boîte</button>
+      <button class="filter-btn" data-filter="racing">Racing & Trackday</button>
+      <button class="filter-btn" data-filter="classic">Restauration Classic</button>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-grid-section" style="padding: 60px 0; background: #050505;">
+  <div class="container">
+    <div class="main-gallery-grid">
+      
+      <div class="gallery-card" data-category="moteur">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/moteur-1.jpg' | relative_url }}" alt="Réfection moteur Porsche Flat-6">
+          <div class="gallery-overlay">
+            <span class="category-tag">Moteur</span>
+            <h3>Réfection Flat-6 Porsche</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-category="racing">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/racing-1.jpg' | relative_url }}" alt="Setup châssis Porsche GT3 RS">
+          <div class="gallery-overlay">
+            <span class="category-tag">Racing</span>
+            <h3>Setup Châssis GT3 RS</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-category="classic">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/classic-1.jpg' | relative_url }}" alt="Restauration Porsche 911 2.4S">
+          <div class="gallery-overlay">
+            <span class="category-tag">Classic</span>
+            <h3>Porsche 911 2.4S</h3>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </div>
+</section>
+
+<section class="cta-simple" style="padding: 100px 0; text-align: center; background: #080808; border-top: 1px solid #111;">
+  <div class="container">
+    <h2>VOTRE PROJET COMMENCE ICI</h2>
+    <p style="color: #666; margin-bottom: 30px;">Confiez votre véhicule à un expert du Championnat du Monde d'Endurance.</p>
+    <a href="{{ site.baseurl }}/fr/contact" class="btn btn-primary">Demander un devis</a>
+  </div>
+</section>
+
+<script>
+  // Script simple pour le filtrage
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Style bouton
+      document.querySelector('.filter-btn.active').classList.remove('active');
+      btn.classList.add('active');
+      
+      // Filtrage cards
+      const filter = btn.getAttribute('data-filter');
+      document.querySelectorAll('.gallery-card').forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
