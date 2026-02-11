@@ -503,19 +503,21 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   flex: 1;
   min-width: 250px;
   
-  h3 {
+    h3 {
     color: white;
     font-size: 1.1rem;
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 15px;
-    
+    text-align: center; /* Centre le titre */
+  
     &::after {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: 40px;
+      left: 50% !important; /* Centre le départ de la ligne */
+      transform: translateX(-50%); /* Ajustement pour un centrage parfait */
+      width: 50px;
       height: 2px;
       background-color: $color-brand-yellow;
     }
@@ -523,10 +525,12 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 }
 
 .brand-col {
+  text-align: center; /* Centre la description */
   .footer-logo img {
-    height: 80px !important; 
-    margin-bottom: 20px;
-    opacity: 0.8;
+    height: 120px !important; /* Agrandissement */
+    margin: 0 auto 20px; /* Centrage horizontal */
+    opacity: 1;
+    display: block;
   }
   .footer-desc {
     line-height: 1.6;
@@ -537,6 +541,7 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 .links-col ul {
   list-style: none;
   padding: 0;
+  text-align: center;
   
   li {
     margin-bottom: 12px;
@@ -555,13 +560,16 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 
 .contact-item {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column; /* Icône au-dessus */
+  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
   
   .icon {
-    min-width: 24px;
-    margin-right: 15px;
-    margin-top: 3px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
     
     svg {
       width: 20px;
@@ -613,7 +621,8 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 25px; 
+  margin-top: 25px;
+  justify-content: center;
   
   a {
     display: flex;
