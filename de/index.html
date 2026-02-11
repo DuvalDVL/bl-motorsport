@@ -6,11 +6,17 @@ lang: de
 ---
 
 <section class="hero-section">
-  <div class="hero-bg" style="background-image: url('{{ "/assets/img/hero-bg.jpg" | absolute_url }}');"></div>
+  <div class="hero-bg" role="img" style="background-image: url('{{ "/assets/img/hero-bg.jpg" | absolute_url }}');"></div>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
-    <h1 class="hero-title">{{ site.data.locales.hero.title_1[page.lang] }} <br> <span class="text-gradient">{{ site.data.locales.hero.title_2[page.lang] }}</span></h1>
-    <p class="hero-subtitle">{{ site.data.locales.hero.subtitle[page.lang] }}</p>
+    <h1 class="hero-title">
+      {{ site.data.locales.hero.title_1[page.lang] }} <br>
+      <span class="text-gradient">{{ site.data.locales.hero.title_2[page.lang] }}</span>
+    </h1>
+    <p class="hero-subtitle">
+      {{ site.data.locales.hero.subtitle[page.lang] }}<br>
+      By Bastien Lefebvre, <strong>{{ site.data.locales.hero.role[page.lang] }}</strong>.
+    </p>
     <div class="hero-actions">
       <a href="{{ site.baseurl }}/{{ page.lang }}/prestations" class="btn btn-primary">{{ site.data.locales.hero.btn_1[page.lang] }}</a>
       <a href="{{ site.baseurl }}/{{ page.lang }}/contact" class="btn btn-outline">{{ site.data.locales.hero.btn_2[page.lang] }}</a>
@@ -22,22 +28,34 @@ lang: de
   <div class="container bio-container">
     <div class="bio-text">
       <span class="bio-label">{{ site.data.locales.bio.label[page.lang] }}</span>
-      <h2>{{ site.data.locales.bio.title_1[page.lang] }}<br>{{ site.data.locales.bio.title_2[page.lang] }}</h2>
-      <div class="divider-yellow"></div>
+      <h2>{{ site.data.locales.bio.title[page.lang] }}</h2>
+      <div class="divider-yellow" style="margin: 0 0 30px 0;"></div>
       <p class="bio-intro">{{ site.data.locales.bio.intro[page.lang] }}</p>
-      <p>{{ site.data.locales.bio.desc[page.lang] }}</p>
+      <p class="bio-desc">{{ site.data.locales.bio.desc_full[page.lang] }}</p>
     </div>
     <div class="bio-stats">
-      <div class="stat-card"><span class="stat-number">+10</span><span class="stat-label">{{ site.data.locales.bio_stats.s1_l[page.lang] }}</span></div>
-      <a href="https://www.fiawec.com/" target="_blank" class="stat-card"><span class="stat-number">WEC</span><span class="stat-label">{{ site.data.locales.bio_stats.s2_l[page.lang] }}</span></a>
-      <a href="https://www.w-racingteam.com/" target="_blank" class="stat-card"><span class="stat-number">WRT</span><span class="stat-label">{{ site.data.locales.bio_stats.s3_l[page.lang] }}</span></a>
+      <div class="stat-card">
+        <span class="stat-number">+10</span>
+        <span class="stat-label">{{ site.data.locales.bio_stats.s1_l[page.lang] }}</span>
+      </div>
+      <a href="https://www.fiawec.com/" target="_blank" rel="noopener" class="stat-card">
+        <span class="stat-number">WEC</span>
+        <span class="stat-label">{{ site.data.locales.bio_stats.s2_l[page.lang] }}</span>
+      </a>
+      <a href="https://www.w-racingteam.com/" target="_blank" rel="noopener" class="stat-card">
+        <span class="stat-number">WRT</span>
+        <span class="stat-label">{{ site.data.locales.bio_stats.s3_l[page.lang] }}</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="services-section">
   <div class="container">
-    <div class="section-header"><h2>{{ site.data.locales.services_section.title[page.lang] }}</h2><div class="divider-yellow"></div></div>
+    <div class="section-header">
+      <h2>{{ site.data.locales.services_section.title[page.lang] }}</h2>
+      <div class="divider-yellow"></div>
+    </div>
     <div class="services-grid">
       <div class="service-card">
         <h3>{{ site.data.locales.services_section.s1_t[page.lang] }}</h3>
@@ -50,6 +68,7 @@ lang: de
         <a href="{{ site.baseurl }}/{{ page.lang }}/entretien-prestige-combloux/" class="btn-card">{{ site.data.locales.services_section.s1_btn[page.lang] }}</a>
       </div>
       <div class="service-card featured">
+        <div class="card-badge">EXPERTISE</div>
         <h3>{{ site.data.locales.services_section.s2_t[page.lang] }}</h3>
         <p>{{ site.data.locales.services_section.s2_d[page.lang] }}</p>
         <ul class="check-list">
@@ -57,7 +76,7 @@ lang: de
           <li>{{ site.data.locales.services_section.s2_l2[page.lang] }}</li>
           <li>{{ site.data.locales.services_section.s2_l3[page.lang] }}</li>
         </ul>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/" class="btn-card">{{ site.data.locales.services_section.s2_btn[page.lang] }}</a>
+        <a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/" class="btn-card racing-btn">{{ site.data.locales.services_section.s2_btn[page.lang] }}</a>
       </div>
       <div class="service-card">
         <h3>{{ site.data.locales.services_section.s3_t[page.lang] }}</h3>
@@ -75,7 +94,6 @@ lang: de
         <ul class="check-list">
           <li>{{ site.data.locales.services_section.s4_l1[page.lang] }}</li>
           <li>{{ site.data.locales.services_section.s4_l2[page.lang] }}</li>
-          <li>{{ site.data.locales.services_section.s4_l3[page.lang] }}</li>
         </ul>
         <a href="{{ site.baseurl }}/{{ page.lang }}/competition-racing-trackday/" class="btn-card">{{ site.data.locales.services_section.s4_btn[page.lang] }}</a>
       </div>
@@ -119,16 +137,19 @@ lang: de
     </div>
     <div class="bio-text">
       <span class="bio-label">{{ site.data.locales.bio_detail.label[page.lang] }}</span>
-      <h2>{{ site.data.locales.bio_detail.title[page.lang] }}</h2>
-      <div class="divider-yellow"></div>
-      <p class="bio-intro">{{ site.data.locales.bio_detail.p1[page.lang] }}</p>
+      <h2>{{ site.data.locales.bio_detail.title_1[page.lang] }}<span class="text-yellow">WEC</span>{{ site.data.locales.bio_detail.title_2[page.lang] }}</h2>
+      <div class="divider-yellow" style="margin: 0 0 30px 0;"></div>
+      <p class="bio-intro">{{ site.data.locales.bio.intro[page.lang] }}</p>
+      <div class="bio-credentials">
+        <p>{{ site.data.locales.bio.desc_full[page.lang] }}</p>
+      </div>
       <ul class="bio-features">
         <li>{{ site.data.locales.bio_detail.f1[page.lang] }}</li>
         <li>{{ site.data.locales.bio_detail.f2[page.lang] }}</li>
         <li>{{ site.data.locales.bio_detail.f3[page.lang] }}</li>
       </ul>
       <div class="bio-cta-wrapper">
-        <a href="{{ site.baseurl }}/{{ page.lang }}/prestations" class="btn btn-primary">{{ site.data.locales.header.services[page.lang] }}</a>
+        <a href="{{ site.baseurl }}/{{ page.lang }}/prestations" class="btn btn-primary">{{ site.data.locales.bio_detail.btn | default: "Services" }}</a>
       </div>
     </div>
   </div>
@@ -138,6 +159,6 @@ lang: de
   <div class="container">
     <h2 style="font-size: 3rem; margin-bottom: 20px;">{{ site.data.locales.cta_home.title[page.lang] }}</h2>
     <p style="font-size: 1.2rem; color: #ddd; margin-bottom: 40px;">{{ site.data.locales.cta_home.sub[page.lang] }}</p>
-    <a href="{{ site.baseurl }}/{{ page.lang }}/contact" class="btn btn-primary">{{ site.data.locales.hero.btn_2[page.lang] }}</a>
+    <a href="{{ site.baseurl }}/{{ page.lang }}/contact" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.1rem;">{{ site.data.locales.hero.btn_2[page.lang] }}</a>
   </div>
 </section>
