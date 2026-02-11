@@ -504,31 +504,31 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   min-width: 250px;
   
     h3 {
-    color: white;
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-    text-align: center; /* Centre le titre */
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+  text-align: center; /* Texte au centre */
   
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50% !important; /* Centre le départ de la ligne */
-      transform: translateX(-50%); /* Ajustement pour un centrage parfait */
-      width: 50px;
-      height: 2px;
-      background-color: $color-brand-yellow;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50% !important; /* Départ au milieu */
+    transform: translateX(-50%); /* Centrage parfait */
+    width: 50px;
+    height: 2px;
+    background-color: $color-brand-yellow;
   }
+}
 }
 
 .brand-col {
-  text-align: center; /* Centre la description */
+  text-align: center; /* Centre le texte */
   .footer-logo img {
     height: 120px !important; /* Agrandissement */
-    margin: 0 auto 20px; /* Centrage horizontal */
+    margin: 0 auto 20px; /* Centrage logo */
     opacity: 1;
     display: block;
   }
@@ -541,26 +541,20 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
 .links-col ul {
   list-style: none;
   padding: 0;
-  text-align: center;
-  
+  text-align: center; /* Alignement centre */
   li {
     margin-bottom: 12px;
-    
     a {
       color: #999;
       transition: all 0.3s ease;
-      
-      &:hover {
-        color: $color-brand-yellow;
-        padding-left: 5px;
-      }
+      &:hover { color: $color-brand-yellow; }
     }
   }
 }
 
 .contact-item {
   display: flex;
-  flex-direction: column; /* Icône au-dessus */
+  flex-direction: column; /* Icône au-dessus du texte */
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
@@ -568,27 +562,17 @@ footer { background-color: #020202; border-top: 1px solid #111; padding: 40px 0;
   .icon {
     margin-right: 0;
     margin-bottom: 8px;
-  }
-}
-    
     svg {
       width: 20px;
       height: 20px;
       fill: $color-brand-yellow;
     }
   }
-  
   p {
     margin: 0;
     line-height: 1.5;
     color: #999;
-    
-    a {
-      &:hover {
-        color: white;
-        text-decoration: underline;
-      }
-    }
+    a:hover { color: white; text-decoration: underline; }
   }
 }
 
