@@ -31,7 +31,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2M12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg>
           </div>
           <p>
-            <a href="https://www.google.com/maps/search/?api=1&query=679+route+de+Plan+Mouillé+74920+Combloux" target="_blank" rel="noopener">
+            <a href="https://maps.app.goo.gl/ETvb4iH9rjSNdDKB7" target="_blank" rel="noopener">
               {{ site.company.address }}<br>
               {{ site.company.zip }} {{ site.company.city }}
             </a>
@@ -52,25 +52,23 @@
           <a href="https://www.facebook.com/profile.php?id=61587389083458" target="_blank" rel="noopener" aria-label="Facebook">
             <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
           </a>
-          <a href="https://search.google.com/local/reviews?placeid=ChIJ8_S1A4qNfEcRTo5N8W9843I" target="_blank" rel="noopener" aria-label="Google Business">
+          <a href="https://share.google/JzAf1cpsUYyAfEWRD" target="_blank" rel="noopener" aria-label="Google Business">
             <svg viewBox="0 0 24 24"><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5.02,16.25 5.02,12C5.02,7.75 8.36,4.73 12.19,4.73C15.19,4.73 17.1,6.73 17.1,6.73L19.05,4.82C19.05,4.82 16.32,2 12.18,2C6.65,2 2.13,6.5 2.13,12C2.13,17.5 6.65,22 12.18,22C17.18,22 21.65,18.5 21.65,12C21.65,11.5 21.35,11.1 21.35,11.1V11.1Z"/></svg>
           </a>
         </div>
-
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <div class="container">
-     <p>© {{ site.time | date: '%Y' }} {{ site.company.name }}. {{ site.data.locales.footer.rights[page.lang] }} | Site créé et édité par <a href="https://www.duvaldvl.com" class="creator-link" target="_blank">Duval DVL</a></p>
-    </div>
-  </div>
-
-  <div id="cookie-popup" class="cookie-banner">
-    <div class="cookie-content">
-      <p>{{ site.data.locales.cookies.text[page.lang] }}</p>
-      <button id="accept-cookies" class="btn-cookie">{{ site.data.locales.cookies.btn[page.lang] }}</button>
+    <div class="container footer-bottom-flex">
+      <p>© {{ site.time | date: '%Y' }} {{ site.company.name }}. {{ site.data.locales.footer.rights[page.lang] }} | Site créé et édité par <a href="https://www.duvaldvl.com" class="creator-link" target="_blank">Duval DVL</a></p>
+      
+      <div class="legal-links">
+        <a href="{{ site.baseurl }}/fr/mentions-legales">Mentions Légales</a>
+        <span class="sep">|</span>
+        <a href="{{ site.baseurl }}/fr/politique-de-confidentialite/">Politique de Confidentialité</a>
+      </div>
     </div>
   </div>
 </footer>
