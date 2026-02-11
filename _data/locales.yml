@@ -247,3 +247,56 @@ maintenance_page:
   valet_s: { fr: "Logistique Premium", en: "Premium Logistics", it: "Logistica Premium", de: "Premium-Logistik" }
   valet_t: { fr: "SERVICE VOITURIER MEGÈVE & ENVIRONS", en: "VALET SERVICE MEGÈVE & SURROUNDINGS", it: "SERVIZIO VALLETTO MEGÈVE E DINTORNI", de: "VALET-SERVICE MEGÈVE & UMGEBUNG" }
   valet_d: { fr: "Pour votre confort, nous pouvons organiser la récupération et la restitution de votre véhicule par chauffeur à votre domicile, chalet ou hôtel.", en: "For your comfort, we can organize the collection and return of your vehicle by chauffeur to your home, chalet or hotel.", it: "Per vostra comodità, possiamo organizzare il ritiro e la riconsegna del vostro veicolo con autista presso il vostro domicilio, chalet o hotel.", de: "Für Ihren Komfort können wir die Abholung und Rückgabe Ihres Fahrzeugs durch einen Chauffeur an Ihrem Wohnort, Chalet oder Hotel organisieren." }
+
+# --- PAGE MENTIONS LÉGALES ---
+legal_page:
+  title: { fr: "MENTIONS LÉGALES", en: "LEGAL NOTICE", it: "NOTE LEGALI", de: "IMPRESSUM" }
+  # Section 1
+  sec1_t: { fr: "1. ÉDITEUR DU SITE", en: "1. SITE EDITOR", it: "1. EDITORE DEL SITO", de: "1. HERAUSGEBER DER WEBSITE" }
+  sec1_p1: 
+    fr: "Le présent site internet, accessible à l'adresse {{ site.url }}, est édité par :"
+    en: "This website, accessible at {{ site.url }}, is edited by:"
+    it: "Il presente sito internet, accessibile all'indirizzo {{ site.url }}, è edito da:"
+    de: "Diese Website, erreichbar unter {{ site.url }}, wird herausgegeben von:"
+  label_name: { fr: "Raison sociale :", en: "Company name:", it: "Ragione sociale:", de: "Firma:" }
+  label_addr: { fr: "Adresse :", en: "Address:", it: "Indirizzo:", de: "Adresse:" }
+  label_phone: { fr: "Téléphone :", en: "Phone:", it: "Telefono:", de: "Telefon:" }
+  label_email: { fr: "Email :", en: "Email:", it: "Email:", de: "Email:" }
+  label_dir: { fr: "Directeur de la publication :", en: "Publishing Director:", it: "Direttore della pubblicazione:", de: "Verantwortlich für den Inhalt:" }
+  # Section 2
+  sec2_t: { fr: "2. HÉBERGEMENT", en: "2. HOSTING", it: "2. HOSTING", de: "2. HOSTING" }
+  sec2_p1: 
+    fr: "Le site est hébergé par la société GitHub Inc. Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis. Le stockage des données est assuré sur les serveurs de GitHub Pages."
+    en: "The site is hosted by GitHub Inc. Address: 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Data storage is provided on GitHub Pages servers."
+    it: "Il sito è ospitato dalla società GitHub Inc. Indirizzo: 88 Colin P Kelly Jr St, San Francisco, CA 94107, Stati Uniti. L'archiviazione dei dati è garantita sui server di GitHub Pages."
+    de: "Die Website wird von GitHub Inc. gehostet. Adresse: 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Die Datenspeicherung erfolgt auf den Servern von GitHub Pages."
+  # Section 3
+  sec3_t: { fr: "3. PROPRIÉTÉ INTELLECTUELLE", en: "3. INTELLECTUAL PROPERTY", it: "3. PROPRIETÀ INTELLETTUALE", de: "3. GEISTIGES EIGENTUM" }
+  sec3_p1: 
+    fr: "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés."
+    en: "The entirety of this site is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved."
+    it: "L'intero sito è soggetto alla legislazione francese e internazionale sul diritto d'autore e sulla proprietà intellettuale. Tutti i diritti di riproduzione sono riservati."
+    de: "Die gesamte Website unterliegt der französischen und internationalen Gesetzgebung zum Urheberrecht und zum geistigen Eigentum. Alle Vervielfältigungsrechte sind vorbehalten."
+  sec3_p2: 
+    fr: "La reproduction de tout ou partie de ce site sur un support électronique est formellement interdite sauf autorisation expresse."
+    en: "The reproduction of all or part of this site on any electronic medium is strictly prohibited unless expressly authorized."
+    it: "La riproduzione totale o parziale di questo sito su qualsiasi supporto elettronico è formalmente vietata salvo espressa autorizzazione."
+    de: "Die Vervielfältigung dieser Website als Ganzes oder in Teilen auf elektronischen Medien ist ohne ausdrückliche Genehmigung strengstens untersagt."
+  # Section 4
+  sec4_t: { fr: "4. DONNÉES PERSONNELLES (RGPD)", en: "4. PERSONAL DATA (GDPR)", it: "4. DATI PERSONALI (GDPR)", de: "4. PERSONENBEZOGENE DATEN (DSGVO)" }
+  sec4_p1: 
+    fr: "Les informations recueillies via le formulaire de contact font l’objet d’un traitement informatique destiné exclusivement à <strong>{{ site.company.name }}</strong> dans le but de traiter votre demande."
+    en: "The information collected via the contact form is processed electronically exclusively for <strong>{{ site.company.name }}</strong> for the purpose of processing your request."
+    it: "Le informazioni raccolte tramite il modulo di contatto sono trattate elettronicamente esclusivamente per <strong>{{ site.company.name }}</strong> allo scopo di elaborare la vostra richiesta."
+    de: "Die über das Kontaktformular erhobenen Informationen werden elektronisch ausschließlich für <strong>{{ site.company.name }}</strong> verarbeitet, um Ihre Anfrage zu bearbeiten."
+  sec4_p2: 
+    fr: "Le destinataire des données est uniquement la direction de l'atelier. Ces données ne sont ni vendues, ni échangées à des tiers."
+    en: "The recipient of the data is solely the workshop management. These data are neither sold nor exchanged with third parties."
+    it: "Il destinatario dei dati è esclusivamente la direzione dell'officina. Questi dati non vengono né venduti né scambiati con terzi."
+    de: "Empfänger der Daten ist ausschließlich die Werkstattleitung. Diese Daten werden weder an Dritte verkauft noch mit ihnen ausgetauscht."
+  sec4_p3: 
+    fr: "Vous bénéficiez d’un droit d’accès, de rectification et d’effacement aux informations qui vous concernent."
+    en: "You have a right of access, rectification, and erasure to the information concerning you."
+    it: "Avete il diritto di accesso, rettifica e cancellazione delle informazioni che vi riguardano."
+    de: "Sie haben ein Recht auf Auskunft, Berichtigung und Löschung der Sie betreffenden Informationen."
+
