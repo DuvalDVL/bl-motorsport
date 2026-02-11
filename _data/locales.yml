@@ -95,3 +95,15 @@ cta_home:
 whatsapp:
   label: { fr: "Contacter par WhatsApp", en: "Contact via WhatsApp", it: "Contatta su WhatsApp", de: "Per WhatsApp kontaktieren" }
   message: { fr: "Bonjour Bastien, je souhaite un renseignement pour mon véhicule.", en: "Hello Bastien, I would like some information regarding my vehicle.", it: "Buongiorno Bastien, vorrei informazioni per il mio veicolo.", de: "Guten Tag Bastien, ich hätte gerne Informationen zu meinem Fahrzeug." }
+
+# --- PAGE 404 ---
+p404:
+  title: { fr: "Page introuvable", en: "Page Not Found", it: "Pagina non trovata", de: "Seite nicht gefunden" }
+  h1: { fr: "SORTIE DE PISTE...", en: "OFF TRACK...", it: "FUORI PISTA...", de: "VON DER PISTE ABGEKOMMEN..." }
+  text:
+    fr: "La page que vous cherchez a pris les stands ou n'existe plus.<br>Pas d'inquiétude, nos techniciens sont sur le coup."
+    en: "The page you are looking for has taken a pit stop or no longer exists.<br>Don't worry, our technicians are on it."
+    it: "La pagina che stai cercando è ai box o non esiste più.<br>Non preoccuparti, i nostri tecnici sono al lavoro."
+    de: "Die gesuchte Seite hat einen Boxenstopp eingelegt oder existiert nicht mehr.<br>Keine Sorge, unsere Techniker sind dran."
+  btn_home: { fr: "Retour à l'accueil", en: "Back to Home", it: "Torna alla Home", de: "Zurück zur Startseite" }
+  btn_contact: { fr: "Nous contacter", en: "Contact Us", it: "Contattaci", de: "Kontakt" }
