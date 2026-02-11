@@ -107,3 +107,62 @@ p404:
     de: "Die gesuchte Seite hat einen Boxenstopp eingelegt oder existiert nicht mehr.<br>Keine Sorge, unsere Techniker sind dran."
   btn_home: { fr: "Retour à l'accueil", en: "Back to Home", it: "Torna alla Home", de: "Zurück zur Startseite" }
   btn_contact: { fr: "Nous contacter", en: "Contact Us", it: "Contattaci", de: "Kontakt" }
+
+# --- PAGE RACING & TRACKDAY ---
+racing_page:
+  # Hero
+  hero_badge: { fr: "EXPERTISE CAR CHIEF WEC (WORLD ENDURANCE CHAMPIONSHIP)", en: "WEC CAR CHIEF EXPERTISE (WORLD ENDURANCE CHAMPIONSHIP)", it: "ESPERIENZA CAR CHIEF WEC (WORLD ENDURANCE CHAMPIONSHIP)", de: "WEC CAR CHIEF EXPERTISE (WORLD ENDURANCE CHAMPIONSHIP)" }
+  hero_t1: { fr: "INGÉNIERIE DE", en: "RACING", it: "INGEGNERIA DA", de: "RENNSPORT" }
+  hero_t2: { fr: "COMPÉTITION", en: "ENGINEERING", it: "COMPETIZIONE", de: "ENGINEERING" }
+  hero_sub: { fr: "Du Trackday privé au Championnat GT National & International. Optimisez vos chronos grâce à une méthodologie de réglage de niveau mondial.", en: "From private Trackdays to National & International GT Championships. Optimize your lap times with world-class tuning methodology.", it: "Dai Trackday privati ai campionati GT nazionali e internazionali. Ottimizzate i vostri tempi sul giro con una metodologia di assetto di livello mondiale.", de: "Vom privaten Trackday bis zur nationalen & internationalen GT-Meisterschaft. Optimieren Sie Ihre Rundenzeiten mit einer erstklassigen Abstimmungsmethodik." }
+  hero_btn: { fr: "Étude de projet Racing", en: "Start Racing Project", it: "Studio progetto Racing", de: "Racing-Projekt planen" }
+
+  # Section Performance
+  perf_sub: { fr: "PERFORMANCE", en: "PERFORMANCE", it: "PERFORMANCE", de: "PERFORMANCE" }
+  perf_t: { fr: "L'APPROCHE DU SPORT AUTO POUR VOTRE VÉHICULE", en: "THE MOTORSPORT APPROACH FOR YOUR VEHICLE", it: "L'APPROCCIO MOTORSPORT PER IL VOSTRO VEICOLO", de: "DER MOTORSPORT-ANSATZ FÜR IHR FAHRZEUG" }
+  perf_p1: { fr: "En compétition, la vitesse pure ne vient pas seulement de la puissance moteur, mais de l'exploitation millimétrée du châssis. En tant que Responsable Voiture en WEC, Bastien transpose les méthodes des écuries d'usine (WRT) à votre véhicule de piste.", en: "In racing, pure speed doesn't just come from engine power, but from millimeter-perfect chassis exploitation. As a WEC Car Chief, Bastien brings factory team methods (WRT) to your track vehicle.", it: "Nelle corse, la velocità pura non deriva solo dalla potenza del motore, ma dallo sfruttamento millimetrico del telaio. In qualità di Car Chief nel WEC, Bastien trasferisce i metodi dei team ufficiali (WRT) al vostro veicolo da pista.", de: "Im Rennsport kommt die reine Geschwindigkeit nicht nur von der Motorleistung, sondern von der millimetergenauen Ausnutzung des Fahrwerks. Als WEC Car Chief überträgt Bastien die Methoden der Werksteams (WRT) auf Ihr Rennfahrzeug." }
+  perf_p2: { fr: "Nous ne nous contentons pas d'installer des pièces de performance : nous les développons en harmonie avec votre style de pilotage et vos objectifs.", en: "We don't just install performance parts: we develop them in harmony with your driving style and performance goals.", it: "Non ci limitiamo a installare componenti prestazionali: li sviluppiamo in armonia con il vostro stile di guida e i vostri obiettivi.", de: "Wir bauen nicht nur Performance-Teile ein: Wir entwickeln sie im Einklang mit Ihrem Fahrstil und Ihren Performance-Zielen." }
+  perf_l1_t: { fr: "Setup Sur-Mesure :", en: "Bespoke Setup:", it: "Setup su misura:", de: "Maßgeschneidertes Setup:" }
+  perf_l1_d: { fr: "Choix d'amortisseurs et réglage des demi-trains.", en: "Shock absorber choice and half-axle tuning.", it: "Scelta ammortizzatori e regolazione semiassi.", de: "Stoßdämpferwahl und Achsabstimmung." }
+  perf_l2_t: { fr: "Poids par roue :", en: "Corner Weight:", it: "Pesi per ruota:", de: "Radlasten (Corner Weight):" }
+  perf_l2_d: { fr: "Équilibrage des masses pour une balance parfaite.", en: "Mass balancing for perfect vehicle equilibrium.", it: "Bilanciamento delle masse per un equilibrio perfetto.", de: "Gewichtsverteilung für eine perfekte Fahrzeugbalance." }
+  perf_l3_t: { fr: "Géométrie :", en: "Geometry:", it: "Geometria:", de: "Geometrie:" }
+  perf_l3_d: { fr: "Réglages de précision (Carrossage, Pince, Chasse).", en: "Precision settings (Camber, Toe, Caster).", it: "Regolazioni di precisione (Campanatura, Convergenza, Incidenza).", de: "Präzisionseinstellungen (Sturz, Spur, Nachlauf)." }
+
+  # Grid Services
+  grid_t: { fr: "CHÂSSIS, SÉCURITÉ & ENDURANCE", en: "CHASSIS, SAFETY & ENDURANCE", it: "TELAIO, SICUREZZA & ENDURANCE", de: "FAHRWERK, SICHERHEIT & ENDURANCE" }
+  c1_t: { fr: "LIAISON AU SOL", en: "SUSPENSION & CHASSIS", it: "TENUTA DI STRADA", de: "FAHRWERKSTECHNIK" }
+  c1_d: { fr: "Le seul lien entre votre pilotage et la piste. Nous optimisons chaque degré de liberté.", en: "The only link between your driving and the track. We optimize every degree of freedom.", it: "L'unico legame tra la vostra guida e la pista. Ottimizziamo ogni grado di libertà.", de: "Die einzige Verbindung zwischen Ihrem Fahrstil und der Strecke. Wir optimieren jeden Freiheitsgrad." }
+  c1_l1: { fr: "Combinés Filetés (Öhlins, KW, Bilstein)", en: "Coilovers (Öhlins, KW, Bilstein)", it: "Assetti a ghiera (Öhlins, KW, Bilstein)", de: "Gewindefahrwerke (Öhlins, KW, Bilstein)" }
+  c1_l2: { fr: "Silentblocs & Rotules Uniball", en: "Bushings & Uniball joints", it: "Silentblock e snodi Uniball", de: "Buchsen & Uniball-Gelenke" }
+  c1_l3: { fr: "Optimisation cinématique", en: "Kinematic optimization", it: "Ottimizzazione cinematica", de: "Kinematik-Optimierung" }
+  
+  c2_badge: { fr: "NORMES FIA", en: "FIA STANDARDS", it: "NORME FIA", de: "FIA-NORMEN" }
+  c2_t: { fr: "SÉCURITÉ & HABITACLE", en: "SAFETY & INTERIOR", it: "SICUREZZA & ABITACOLO", de: "SICHERHEIT & INTERIEUR" }
+  c2_d: { fr: "Préparation selon les standards de sécurité internationaux les plus stricts.", en: "Preparation according to the strictest international safety standards.", it: "Preparazione secondo i più severi standard di sicurezza internazionali.", de: "Vorbereitung nach den strengsten internationalen Sicherheitsstandards." }
+  c2_l1: { fr: "Sièges Baquets & Harnais FIA", en: "FIA Bucket Seats & Harnesses", it: "Sedili a guscio e imbracature FIA", de: "FIA-Schalensitze & Gurte" }
+  c2_l2: { fr: "Extinction & Coupe-circuit", en: "Fire suppression & Kill switch", it: "Estintori e staccabatteria", de: "Löschanlagen & Not-Aus-Schalter" }
+  
+  c3_t: { fr: "FREINAGE ENDURANCE", en: "ENDURANCE BRAKING", it: "FRENATA ENDURANCE", de: "ENDURANCE-BREMSEN" }
+  c3_d: { fr: "Enchaînez les relais sans aucune perte d'efficacité ni fading.", en: "Run back-to-back stints without any loss of efficiency or fading.", it: "Effettuate stint consecutivi senza alcuna perdita di efficienza o fading.", de: "Absolvieren Sie Stints ohne Effizienzverlust oder Fading." }
+  c3_l1: { fr: "Kits gros freins & Plaquettes Racing", en: "Big brake kits & Racing pads", it: "Kit freni maggiorati e pastiglie Racing", de: "Big-Brake-Kits & Rennbeläge" }
+  c3_l2: { fr: "Liquide Haute Température", en: "High-temperature fluid", it: "Liquido freni alta temperatura", de: "Hochtemperatur-Bremsflüssigkeit" }
+  c3_l3: { fr: "Refroidissement & Durites aviation", en: "Custom cooling & Braided lines", it: "Raffreddamento e tubi in treccia", de: "Kühlung & Stahlflexleitungen" }
+
+  # Gallery
+  gal_t: { fr: "L'EXPERTISE EN ACTION", en: "EXPERTISE IN ACTION", it: "L'ESPERIENZA IN AZIONE", de: "EXPERTISE IN AKTION" }
+  gal_sub: { fr: "Assistance circuit, Setup technique et Management de course.", en: "Trackside assistance, technical setup, and race management.", it: "Assistenza in pista, setup tecnico e gestione gara.", de: "Streckensupport, technisches Setup und Rennmanagement." }
+  cap1: { fr: "ASSISTANCE STAND", en: "PIT ASSISTANCE", it: "ASSISTENZA AI BOX", de: "BOXEN-SUPPORT" }
+  cap2: { fr: "ACTION PISTE", en: "TRACK ACTION", it: "AZIONE IN PISTA", de: "ACTION AUF DER STRECKE" }
+  cap3: { fr: "DÉTAIL TECHNIQUE", en: "TECHNICAL DETAIL", it: "DETTAGLIO TECNICO", de: "TECHNISCHES DETAIL" }
+
+  # Specialist
+  spec_t: { fr: "SPÉCIALISTE MODÈLES GT", en: "GT MODEL SPECIALIST", it: "SPECIALISTA MODELLI GT", de: "GT-MODELL SPEZIALIST" }
+  spec_f: { fr: "... et préparation sur mesure pour tout véhicule de sport & compétition.", en: "... and bespoke preparation for any sports or competition vehicle.", it: "... e preparazione su misura per qualsiasi veicolo sportivo o da competizione.", de: "... und maßgeschneiderte Vorbereitung für jedes Sport- oder Wettbewerbsfahrzeug." }
+
+  # Bottom CTA
+  cta_s: { fr: "Prêt pour le chrono ?", en: "Ready for the clock?", it: "Pronti per il cronometro?", de: "Bereit für die Uhr?" }
+  cta_t: { fr: "L'EXPERTISE SANS LA CONTRAINTE", en: "EXPERTISE WITHOUT THE HASSLE", it: "L'ECCELLENZA SENZA VINCOLI", de: "EXPERTISE OHNE AUFWAND" }
+  cta_d: { fr: "Confiez-nous la préparation de votre sortie circuit. Nous organisons le transport par chauffeur de votre véhicule.", en: "Entrust us with your track day preparation. We organize chauffeur transport for your vehicle.", it: "Affidateci la preparazione della vostra uscita in pista. Organizziamo il trasporto con autista del vostro veicolo.", de: "Vertrauen Sie uns die Vorbereitung Ihres Trackdays an. Wir organisieren den Chauffeur-Transport für Ihr Fahrzeug." }
+  cta_b1: { fr: "Lancer mon programme Racing", en: "Start my Racing program", it: "Avvia il mio programma Racing", de: "Mein Racing-Programm starten" }
+  cta_b2: { fr: "Demander un audit technique", en: "Request a technical audit", it: "Richiedi un audit tecnico", de: "Technisches Audit anfragen" }
