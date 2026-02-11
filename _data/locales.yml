@@ -367,4 +367,49 @@ prestations_page:
   s5_l2: { fr: "Transport sécurisé et confidentiel.", en: "Secure and confidential transport.", it: "Trasporto sicuro e riservato.", de: "Sicherer und vertraulicher Transport." }
   s5_btn: { fr: "Réserver un transport", en: "Book a Transfer", it: "Prenota un trasporto", de: "Transport reservieren" }
 
+# --- PAGE RÉFECTION MOTEUR & BOÎTE ---
+rebuild_page:
+  # Header
+  title: { fr: "RÉFECTION MOTEUR &", en: "ENGINE &", it: "REVISIONE MOTORE &", de: "MOTOR- &" }
+  title_2: { fr: "BOÎTE DE VITESSES", en: "GEARBOX REBUILD", it: "CAMBIO", de: "GETRIEBEÜBERHOLUNG" }
+  subtitle:
+    fr: "De la métrologie au remontage complet, nous redonnons vie aux motorisations les plus nobles avec une rigueur absolue héritée du Motorsport."
+    en: "From metrology to complete reassembly, we bring the finest engines back to life with absolute rigour inherited from Motorsport."
+    it: "Dalla metrologia al rimontaggio completo, ridiamo vita ai motori più nobili con il rigore assoluto ereditato dal Motorsport."
+    de: "Von der Metrologie bis zum kompletten Zusammenbau erwecken wir edle Motoren mit der absoluten Strenge des Motorsports zu neuem Leben."
+
+  # Precision section
+  prec_sub: { fr: "INGÉNIERIE & PRÉCISION", en: "ENGINEERING & PRECISION", it: "INGEGNERIA & PRECISIONE", de: "ENGINEERING & PRÄZISION" }
+  prec_t: { fr: "L'EXCELLENCE DE LA MÉTROLOGIE", en: "THE EXCELLENCE OF METROLOGY", it: "L'ECCELLENZA DELLA METROLOGIA", de: "EXZELLENZ DER METROLOGIE" }
+  prec_p: { fr: "L'atelier B.L Motorsport intervient sur les mécaniques de prestige les plus complexes (Flat-6, V8, V10, V12). Notre approche repose sur une analyse systématique et documentée de chaque composant moteur.", en: "B.L Motorsport works on the most complex prestige mechanics (Flat-6, V8, V10, V12). Our approach is based on a systematic and documented analysis of each engine component.", it: "B.L Motorsport interviene sulle meccaniche di prestigio più complesse (Flat-6, V8, V10, V12). Il nostro approccio si basa su un'analisi sistematica e documentata di ogni componente del motore.", de: "B.L Motorsport arbeitet an den komplexesten Prestige-Mechaniken (Flat-6, V8, V10, V12). Unser Ansatz basiert auf einer systematischen und dokumentierten Analyse jeder Motorkomponente." }
+  l1_t: { fr: "Démontage & Nettoyage :", en: "Disassembly & Cleaning:", it: "Smontaggio e pulizia:", de: "Demontage & Reinigung:" }
+  l1_d: { fr: "Procédé complet par ultrasons et micro-billage pour une propreté clinique.", en: "Complete ultrasonic and bead blasting process for clinical cleanliness.", it: "Processo completo a ultrasuoni e microsfere per una pulizia clinica.", de: "Vollständiges Ultraschall- und Glasperlenstrahlverfahren für klinische Sauberkeit." }
+  l2_t: { fr: "Métrologie :", en: "Metrology:", it: "Metrologia:", de: "Metrologie:" }
+  l2_d: { fr: "Contrôle rigoureux (vilebrequin, alésages, culasses) aux instruments de précision.", en: "Rigorous check (crankshaft, bores, cylinder heads) with precision instruments.", it: "Controllo rigoroso (albero motore, alesaggi, testate) con strumenti di precisione.", de: "Strenge Prüfung (Kurbelwelle, Bohrungen, Zylinderköpfe) mit Präzisionsinstrumenten." }
+  l3_t: { fr: "Fiabilisation :", en: "Reliability:", it: "Affidabilità:", de: "Zuverlässigkeitssteigerung:" }
+  l3_d: { fr: "Correction définitive des défauts de conception (IMS Porsche, étanchéité).", en: "Permanent correction of design flaws (Porsche IMS, sealing).", it: "Correzione definitiva dei difetti di progettazione (Porsche IMS, tenuta).", de: "Dauerhafte Korrektur von Konstruktionsfehlern (Porsche IMS, Abdichtung)." }
+  l4_t: { fr: "Transmissions :", en: "Transmissions:", it: "Trasmissioni:", de: "Getriebe:" }
+  l4_d: { fr: "Révision complète des boîtes manuelles et séquentielles.", en: "Complete overhaul of manual and sequential gearboxes.", it: "Revisione completa di cambi manuali e sequenziali.", de: "Komplette Überholung von Schalt- und sequenziellen Getrieben." }
+  btn_expert: { fr: "Expertiser ma Mécanique", en: "Expertise my Engine", it: "Perizia del mio motore", de: "Motor-Expertise anfragen" }
+
+  # Specializations
+  spec_t: { fr: "SPÉCIALISATIONS MOTEURS", en: "ENGINE SPECIALIZATIONS", it: "SPECIALIZZAZIONI MOTORI", de: "MOTOR-SPEZIALISIERUNGEN" }
+  c1_t: { fr: "PORSCHE FLAT-6", en: "PORSCHE FLAT-6", it: "PORSCHE FLAT-6", de: "PORSCHE FLAT-6" }
+  c1_d: { fr: "Réfection complète moteurs Aircooled (911 F, G, 964, 993) et blocs modernes. Remplacement IMS, chemisage cylindres et étanchéité.", en: "Complete rebuild of Aircooled engines (911 F, G, 964, 993) and modern blocks. IMS replacement, cylinder sleeving, and sealing.", it: "Revisione completa motori Aircooled (911 F, G, 964, 993) e blocchi moderni. Sostituzione IMS, incamiciatura cilindri e tenuta.", de: "Komplette Überholung von Aircooled-Motoren (911 F, G, 964, 993) und modernen Blöcken. IMS-Lager-Austausch, Zylinderlaufbahnen und Abdichtung." }
+  c2_t: { fr: "V8 & V12 ITALIENS", en: "ITALIAN V8 & V12", it: "V8 & V12 ITALIANI", de: "ITALIENISCHE V8 & V12" }
+  c2_d: { fr: "Maintenance lourde et réfection des blocs Ferrari et Lamborghini. Calage de distribution haute précision et révision culasses.", en: "Heavy maintenance and rebuild of Ferrari and Lamborghini blocks. High-precision timing and cylinder head overhaul.", it: "Manutenzione pesante e revisione blocchi Ferrari e Lamborghini. Messa in fase di precisione e revisione testate.", de: "Umfassende Wartung und Überholung von Ferrari- und Lamborghini-Blöcken. Hochpräzise Steuerzeiten und Zylinderkopfüberholung." }
+  c3_t: { fr: "MOTEURS BMW M", en: "BMW M ENGINES", it: "MOTORI BMW M", de: "BMW M MOTOREN" }
+  c3_d: { fr: "Fiabilisation préventive : coussinets de bielles, révision complète du système Vanos et optimisation des blocs S54, S65 et S85.", en: "Preventive reliability: rod bearings, full Vanos system overhaul, and optimization of S54, S65, and S85 blocks.", it: "Affidabilità preventiva: bronzine di biella, revisione completa Vanos e ottimizzazione dei blocchi S54, S65 e S85.", de: "Präventive Zuverlässigkeit: Pleuellager, komplette Vanos-Überholung und Optimierung der S54-, S65- und S85-Blöcke." }
+
+  # Brands
+  brands_t: { fr: "MÉCANIQUES D'EXCEPTION", en: "EXCEPTIONAL MECHANICS", it: "MECCANICHE D'ECCELLENZA", de: "EXZEPTIONELLE MECHANIK" }
+  brands_sub: { fr: "... l'exigence de la compétition appliquée à votre moteur.", en: "... racing standards applied to your engine.", it: "... il rigore della competizione applicato al vostro motore.", de: "... Wettbewerbsstandards für Ihren Motor." }
+
+  # CTA
+  cta_sub: { fr: "Logistique & Transport", en: "Logistics & Transport", it: "Logistica e Trasporto", de: "Logistik & Transport" }
+  cta_t: { fr: "L'EXPERTISE SANS LA CONTRAINTE", en: "EXPERTISE WITHOUT THE HASSLE", it: "L'ECCELLENZA SENZA VINCOLI", de: "EXPERTISE OHNE AUFWAND" }
+  cta_d: { fr: "Une réfection moteur est une étape clé. Nous pouvons organiser le transport par chauffeur de votre véhicule vers l'atelier.", en: "An engine rebuild is a key step. We can organize chauffeur transport of your vehicle to the workshop.", it: "La revisione del motore è un passo fondamentale. Possiamo organizzare il trasporto con autista del vostro veicolo in officina.", de: "Eine Motorüberholung ist ein entscheidender Schritt. Wir können den Chauffeur-Transport Ihres Fahrzeugs in die Werkstatt organisieren." }
+  btn_1: { fr: "Discuter de votre projet", en: "Discuss your project", it: "Parliamo del tuo progetto", de: "Projekt besprechen" }
+  btn_2: { fr: "Demander un devis", en: "Request a quote", it: "Richiedi un preventivo", de: "Angebot anfragen" }
+
   
