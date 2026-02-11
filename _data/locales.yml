@@ -1,3 +1,25 @@
+# --- NAVIGATION & STRUCTURE ---
+
+header:
+  home: { fr: "Accueil", en: "Home", it: "Home", de: "Startseite" }
+  service_1: { fr: "Entretien & Révision", en: "Maintenance & Service", it: "Manutenzione", de: "Wartung" }
+  service_2: { fr: "Réfection Moteur & Boîte", en: "Engine & Gearbox Rebuild", it: "Revisione Motore", de: "Motorüberholung" }
+  gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galerie" }
+  contact: { fr: "Contact", en: "Contact", it: "Contatti", de: "Kontakt" }
+
+footer:
+  desc:
+    fr: "Atelier de mécanique de prestige. L'exigence du Sport Automobile au service de votre véhicule."
+    en: "Prestige mechanical workshop. Motorsport excellence at the service of your vehicle."
+    it: "Officina meccanica di prestigio. L'eccellenza del Motorsport al servizio del vostro veicolo."
+    de: "Prestige-Mechanikwerkstatt. Motorsport-Exzellenz im Dienste Ihres Fahrzeugs."
+  valet_info:
+    fr: "Service voiturier par chauffeur (Megève, Chamonix, Sallanches)."
+    en: "Chauffeur valet service (Megève, Chamonix, Sallanches)."
+    it: "Servizio di sosta e riconsegna auto con autista (Megève, Chamonix, Sallanches)."
+    de: "Chauffeur-Valet-Service (Megève, Chamonix, Sallanches)."
+  rights: { fr: "Tous droits réservés", en: "All rights reserved", it: "Tutti i diritti riservati", de: "Alle Rechte vorbehalten" }
+
 # --- HOMEPAGE ---
 
 hero:
