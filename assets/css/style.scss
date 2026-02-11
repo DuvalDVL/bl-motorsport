@@ -1018,3 +1018,109 @@ input, textarea {
     }
   }
 }
+
+/* --- BIO SECTION ENHANCED --- */
+.bio-section {
+  padding: 100px 0;
+  background-color: #080808;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.bio-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+}
+
+.bio-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+
+  .img-wrapper {
+    position: relative;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to top, rgba(5,5,5,0.4), transparent);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.bio-text {
+  flex: 1;
+
+  .bio-label {
+    color: $color-brand-yellow;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+
+    .text-yellow { color: $color-brand-yellow; }
+  }
+
+  .bio-intro {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .bio-credentials {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .bio-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: left;
+
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      color: #ccc;
+      font-size: 0.95rem;
+
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: $color-brand-yellow;
+        font-weight: bold;
+      }
+    }
+  }
+}
