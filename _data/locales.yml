@@ -7,7 +7,7 @@ header:
   service_2: { fr: "Réfection Moteur & Boîte", en: "Engine & Gearbox Rebuild", it: "Revisione Motore", de: "Motorüberholung" }
   restoration: { fr: "Restauration", en: "Restoration", it: "Restauro", de: "Restaurierung" }
   racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
-  gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galleria" }
+  gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galerie" }
   contact: { fr: "Contact", en: "Contact", it: "Contatti", de: "Kontakt" }
 
 footer:
@@ -38,62 +38,81 @@ hero:
 
 bio:
   label: { fr: "DE LA PISTE À LA ROUTE", en: "FROM TRACK TO ROAD", it: "DALLA PISTA ALLA STRADA", de: "VON DER RENNSTRECKE AUF DIE STRASSE" }
-  title_1: { fr: "L'EXIGENCE DU MONDIAL", en: "WORLD-CLASS STANDARDS", it: "L'ECCELLENZA MONDIALE", de: "WELTKLASSE-STANDARDS" }
-  title_2: { fr: "À VOTRE SERVICE", en: "AT YOUR SERVICE", it: "AL VOSTRO SERVIZIO", de: "ZU IHREN DIENSTEN" }
+  title_1: { fr: "L'EXPERTISE MONDIALE", en: "WORLD-CLASS EXPERTISE", it: "L'ECCELLENZA MONDIALE", de: "WELTWEITE EXPERTISE" }
+  title_2: { fr: "À COMBLOUX", en: "IN COMBLOUX", it: "A COMBLOUX", de: "IN COMBLOUX" }
   intro:
-    fr: "Après 10 années au cœur du sport automobile international, Bastien a fondé B.L Motorsport pour offrir un niveau de technicité sans compromis."
-    en: "After 10 years at the heart of international motorsport, Bastien founded B.L Motorsport to offer an uncompromising level of technical expertise."
-    it: "Dopo 10 anni nel cuore del motorsport internazionale, Bastien ha fondato B.L Motorsport per offrire un livello di competenza tecnica senza compromessi."
-    de: "Nach 10 Jahren im Herzen des internationalen Motorsports gründete Bastien B.L Motorsport, um ein kompromissloses Maß an technischem Fachwissen anzubieten."
-  credentials:
-    fr: "Actuellement Responsable Voiture chez WRT en WEC, il collabore avec des pilotes de légende. Cette rigueur est désormais disponible à Combloux."
-    en: "Currently Car Chief at WRT in WEC, he works with legendary drivers. This rigour is now available in Combloux."
-    it: "Attualmente Car Chief presso WRT nel WEC, collabora con piloti leggendari. Questo rigore è ora disponibile a Combloux."
-    de: "Derzeit Car Chief bei WRT in der WEC, arbeitet er mit legendären Fahrern zusammen. Diese Strenge ist nun in Combloux verfügbar."
-  stat_1: { fr: "Ans de Motorsport", en: "Years in Motorsport", it: "Anni nel Motorsport", de: "Jahre im Motorsport" }
-  stat_2: { fr: "Expertise World Endurance", en: "World Endurance Expertise", it: "Esperienza World Endurance", de: "World Endurance Expertise" }
-  stat_3: { fr: "Responsable Voiture Team Officiel", en: "Car Chief Official Team", it: "Car Chief Team Ufficiale", de: "Car Chief Offizielles Team" }
+    fr: "Fort de plus de 10 années d'expérience dans le sport automobile de haut niveau, Bastien applique la rigueur de la compétition à votre véhicule personnel."
+    en: "With over 10 years of experience in high-level motorsport, Bastien applies racing rigour to your personal vehicle."
+    it: "Con oltre 10 anni di esperienza nel motorsport di alto livello, Bastien applica il rigore delle corse al vostro veicolo personale."
+    de: "Mit über 10 Jahren Erfahrung im hochklassigen Motorsport überträgt Bastien die Strenge des Rennsports auf Ihr privates Fahrzeug."
 
-process:
-  title: { fr: "LA MÉTHODE", en: "THE METHOD", it: "IL METODO", de: "DIE METHODE" }
-  step_1_t: { fr: "DIAGNOSTIC", en: "DIAGNOSIS", it: "DIAGNOSI", de: "DIAGNOSE" }
-  step_1_d: { fr: "Expertise visuelle et électronique complète.", en: "Full visual and electronic expertise.", it: "Esperienza visiva ed elettronica completa.", de: "Vollständige visuelle und elektronische Expertise." }
-  step_2_t: { fr: "INGÉNIERIE", en: "ENGINEERING", it: "INGEGNERIA", de: "ENGINEERING" }
-  step_2_d: { fr: "Outillage de précision et respect des couples.", en: "Precision tooling and torque compliance.", it: "Strumenti di precisione e rispetto delle coppie.", de: "Präzisionswerkzeuge und Einhaltung der Drehmomente." }
-  step_3_t: { fr: "VALIDATION", en: "VALIDATION", it: "VALIDAZIONE", de: "VALIDIERUNG" }
-  step_3_d: { fr: "Contrôle qualité final avant restitution.", en: "Final quality control before return.", it: "Controllo qualità finale prima della consegna.", de: "Abschließende Qualitätskontrolle vor der Rückgabe." }
+bio_stats:
+  s1_n: { fr: "+10", en: "+10", it: "+10", de: "+10" }
+  s1_l: { fr: "Ans d'expérience", en: "Years of experience", it: "Anni di esperienza", de: "Jahre Erfahrung" }
+  s2_n: { fr: "WEC", en: "WEC", it: "WEC", de: "WEC" }
+  s2_l: { fr: "Expertise World Endurance", en: "World Endurance Expertise", it: "Esperienza World Endurance", de: "World Endurance Expertise" }
+  s3_n: { fr: "WRT", en: "WRT", it: "WRT", de: "WRT" }
+  s3_l: { fr: "Team Officiel W Racing Team", en: "Official W Racing Team", it: "Team Ufficiale W Racing Team", de: "Offizielles W Racing Team" }
 
-  # --- WHATSAPP STICKY BUTTON ---
-
-whatsapp:
-  label: { fr: "Contacter par WhatsApp", en: "Contact via WhatsApp", it: "Contatta su WhatsApp", de: "Per WhatsApp kontaktieren" }
-  message: 
-    fr: "Bonjour Bastien, je souhaite un renseignement pour mon véhicule."
-    en: "Hello Bastien, I would like some information regarding my vehicle."
-    it: "Buongiorno Bastien, vorrei informazioni per il mio veicolo."
-    de: "Guten Tag Bastien, ich hätte gerne Informationen zu meinem Fahrzeug."
-
-# --- SERVICES SECTION ---
 services_section:
   title: { fr: "NOS PÔLES D'EXPERTISE", en: "OUR AREAS OF EXPERTISE", it: "I NOSTRI SETTORI DI COMPETENZA", de: "UNSERE EXPERTENBEREICHE" }
   # Carte 1
   s1_t: { fr: "ENTRETIEN & RÉVISION", en: "MAINTENANCE & SERVICE", it: "MANUTENZIONE & REVISIONE", de: "WARTUNG & INSPEKTION" }
-  s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs.", en: "Rigorous maintenance following manufacturer guidelines.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore.", de: "Sorgfältige Wartung gemäß Herstellervorgaben." }
+  s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs pour vos véhicules.", en: "Rigorous maintenance following manufacturer guidelines for your vehicles.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore per i vostri veicoli.", de: "Sorgfältige Wartung gemäß Herstellervorgaben für Ihre Fahrzeuge." }
+  s1_l1: { fr: "Vidange & Filtration OEM", en: "OEM Oil & Filter change", it: "Cambio olio e filtri OEM", de: "OEM Öl- und Filterwechsel" }
+  s1_l2: { fr: "Diagnostic électronique", en: "Electronic diagnostics", it: "Diagnostica elettronica", de: "Elektronische Diagnose" }
+  s1_l3: { fr: "Check-up sécurité complet", en: "Full safety check-up", it: "Controllo sicurezza completo", de: "Vollständiger Sicherheits-Check" }
   s1_btn: { fr: "Détails Entretien", en: "Service Details", it: "Dettagli Manutenzione", de: "Wartungsdetails" }
   # Carte 2
   s2_t: { fr: "RÉFECTION MOTEUR / BOÎTE", en: "ENGINE & GEARBOX REBUILD", it: "REVISIONE MOTORE & CAMBIO", de: "MOTOR- & GETRIEBEÜBERHOLUNG" }
-  s2_d: { fr: "Métrologie de précision et remise à neuf complète.", en: "Precision metrology and complete overhaul.", it: "Metrologia di precisione e revisione completa.", de: "Präzisionsmetrologie und komplette Generalüberholung." }
+  s2_d: { fr: "Métrologie de précision et remise à neuf complète de mécaniques nobles.", en: "Precision metrology and complete overhaul of noble mechanics.", it: "Metrologia di precisione e revisione completa di meccaniche nobili.", de: "Präzisionsmetrologie und komplette Generalüberholung edler Mechanik." }
+  s2_l1: { fr: "Réfection complète à neuf", en: "Complete overhaul", it: "Revisione completa a nuovo", de: "Komplette Generalüberholung" }
+  s2_l2: { fr: "Fiabilisation IMS et étanchéité", en: "IMS reliability & sealing", it: "Affidabilità IMS e tenuta", de: "IMS-Zuverlässigkeit & Abdichtung" }
+  s2_l3: { fr: "Révision boîtes de vitesses", en: "Gearbox service", it: "Revisione cambi", de: "Getriebeüberholung" }
   s2_btn: { fr: "Ingénierie Moteur", en: "Engine Engineering", it: "Ingegneria Motore", de: "Motorentechnik" }
   # Carte 3
   s3_t: { fr: "RESTAURATION CLASSIC", en: "CLASSIC RESTORATION", it: "RESTAURO CLASSIC", de: "CLASSIC RESTAURIERUNG" }
-  s3_d: { fr: "Préservation du patrimoine automobile et authenticité.", en: "Preservation of automotive heritage and authenticity.", it: "Preservazione del patrimonio automobilistico e autenticità.", de: "Bewahrung des automobilen Erbes und Authentizität." }
+  s3_d: { fr: "Préservation du patrimoine automobile, de la remise en route à la restauration intégrale.", en: "Preservation of automotive heritage, from restarting to full restoration.", it: "Preservazione del patrimonio automobilistico, dalla rimessa in strada al restauro completo.", de: "Bewahrung des automobilen Erbes, von der Wiederinbetriebnahme bis zur Vollrestaurierung." }
+  s3_l1: { fr: "Respect de l'authenticité", en: "Respect for authenticity", it: "Rispetto dell'autenticità", de: "Einhaltung der Authentizität" }
+  s3_l2: { fr: "Réglages carburation & allumage", en: "Carburetion & ignition tuning", it: "Messa a punto carburazione", de: "Vergaser- & Zündungstuning" }
+  s3_l3: { fr: "Gestion de projet Classic", en: "Classic project management", it: "Gestione progetti Classic", de: "Classic-Projektmanagement" }
   s3_btn: { fr: "Découvrir le Classic", en: "Discover Classic", it: "Scopri il Classic", de: "Classic entdecken" }
   # Carte 4
   s4_t: { fr: "DÉPARTEMENT RACING", en: "RACING DEPARTMENT", it: "REPARTO RACING", de: "RENNSPORT-ABTEILUNG" }
-  s4_d: { fr: "Optimisation performance et setup châssis Motorsport.", en: "Performance optimization and Motorsport chassis setup.", it: "Ottimizzazione delle prestazioni e setup telaio Motorsport.", de: "Leistungsoptimierung und Motorsport-Fahrwerksetup." }
+  s4_d: { fr: "Optimisation performance et setup châssis par un professionnel du Motorsport.", en: "Performance optimization and chassis setup by a Motorsport professional.", it: "Ottimizzazione delle prestazioni e setup telaio da un professionista del Motorsport.", de: "Leistungsoptimierung und Fahrwerksetup durch einen Motorsport-Profi." }
+  s4_l1: { fr: "Poids par roue & Géométrie", en: "Corner weights & Geometry", it: "Pesi per ruota e geometria", de: "Radlasten & Geometrie" }
+  s4_l2: { fr: "Préparation Trackday", en: "Trackday preparation", it: "Preparazione Trackday", de: "Trackday-Vorbereitung" }
+  s4_l3: { fr: "Setup Compétition", en: "Competition Setup", it: "Setup competizione", de: "Wettbewerbs-Setup" }
   s4_btn: { fr: "L'esprit Racing", en: "Racing Spirit", it: "Spirito Racing", de: "Racing-Geist" }
 
-# --- CTA ---
+process:
+  title: { fr: "LA MÉTHODE", en: "THE METHOD", it: "IL METODO", de: "DIE METHODE" }
+  sub: { fr: "Nous appliquons les procédures de contrôle du sport automobile à chaque véhicule.", en: "We apply motorsport control procedures to every vehicle.", it: "Applichiamo le procedure di controllo del motorsport a ogni veicolo.", de: "Wir wenden Motorsport-Kontrollverfahren auf jedes Fahrzeug an." }
+  step_1_t: { fr: "DIAGNOSTIC TECHNIQUE", en: "TECHNICAL DIAGNOSIS", it: "DIAGNOSI TECNICA", de: "TECHNISCHE DIAGNOSE" }
+  step_1_d: { fr: "Check-up visuel et électronique complet avant toute intervention.", en: "Full visual and electronic check-up before any work.", it: "Controllo visivo ed elettronico completo prima di ogni lavoro.", de: "Vollständiger visueller und elektronischer Check-up vor jedem Eingriff." }
+  step_2_t: { fr: "INTERVENTION EXPERTE", en: "EXPERT INTERVENTION", it: "INTERVENTO ESPERTO", de: "EXPERTEN-EINGRIFF" }
+  step_2_d: { fr: "Outillage de précision et respect strict des couples constructeur.", en: "Precision tools and strict compliance with manufacturer torques.", it: "Strumenti di precisione e rigoroso rispetto delle coppie del costruttore.", de: "Präzisionswerkzeuge und strikte Einhaltung der Herstellervorgaben." }
+  step_3_t: { fr: "CONTRÔLE QUALITÉ", en: "QUALITY CONTROL", it: "CONTROLLO QUALITÀ", de: "QUALITÄTSKONTROLLE" }
+  step_3_d: { fr: "Validation dynamique et double contrôle avant la restitution.", en: "Dynamic validation and double check before return.", it: "Validazione dinamica e doppio controllo prima della consegna.", de: "Dynamische Validierung und Doppelkontrolle vor der Rückgabe." }
+
+bio_detail:
+  label: { fr: "L'EXPERTISE AU SOMMET", en: "EXPERTISE AT THE TOP", it: "L'ECCELLENZA AL VERTICE", de: "SPITZENKOMPETENZ" }
+  title_1: { fr: "BASTIEN : L'EXIGENCE DU ", en: "BASTIEN: THE RIGOUR OF ", it: "BASTIEN: IL RIGORE DEL ", de: "BASTIEN: DIE STRENGE DER " }
+  title_2: { fr: " AU SERVICE DE VOTRE MACHINE", en: " AT THE SERVICE OF YOUR MACHINE", it: " AL SERVIZIO DELLA VOSTRA MACCHINA", de: " IM DIENSTE IHRER MASCHINE" }
+  desc_p1: { fr: "Actuellement Responsable Voiture en WEC (World Endurance Championship) au sein du team officiel WRT, il collabore avec des pilotes de renommée mondiale. Cette expertise technique pointue est désormais accessible pour l'entretien et la performance de votre véhicule de prestige.", en: "Currently Car Chief in WEC (World Endurance Championship) within the official WRT team, he works with world-renowned drivers. This sharp technical expertise is now accessible for the maintenance and performance of your prestige vehicle.", it: "Attualmente Car Chief nel WEC (World Endurance Championship) all'interno del team ufficiale WRT, collabora con piloti di fama mondiale. Questa profonda competenza tecnica è ora accessibile per la manutenzione e le prestazioni del vostro veicolo di prestigio.", de: "Derzeit Car Chief in der WEC (World Endurance Championship) im offiziellen WRT-Team, arbeitet er mit weltbekannten Fahrern zusammen. Dieses fundierte technische Fachwissen steht nun für die Wartung und Leistung Ihres Prestigefahrzeugs zur Verfügung." }
+  f1: { fr: "Philosophie Race to Road : Les standards de contrôle de la compétition appliqués à la route.", en: "Race to Road Philosophy: Competition control standards applied to the road.", it: "Filosofia Race to Road: Standard di controllo della competizione applicati alla strada.", de: "Race to Road Philosophie: Wettbewerbskontrollstandards für die Straße." }
+  f2: { fr: "Proximité : Un service sur-mesure pour les propriétaires de Megève, Chamonix et Sallanches.", en: "Proximity: A tailor-made service for owners in Megève, Chamonix and Sallanches.", it: "Prossimità: Un servizio su misura per i proprietari di Megève, Chamonix e Sallanches.", de: "Nähe: Ein maßgeschneiderter Service für Besitzer in Megève, Chamonix und Sallanches." }
+  f3: { fr: "Authenticité : Une passion pure pour les mécaniques nobles et les restaurations d'icônes.", en: "Authenticity: A pure passion for noble mechanics and icon restorations.", it: "Autenticità: Una pura passione per la meccanica nobile e il restauro di icone.", de: "Authentizität: Eine pure Leidenschaft für edle Mechanik und Ikonen-Restaurierungen." }
+  btn: { fr: "Toutes nos prestations", en: "All our services", it: "Tutti i nostri servizi", de: "Alle unsere Leistungen" }
+
 cta_home:
   title: { fr: "CONFIEZ-NOUS VOTRE MACHINE", en: "ENTRUST US WITH YOUR MACHINE", it: "AFFIDATECI LA VOSTRA MACCHINA", de: "VERTRAUEN SIE UNS IHR FAHRZEUG AN" }
-  sub: { fr: "L'atelier B.L Motorsport vous reçoit à Combloux.", en: "The B.L Motorsport workshop welcomes you in Combloux.", it: "L'officina B.L Motorsport vi riceve a Combloux.", de: "Die Werkstatt B.L Motorsport empfängt Sie in Combloux." }
+  sub: { fr: "L'atelier B.L Motorsport vous reçoit à Combloux pour un service sur-mesure.", en: "The B.L Motorsport workshop welcomes you in Combloux for a tailor-made service.", it: "L'officina B.L Motorsport vi riceve a Combloux per un servizio su misura.", de: "Die Werkstatt B.L Motorsport empfängt Sie in Combloux für einen maßgeschneiderten Service." }
+
+whatsapp:
+  label: { fr: "Contacter par WhatsApp", en: "Contact via WhatsApp", it: "Contatta su WhatsApp", de: "Per WhatsApp kontaktieren" }
+  message:
+    fr: "Bonjour Bastien, je souhaite un renseignement pour mon véhicule."
+    en: "Hello Bastien, I would like some information regarding my vehicle."
+    it: "Buongiorno Bastien, vorrei informazioni per il mio veicolo."
+    de: "Guten Tag Bastien, ich hätte gerne Informationen zu meinem Fahrzeug."
