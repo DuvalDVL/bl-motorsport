@@ -412,4 +412,57 @@ rebuild_page:
   btn_1: { fr: "Discuter de votre projet", en: "Discuss your project", it: "Parliamo del tuo progetto", de: "Projekt besprechen" }
   btn_2: { fr: "Demander un devis", en: "Request a quote", it: "Richiedi un preventivo", de: "Angebot anfragen" }
 
+# --- PAGE RESTAURATION CLASSIC ---
+classic_page:
+  # Hero
+  hero_t1: { fr: "PRÉSERVER", en: "PRESERVE", it: "PRESERVARE", de: "DIE AUTHENTIZITÄT" }
+  hero_t2: { fr: "L'AUTHENTICITÉ", en: "THE AUTHENTICITY", it: "L'AUTENTICITÀ", de: "BEWAHREN" }
+  hero_sub: { fr: "De la sortie de grange à l'état concours. Restauration mécanique et expertise historique Porsche Classic dans les règles de l'art.", en: "From barn find to concours condition. Mechanical restoration and historical Porsche Classic expertise by the book.", it: "Dal ritrovamento in granaio allo stato da concorso. Restauro meccanico ed esperienza storica Porsche Classic a regola d'arte.", de: "Vom Scheunenfund bis zum Concours-Zustand. Mechanische Restaurierung und historische Porsche Classic Expertise nach allen Regeln der Kunst." }
+  hero_btn: { fr: "Parler de votre projet", en: "Discuss your project", it: "Parliamo del tuo progetto", de: "Projekt besprechen" }
+
+  # Heritage Section
+  her_sub: { fr: "HÉRITAGE & PASSION", en: "HERITAGE & PASSION", it: "HERITAGE & PASSIONE", de: "TRADITION & LEIDENSCHAFT" }
+  her_t: { fr: "L'ART DE LA RÉFECTION CLASSIC", en: "THE ART OF CLASSIC REBUILD", it: "L'ARTE DEL RESTAURO CLASSIC", de: "DIE KUNST DER CLASSIC-RESTAURIERUNG" }
+  her_p1: { fr: "Restaurer un véhicule de collection est un équilibre subtil entre le respect de l'histoire et la nécessité de le fiabiliser pour les routes d'aujourd'hui. À l'atelier B.L Motorsport, nous traitons chaque icône comme une pièce unique.", en: "Restoring a vintage vehicle is a subtle balance between respecting history and ensuring reliability for today's roads. At B.L Motorsport, we treat every icon as a unique piece.", it: "Restaurare un veicolo d'epoca è un sottile equilibrio tra il rispetto della storia e la necessità di renderlo affidabile per le strade di oggi. All'officina B.L Motorsport trattiamo ogni icona come un pezzo unico.", de: "Die Restaurierung eines Oldtimers ist ein feines Gleichgewicht zwischen dem Respekt vor der Geschichte und der Notwendigkeit, ihn für die Straßen von heute zuverlässig zu machen. Bei B.L Motorsport behandeln wir jede Ikone als Einzelstück." }
+  her_p2: { fr: "Grâce à notre rigueur issue du WEC, nous appliquons des processus de métrologie et de contrôle stricts à des mécaniques anciennes.", en: "Thanks to our WEC-derived rigour, we apply strict metrology and control processes to vintage mechanics.", it: "Grazie al nostro rigore derivato dal WEC, applichiamo rigorosi processi di metrologia e controllo alle meccaniche d'epoca.", de: "Dank unserer aus der WEC resultierenden Strenge wenden wir strenge Metrologie- und Kontrollprozesse auf historische Mechaniken an." }
+  l1_t: { fr: "Matching Numbers :", en: "Matching Numbers:", it: "Matching Numbers:", de: "Matching Numbers:" }
+  l1_d: { fr: "Respect scrupuleux de la configuration et des numéros de série d'origine.", en: "Scrupulous respect for original configuration and serial numbers.", it: "Rispetto scrupoloso della configurazione e dei numeri di serie originali.", de: "Strikte Einhaltung der ursprünglichen Konfiguration und Seriennummern." }
+  l2_t: { fr: "Sourcing Expert :", en: "Expert Sourcing:", it: "Sourcing Esperto:", de: "Experten-Sourcing:" }
+  l2_d: { fr: "Recherche de pièces d'origine (N.O.S) ou refabrications certifiées.", en: "Search for original parts (N.O.S) or certified high-quality reproductions.", it: "Ricerca di ricambi originali (N.O.S) o rifabbricazioni certificate.", de: "Suche nach Originalteilen (N.O.S) oder zertifizierten Nachfertigungen." }
+  l3_t: { fr: "Traçabilité :", en: "Traceability:", it: "Tracciabilità:", de: "Rückverfolgbarkeit:" }
+  l3_d: { fr: "Suivi photographique intégral et dossier technique complet.", en: "Full photographic follow-up and complete technical file.", it: "Monitoraggio fotografico integrale e fascicolo tecnico completo.", de: "Vollständige fotografische Dokumentation und technische Akte." }
+
+  # Skills Grid
+  grid_t: { fr: "NOTRE SAVOIR-FAIRE HISTORIQUE", en: "OUR HISTORICAL KNOW-HOW", it: "IL NOSTRO KNOW-HOW STORICO", de: "UNSER HISTORISCHES FACHWISSEN" }
+  c1_t: { fr: "MÉCANIQUE ANCIENNE", en: "VINTAGE MECHANICS", it: "MECCANICA D'EPOCA", de: "HISTORISCHE MECHANIK" }
+  c1_l1: { fr: "Réglage précis Carburateurs", en: "Precise Carburetor tuning", it: "Regolazione precisa carburatori", de: "Präzise Vergasereinstellung" }
+  c1_l2: { fr: "Calage Allumage & Distribution", en: "Ignition & Timing setup", it: "Messa in fase accensione", de: "Zündungs- & Steuerzeiteneinstellung" }
+  c1_l3: { fr: "Étanchéité moteur & boîte", en: "Engine & gearbox sealing", it: "Tenuta motore e cambio", de: "Motor- & Getriebeabdichtung" }
   
+  c2_t: { fr: "GESTION DE PROJET", en: "PROJECT MANAGEMENT", it: "GESTIONE PROGETTI", de: "PROJEKTMANAGEMENT" }
+  c2_l1: { fr: "Carrosserie & Peinture", en: "Bodywork & Paint", it: "Carrozzeria e verniciatura", de: "Karosserie & Lackierung" }
+  c2_l2: { fr: "Sellerie & tissus d'époque", en: "Upholstery & period fabrics", it: "Selleria e tessuti d'epoca", de: "Sattlerei & historische Stoffe" }
+  c2_l3: { fr: "Traitement châssis époxy", en: "Epoxy chassis treatment", it: "Trattamento telaio epossidico", de: "Epoxid-Fahrwerksbehandlung" }
+  
+  c3_t: { fr: "FIABILISATION", en: "RELIABILITY UPGRADES", it: "AFFIDABILITÀ", de: "ZUVERLÄSSIGKEIT" }
+  c3_l1: { fr: "Circuits de refroidissement", en: "Cooling system optimization", it: "Ottimizzazione raffreddamento", de: "Optimierung des Kühlsystems" }
+  c3_l2: { fr: "Faisceaux électriques", en: "Electrical wiring harness", it: "Cablaggi elettrici", de: "Kabelbaum-Instandsetzung" }
+  c3_l3: { fr: "Modernisation discrète", en: "Discreet modernization", it: "Modernizzazione discreta", de: "Diskrete Modernisierung" }
+
+  # Realisations
+  real_t: { fr: "RÉALISATIONS ATELIER", en: "WORKSHOP ACHIEVEMENTS", it: "REALIZZAZIONI IN OFFICINA", de: "WERKSTATT-PROJEKTE" }
+  real_sub: { fr: "Focus sur nos dernières restaurations de véhicules de collection.", en: "Focus on our latest vintage vehicle restorations.", it: "Focus sui nostri ultimi restauri di veicoli d'epoca.", de: "Fokus auf unsere neuesten Oldtimer-Restaurierungen." }
+  cap1: { fr: "RESTAURATION MOTEUR", en: "ENGINE RESTORATION", it: "RESTAURO MOTORE", de: "MOTOR-RESTAURIERUNG" }
+  cap2: { fr: "TRAITEMENT CHÂSSIS", en: "CHASSIS TREATMENT", it: "TRATTAMENTO TELAIO", de: "FAHRWERKSBEHANDLUNG" }
+  cap3: { fr: "SELLERIE & FINITIONS", en: "UPHOLSTERY & FINISHES", it: "SELLERIA E FINITURE", de: "SATTLEREI & FINISH" }
+
+  # Icons
+  icons_t: { fr: "ICÔNES PRISES EN CHARGE", en: "SUPPORTED ICONS", it: "ICONE SUPPORTATE", de: "UNTERSTÜTZTE IKONEN" }
+  icons_f: { fr: "... l'expertise Motorsport au service du patrimoine.", en: "... Motorsport expertise serving heritage.", it: "... l'esperienza Motorsport al servizio del patrimonio.", de: "... Motorsport-Expertise im Dienste des Kulturerbes." }
+
+  # Bottom CTA
+  cta_s: { fr: "Un projet de restauration ?", en: "A restoration project?", it: "Un progetto di restauro?", de: "Ein Restaurierungsprojekt?" }
+  cta_t: { fr: "REDONNEZ VIE À VOTRE PASSION", en: "BRING YOUR PASSION BACK TO LIFE", it: "RIDATE VITA ALLA VOSTRA PASSIONE", de: "ERWECKEN SIE IHRE LEIDENSCHAFT NEU" }
+  cta_d: { fr: "Nous vous accompagnons dans chaque étape, de l'expertise avant achat à l'entretien annuel.", en: "We accompany you in every step, from pre-purchase expertise to annual maintenance.", it: "Vi accompagniamo in ogni fase, dalla perizia pre-acquisto alla manutenzione annuale.", de: "Wir begleiten Sie bei jedem Schritt, von der Kaufberatung bis zur jährlichen Wartung." }
+  cta_b1: { fr: "Lancer une restauration", en: "Start a restoration", it: "Inizia un restauro", de: "Restaurierung starten" }
+  cta_b2: { fr: "Échanger sur mon projet", en: "Discuss my project", it: "Parliamo del mio progetto", de: "Mein Projekt besprechen" }
