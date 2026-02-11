@@ -1,9 +1,9 @@
 title: B.L Motorsport
 description: "Atelier de mécanique de prestige et préparation compétition (WEC). Spécialiste Porsche, Ferrari, BMW. Service voiturier à Megève et Chamonix."
 # Ton dossier GitHub actuel :
-baseurl: "/bl-motorsport"
+baseurl: ""
 # Ton url utilisateur :
-url: "https://duvaldvl.github.io"
+url: "https://www.bl-motorsport-montblanc.com"
 
 markdown: kramdown
 permalink: pretty
