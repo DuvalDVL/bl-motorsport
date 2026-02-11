@@ -1,16 +1,17 @@
 ---
 layout: default
-title: Galerie | Porsche & Prestige Projekte | B.L Motorsport
-description: "Entdecken Sie unsere technische Exzellenz: WEC-Racing-Vorbereitung, mechanische Überholung und Prestige-Wartung in Bildern."
+title: Projektgalerie Porsche & Prestige | B.L Motorsport
+description: "Entdecken Sie die technische Exzellenz der Werkstatt B.L Motorsport in Combloux: Motorüberholungen, Racing-Vorbereitung und Porsche Classic Restaurierungen."
+permalink: /de/galerie/
 lang: de
 ---
 
 <section class="page-header-simple">
   <div class="container">
-    <h1 class="page-title">OUR <span class="text-gradient">GALLERY</span></h1>
+    <h1 class="page-title">{{ site.data.locales.gallery_page.title[page.lang] }} <span class="text-gradient">{{ site.data.locales.gallery_page.title_2[page.lang] }}</span></h1>
     <div class="divider-yellow"></div>
     <p style="color: #999; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
-      The standards of competition applied to every detail. Discover the behind-the-scenes of our workshop interventions carried out by Bastien.
+      {{ site.data.locales.gallery_page.subtitle[page.lang] }}
     </p>
   </div>
 </section>
@@ -18,10 +19,10 @@ lang: de
 <section class="gallery-filters-section" style="background: #050505; padding: 20px 0;">
   <div class="container">
     <div class="gallery-filter-bar">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="moteur">Engine & Gearbox</button>
-      <button class="filter-btn" data-filter="racing">Racing & Trackday</button>
-      <button class="filter-btn" data-filter="classic">Classic Restoration</button>
+      <button class="filter-btn active" data-filter="all">{{ site.data.locales.gallery_page.f_all[page.lang] }}</button>
+      <button class="filter-btn" data-filter="moteur">{{ site.data.locales.gallery_page.f_engine[page.lang] }}</button>
+      <button class="filter-btn" data-filter="racing">{{ site.data.locales.gallery_page.f_racing[page.lang] }}</button>
+      <button class="filter-btn" data-filter="classic">{{ site.data.locales.gallery_page.f_classic[page.lang] }}</button>
     </div>
   </div>
 </section>
@@ -32,30 +33,30 @@ lang: de
       
       <div class="gallery-card" data-category="moteur">
         <div class="gallery-img-container">
-          <img src="{{ '/assets/img/galerie/moteur-porsche.jpg' | relative_url }}" alt="Porsche Flat-6 engine rebuild by Bastien">
+          <img src="{{ '/assets/img/galerie/moteur-porsche.jpg' | absolute_url }}" alt="Engine Rebuild">
           <div class="gallery-overlay">
-            <span class="category-tag">Engine & Gearbox</span>
-            <h3>Manual & sequential gearbox rebuild</h3>
+            <span class="category-tag">{{ site.data.locales.gallery_page.tag_engine[page.lang] }}</span>
+            <h3>{{ site.data.locales.gallery_page.desc_engine[page.lang] }}</h3>
           </div>
         </div>
       </div>
 
       <div class="gallery-card" data-category="racing">
         <div class="gallery-img-container">
-          <img src="{{ '/assets/img/galerie/setup-atelier.jpg' | relative_url }}" alt="Workshop-based chassis optimization in Combloux">
+          <img src="{{ '/assets/img/galerie/setup-atelier.jpg' | absolute_url }}" alt="Racing Setup">
           <div class="gallery-overlay">
-            <span class="category-tag">Racing</span>
-            <h3>In-workshop chassis optimization</h3>
+            <span class="category-tag">{{ site.data.locales.gallery_page.tag_racing[page.lang] }}</span>
+            <h3>{{ site.data.locales.gallery_page.desc_racing[page.lang] }}</h3>
           </div>
         </div>
       </div>
 
       <div class="gallery-card" data-category="classic">
         <div class="gallery-img-container">
-          <img src="{{ '/assets/img/galerie/classic-porsche.jpg' | relative_url }}" alt="Porsche Classic restoration in Haute-Savoie">
+          <img src="{{ '/assets/img/galerie/classic-porsche.jpg' | absolute_url }}" alt="Classic Restoration">
           <div class="gallery-overlay">
-            <span class="category-tag">Classic</span>
-            <h3>Aircooled icon restoration</h3>
+            <span class="category-tag">{{ site.data.locales.gallery_page.tag_classic[page.lang] }}</span>
+            <h3>{{ site.data.locales.gallery_page.desc_classic[page.lang] }}</h3>
           </div>
         </div>
       </div>
@@ -66,9 +67,9 @@ lang: de
 
 <section class="cta-simple" style="padding: 100px 0; text-align: center; background: #080808; border-top: 1px solid #111;">
   <div class="container">
-    <h2>YOUR PROJECT STARTS HERE</h2>
-    <p style="color: #666; margin-bottom: 30px;">Entrust your vehicle to Bastien's expertise, specialist in sports mechanics.</p>
-    <a href="{{ site.baseurl }}/en/contact" class="btn btn-primary">Book an appointment</a>
+    <h2>{{ site.data.locales.gallery_page.cta_t[page.lang] }}</h2>
+    <p style="color: #666; margin-bottom: 30px;">{{ site.data.locales.gallery_page.cta_s[page.lang] }}</p>
+    <a href="{{ site.url }}/{{ page.lang }}/contact" class="btn btn-primary">{{ site.data.locales.hero.btn_2[page.lang] }}</a>
   </div>
 </section>
 
