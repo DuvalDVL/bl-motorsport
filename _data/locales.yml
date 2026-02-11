@@ -166,3 +166,38 @@ racing_page:
   cta_d: { fr: "Confiez-nous la préparation de votre sortie circuit. Nous organisons le transport par chauffeur de votre véhicule.", en: "Entrust us with your track day preparation. We organize chauffeur transport for your vehicle.", it: "Affidateci la preparazione della vostra uscita in pista. Organizziamo il trasporto con autista del vostro veicolo.", de: "Vertrauen Sie uns die Vorbereitung Ihres Trackdays an. Wir organisieren den Chauffeur-Transport für Ihr Fahrzeug." }
   cta_b1: { fr: "Lancer mon programme Racing", en: "Start my Racing program", it: "Avvia il mio programma Racing", de: "Mein Racing-Programm starten" }
   cta_b2: { fr: "Demander un audit technique", en: "Request a technical audit", it: "Richiedi un audit tecnico", de: "Technisches Audit anfragen" }
+
+# --- PAGE CONTACT ---
+contact_page:
+  # Header
+  title: { fr: "CONTACT &", en: "CONTACT &", it: "CONTATTO E", de: "KONTAKT &" }
+  title_2: { fr: "ACCÈS", en: "ACCESS", it: "ACCESSO", de: "ANFAHRT" }
+  subtitle: 
+    fr: "Pour garantir une qualité de service optimale et une confidentialité totale, l'atelier reçoit <strong>exclusivement sur rendez-vous</strong>."
+    en: "To guarantee optimal service quality and total confidentiality, the workshop receives visitors <strong>exclusively by appointment</strong>."
+    it: "Per garantire una qualità del servizio ottimale e la totale riservatezza, l'officina riceve <strong>esclusivamente su appuntamento</strong>."
+    de: "Um eine optimale Servicequalität und absolute Vertraulichkeit zu gewährleisten, empfängt die Werkstatt Besucher <strong>ausschließlich nach Terminvereinbarung</strong>."
+
+  # Infos Blocks
+  info_title: { fr: "COORDONNÉES", en: "CONTACT INFORMATION", it: "DATI DI CONTATTO", de: "KONTAKTINFORMATIONEN" }
+  addr_title: { fr: "ADRESSE ATELIER", en: "WORKSHOP ADDRESS", it: "INDIRIZZO OFFICINA", de: "WERKSTATT-ADRESSE" }
+  comm_title: { fr: "COMMUNICATION", en: "COMMUNICATION", it: "COMUNICAZIONE", de: "KOMMUNIKATION" }
+  hours_title: { fr: "HORAIRES", en: "OPENING HOURS", it: "ORARI", de: "ÖFFNUNGSZEITEN" }
+  hours_text:
+    fr: "Atelier privé. Merci de nous contacter préalablement pour convenir d'un rendez-vous."
+    en: "Private workshop. Please contact us beforehand to arrange an appointment."
+    it: "Officina privata. Vi preghiamo di contattarci preventivamente per concordare un appuntamento."
+    de: "Private Werkstatt. Bitte kontaktieren Sie uns vorher, um einen Termin zu vereinbaren."
+
+  # Form
+  form_title: { fr: "NOUS ÉCRIRE", en: "WRITE TO US", it: "SCRIVICI", de: "SCHREIBEN SIE UNS" }
+  label_name: { fr: "Nom complet", en: "Full name", it: "Nome completo", de: "Vollständiger Name" }
+  ph_name: { fr: "Votre nom", en: "Your name", it: "Il tuo nome", de: "Ihr Name" }
+  label_email: { fr: "Email", en: "Email", it: "Email", de: "Email" }
+  ph_email: { fr: "votre@email.com", en: "your@email.com", it: "tua@email.it", de: "ihre@email.de" }
+  label_phone: { fr: "Téléphone", en: "Phone", it: "Telefono", de: "Telefon" }
+  label_vehicle: { fr: "Véhicule (Marque / Modèle)", en: "Vehicle (Make / Model)", it: "Veicolo (Marca / Modello)", de: "Fahrzeug (Marke / Modell)" }
+  ph_vehicle: { fr: "Ex: Porsche 911", en: "e.g. Porsche 911", it: "Es: Porsche 911", de: "z.B. Porsche 911" }
+  label_msg: { fr: "Votre demande", en: "Your request", it: "La tua richiesta", de: "Ihre Anfrage" }
+  ph_msg: { fr: "Comment pouvons-nous vous aider ?", en: "How can we help you?", it: "Come possiamo aiutarti?", de: "Wie können wir Ihnen helfen?" }
+  btn_send: { fr: "Envoyer la demande", en: "Send request", it: "Invia richiesta", de: "Anfrage senden" }
