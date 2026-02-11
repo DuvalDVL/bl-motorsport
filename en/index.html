@@ -149,7 +149,9 @@ lang: en
         <li>{{ site.data.locales.bio_detail.f3[page.lang] }}</li>
       </ul>
       <div class="bio-cta-wrapper">
-        <a href="{{ site.baseurl }}/{{ page.lang }}/prestations" class="btn btn-primary">{{ site.data.locales.bio_detail.btn | default: "Services" }}</a>
+        <a href="{{ site.baseurl }}/{{ page.lang }}/prestations" class="btn btn-primary">
+  {{ site.data.locales.bio_detail.btn[page.lang] }}
+</a>
       </div>
     </div>
   </div>
