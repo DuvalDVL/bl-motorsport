@@ -364,29 +364,17 @@ classic_page:
   l3_d: { fr: "Suivi photographique intégral et dossier technique complet.", en: "Full photographic follow-up and complete technical file.", it: "Monitoraggio fotografico integrale e fascicolo tecnico completo.", de: "Vollständige fotografische Dokumentation und technische Akte." }
   grid_t: { fr: "NOTRE SAVOIR-FAIRE HISTORIQUE", en: "OUR HISTORICAL KNOW-HOW", it: "IL NOSTRO KNOW-HOW STORICO", de: "UNSER HISTORISCHES FACHWISSEN" }
   c1_t: { fr: "MÉCANIQUE ANCIENNE", en: "VINTAGE MECHANICS", it: "MECCANICA D'EPOCA", de: "HISTORISCHE MECHANIK" }
-  c1_d:
-    fr: "Expertise sur les motorisations atmosphériques complexes et les mécaniques Porsche Refroidies par Air (Aircooled)."
-    en: "Expertise in complex naturally aspirated engines and Aircooled Porsche mechanics."
-    it: "Esperienza su motori aspirati complessi e meccaniche Porsche raffreddate ad aria (Aircooled)."
-    de: "Expertise für komplexe Saugmotoren und luftgekühlte Porsche-Mechanik (Aircooled)."
+  c1_d: { fr: "Expertise sur les motorisations atmosphériques complexes et les mécaniques Porsche Refroidies par Air (Aircooled).", en: "Expertise in complex naturally aspirated engines and Aircooled Porsche mechanics.", it: "Esperienza su motori aspirati complessi e meccaniche Porsche raffreddate ad aria (Aircooled).", de: "Expertise für komplexe Saugmotoren und luftgekühlte Porsche-Mechanik (Aircooled)." }
   c1_l1: { fr: "Réglage précis Carburateurs", en: "Precise Carburetor tuning", it: "Regolazione precisa carburatori", de: "Präzise Vergasereinstellung" }
   c1_l2: { fr: "Calage Allumage & Distribution", en: "Ignition & Timing setup", it: "Messa in fase accensione", de: "Zündungs- & Steuerzeiteneinstellung" }
   c1_l3: { fr: "Étanchéité moteur & boîte", en: "Engine & gearbox sealing", it: "Tenuta motore e cambio", de: "Motor- & Getriebeabdichtung" }
   c2_t: { fr: "GESTION DE PROJET", en: "PROJECT MANAGEMENT", it: "GESTIONE PROGETTI", de: "PROJEKTMANAGEMENT" }
-  c2_d:
-    fr: "Nous coordonnons des partenaires d'excellence sélectionnés pour une restauration 'clés en main' sans compromis."
-    en: "We coordinate selected partners of excellence for a 'turnkey' restoration without compromise."
-    it: "Coordiniamo partner d'eccellenza selezionati per un restauro 'chiavi in mano' senza compromessi."
-    de: "Wir koordinieren ausgewählte exzellente Partner für eine kompromisslose 'schlüsselfertige' Restaurierung."
+  c2_d: { fr: "Nous coordonnons des partenaires d'excellence sélectionnés pour une restauration 'clés en main' sans compromis.", en: "We coordinate selected partners of excellence for a 'turnkey' restoration without compromise.", it: "Coordiniamo partner d'eccellenza selezionati per un restauro 'chiavi in mano' senza compromessi.", de: "Wir koordinieren ausgewählte exzellente Partner für eine kompromisslose 'schlüsselfertige' Restaurierung." }
   c2_l1: { fr: "Carrosserie & Peinture", en: "Bodywork & Paint", it: "Carrozzeria e verniciatura", de: "Karosserie & Lackierung" }
   c2_l2: { fr: "Sellerie & tissus d'époque", en: "Upholstery & period fabrics", it: "Selleria e tessuti d'epoca", de: "Sattlerei & historische Stoffe" }
   c2_l3: { fr: "Traitement châssis époxy", en: "Epoxy chassis treatment", it: "Trattamento telaio epossidico", de: "Epoxid-Fahrwerksbehandlung" }
   c3_t: { fr: "FIABILISATION", en: "RELIABILITY UPGRADES", it: "AFFIDABILITÀ", de: "ZUVERLÄSSIGKEIT" }
-  c3_d:
-    fr: "Pour que votre ancienne ne soit pas seulement une pièce de musée, mais une voiture prête pour le voyage."
-    en: "So that your vintage car is not just a museum piece, but a car ready for the road."
-    it: "Perché la vostra auto d'epoca non sia solo un pezzo da museo, ma una vettura pronta per il viaggio."
-    de: "Damit Ihr Oldtimer nicht nur ein Museumsstück ist, sondern ein fahrbereites Auto für die Reise."
+  c3_d: { fr: "Pour que votre ancienne ne soit pas seulement une pièce de musée, mais une voiture prête pour le voyage.", en: "So that your vintage car is not just a museum piece, but a car ready for the road.", it: "Perché la vostra auto d'epoca non sia solo un pezzo da museo, ma una vettura pronta per il viaggio.", de: "Damit Ihr Oldtimer nicht nur ein Museumsstück ist, sondern ein fahrbereites Auto für die Reise." }
   c3_l1: { fr: "Circuits de refroidissement", en: "Cooling system optimization", it: "Ottimizzazione raffreddamento", de: "Optimierung des Kühlsystems" }
   c3_l2: { fr: "Faisceaux électriques", en: "Electrical wiring harness", it: "Cablaggi elettrici", de: "Kabelbaum-Instandsetzung" }
   c3_l3: { fr: "Modernisation discrète", en: "Discreet modernization", it: "Modernizzazione discreta", de: "Diskrete Modernisierung" }
