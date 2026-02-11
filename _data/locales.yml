@@ -405,27 +405,34 @@ gallery_page:
   title: { fr: "NOTRE", en: "OUR", it: "LA NOSTRA", de: "UNSERE" }
   title_2: { fr: "GALERIE", en: "GALLERY", it: "GALLERIA", de: "GALERIE" }
   subtitle:
-    fr: "L'exigence de la compétition appliquée à chaque détail. Découvrez les coulisses de nos interventions réalisées par Bastien."
-    en: "The standards of competition applied to every detail. Discover the behind-the-scenes of our workshop interventions carried out by Bastien."
-    it: "Gli standard della competizione applicati a ogni dettaglio. Scoprite il dietro le quinte dei nostri interventi eseguiti da Bastien."
-    de: "Wettbewerbsstandards bis ins kleinste Detail. Entdecken Sie die Kulissen unserer von Bastien durchgeführten Werkstattarbeiten."
+    fr: "L'exigence de la compétition appliquée à chaque détail. Découvrez l'expertise de Bastien au cœur de l'atelier B.L Motorsport."
+    en: "The excellence of competition applied to every detail. Discover Bastien's expertise at the heart of the B.L Motorsport workshop."
+    it: "L'eccellenza della competizione applicata a ogni dettaglio. Scoprite l'esperienza di Bastien nel cuore dell'officina B.L Motorsport."
+    de: "Wettbewerbs-Exzellenz bis ins kleinste Detail. Entdecken Sie Bastiens Fachwissen im Herzen der B.L Motorsport Werkstatt."
   
   # Filtres
   f_all: { fr: "Tous", en: "All", it: "Tutti", de: "Alle" }
   f_engine: { fr: "Moteur & Boîte", en: "Engine & Gearbox", it: "Motore & Cambio", de: "Motor & Getriebe" }
   f_racing: { fr: "Racing & Trackday", en: "Racing & Trackday", it: "Racing & Trackday", de: "Racing & Trackday" }
-  f_classic: { fr: "Restauration Classic", en: "Classic Restoration", it: "Restauro Classic", de: "Classic Restaurierung" }
+  f_prestige: { fr: "Expertise Prestige", en: "Prestige Expertise", it: "Esperienza Prestige", de: "Prestige-Expertise" }
 
-  # Cartes
-  tag_engine: { fr: "Moteur & Boîte", en: "Engine & Gearbox", it: "Motore & Cambio", de: "Motor & Getriebe" }
-  desc_engine: { fr: "Réfection moteur & boîte de vitesses", en: "Manual & sequential gearbox rebuild", it: "Revisione motore e cambio", de: "Motor- & Getriebeüberholung" }
-  
+  # Tags des cartes
   tag_racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
-  desc_racing: { fr: "Optimisation châssis en atelier", en: "In-workshop chassis optimization", it: "Ottimizzazione telaio in officina", de: "Fahrwerksoptimierung in der Werkstatt" }
-  
-  tag_classic: { fr: "Classic", en: "Classic", it: "Classic", de: "Classic" }
-  desc_classic: { fr: "Restauration d'icônes Aircooled", en: "Aircooled icon restoration", it: "Restauro icone Aircooled", de: "Restaurierung von Aircooled-Ikonen" }
+  tag_engine: { fr: "Moteur & Boîte", en: "Engine & Gearbox", it: "Motore & Cambio", de: "Motor & Getriebe" }
+  tag_prestige: { fr: "Expertise Prestige", en: "Prestige Expertise", it: "Esperienza Prestige", de: "Prestige-Expertise" }
 
-  # CTA
-  cta_t: { fr: "VOTRE PROJET COMMENCE ICI", en: "YOUR PROJECT STARTS HERE", it: "IL VOSTRO PROGETTO INIZIA QUI", de: "IHR PROJEKT BEGINNT HIER" }
-  cta_s: { fr: "Confiez votre véhicule à l'expertise de Bastien, spécialiste en mécanique de pointe.", en: "Entrust your vehicle to Bastien's expertise, specialist in high-end mechanics.", it: "Affidate il vostro veicolo alla competenza di Bastien, specialista in meccanica d'eccellenza.", de: "Vertrauen Sie Ihr Fahrzeug der Expertise von Bastien an, dem Spezialisten für Hochleistungsmechanik." }
+  # Titres des photos
+  img1_t: { fr: "BMW M4 GT3 - Setup Atelier", en: "BMW M4 GT3 - Workshop Setup", it: "BMW M4 GT3 - Setup Officina", de: "BMW M4 GT3 - Werkstatt-Setup" }
+  img2_t: { fr: "Validation Performance WEC", en: "WEC Performance Validation", it: "Validazione Performance WEC", de: "WEC Performance-Validierung" }
+  img3_t: { fr: "Précision des Trains Roulants", en: "Drivetrain Precision", it: "Precisione degli organi di trasmissione", de: "Präzision des Fahrwerks" }
+  img4_t: { fr: "Ingénierie & Métrologie", en: "Engineering & Metrology", it: "Ingegneria e Metrologia", de: "Engineering & Metrologie" }
+  img5_t: { fr: "L'Esprit d'Équipe WEC", en: "WEC Team Spirit", it: "Spirito di Squadra WEC", de: "WEC Teamgeist" }
+  img6_t: { fr: "Soin et Manutention Exclusive", en: "Exclusive Care & Handling", it: "Cura e movimentazione esclusiva", de: "Exklusive Pflege & Handhabung" }
+  img7_t: { fr: "Rigueur de la Compétition", en: "Rigour of Competition", it: "Rigore della competizione", de: "Strenge des Wettbewerbs" }
+  img8_t: { fr: "Rigueur de l'Endurance", en: "Endurance Rigour", it: "Rigore dell'Endurance", de: "Endurance-Strenge" }
+  img9_t: { fr: "Standard de Qualité Mondial", en: "World-Class Quality Standard", it: "Standard di qualità mondiale", de: "Weltklasse-Qualitätsstandard" }
+
+  # Alts (pour le SEO)
+  img1_alt: { fr: "BMW M4 GT3 en préparation", en: "BMW M4 GT3 preparation", it: "BMW M4 GT3 in preparazione", de: "BMW M4 GT3 in Vorbereitung" }
+  img2_alt: { fr: "BMW M4 GT3 sous la pluie WEC", en: "BMW M4 GT3 in the rain WEC", it: "BMW M4 GT3 sotto la pioggia WEC", de: "BMW M4 GT3 im Regen WEC" }
+  img3_alt: { fr: "Intervention écrou central GT3", en: "GT3 center lock nut intervention", it: "Intervento dado centrale GT3", de: "Eingriff Zentralverschluss GT3" }
