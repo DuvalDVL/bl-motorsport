@@ -1,18 +1,28 @@
 ---
 layout: null
 ---
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>B.L Motorsport - Redirection</title>
-    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/fr/">
-    <script>
-        window.location.href = "{{ site.baseurl }}/fr/";
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={{ site.url }}/fr/">
+  <link rel="canonical" href="{{ site.url }}/fr/">
+
+  <title>B.L Motorsport | Spécialiste Porsche & Prestige à Combloux</title>
+  <meta name="description" content="Expertise WEC pour votre voiture de prestige. Entretien, réfection moteur et préparation compétition à Combloux. Spécialiste Porsche et GT.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:title" content="B.L Motorsport | Spécialiste Porsche & Prestige">
+  <meta property="og:description" content="Expertise WEC à Combloux. Entretien, réfection moteur et préparation compétition.">
+  <meta property="og:image" content="{{ '/assets/img/hero-bg.jpg' | absolute_url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B.L Motorsport | Spécialiste Porsche & Prestige">
+  <meta name="twitter:description" content="Expertise WEC à Combloux. Entretien, réfection moteur et préparation compétition.">
+  <meta name="twitter:image" content="{{ '/assets/img/hero-bg.jpg' | absolute_url }}">
 </head>
 <body>
-    <p>Redirection en cours vers <a href="{{ site.baseurl }}/fr/">la version française..</a></p>
+  <p>Redirection vers <a href="{{ site.url }}/fr/">B.L Motorsport</a>...</p>
 </body>
 </html>
