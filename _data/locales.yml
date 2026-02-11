@@ -5,6 +5,8 @@ header:
   services: { fr: "Prestations", en: "Services", it: "Servizi", de: "Leistungen" }
   service_1: { fr: "Entretien & Révision", en: "Maintenance & Service", it: "Manutenzione", de: "Wartung" }
   service_2: { fr: "Réfection Moteur & Boîte", en: "Engine & Gearbox Rebuild", it: "Revisione Motore", de: "Motorüberholung" }
+  restoration: { fr: "Restauration", en: "Restoration", it: "Restauro", de: "Restaurierung" }
+  racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
   gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galleria" }
   contact: { fr: "Contact", en: "Contact", it: "Contatti", de: "Kontakt" }
 
