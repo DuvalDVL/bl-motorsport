@@ -18,8 +18,13 @@ footer:
 hero:
   title_1: { fr: "L'EXIGENCE DU", en: "THE EXCELLENCE OF", it: "L'ECCELLENZA DEL", de: "DIE EXZELLENZ DES" }
   title_2: { fr: "SPORT AUTOMOBILE", en: "MOTORSPORT", it: "MOTORSPORT", de: "MOTORSPORTS" }
-  subtitle: { fr: "Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition. Par Bastien Lefebvre.", en: "Specialized workshop: Prestige Maintenance, Classic & Racing Preparation. By Bastien Lefebvre.", it: "Officina specializzata: Manutenzione Prestige, Classic & Preparazione Racing. Di Bastien Lefebvre.", de: "Spezialisierte Werkstatt: Prestige-Wartung, Classic & Racing-Vorbereitung. Von Bastien Lefebvre." }
-  role: { fr: "Responsable Voiture en Championnat du Monde (WEC)", en: "Car Chief in the World Endurance Championship (WEC)", it: "Car Chief nel Campionato del Mondo Endurance (WEC)", de: "Car Chief in der Langstrecken-Weltmeisterschaft (WEC)" }
+  subtitle:
+    fr: "Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition."
+    en: "Specialized workshop: Prestige Maintenance, Classic & Racing Preparation."
+    it: "Officina specializzata: Manutenzione Prestige, Classic & Preparazione Racing."
+    de: "Spezialisierte Werkstatt: Prestige-Wartung, Classic & Racing-Vorbereitung."
+  by: { fr: "Par", en: "By", it: "Di", de: "Von" }
+  role: { fr: "Responsable Voiture en Championnat du Monde (WEC)", en: "Car Chief in the World Endurance Championship (WEC)", it: "Car Chief nel Campionato del Monde Endurance (WEC)", de: "Car Chief in der Langstrecken-Weltmeisterschaft (WEC)" }
   btn_1: { fr: "Découvrir l'Atelier", en: "Discover the Workshop", it: "Scopri l'officina", de: "Werkstatt entdecken" }
   btn_2: { fr: "Prendre Rendez-vous", en: "Book an Appointment", it: "Prenota un appuntamento", de: "Termin vereinbaren" }
 
@@ -34,14 +39,14 @@ bio_stats:
   s3_l: { fr: "Team Officiel W Racing Team", en: "Official W Racing Team", it: "Team Ufficiale W Racing Team", de: "Offizielles W Racing Team" }
 
 services_section:
-  title: { fr: "NOS PÔLES D'EXPERTISE", en: "OUR AREAS OF EXPERTISE", it: "I NOSTRI SETTORI DI COMPETENZA", de: "UNSERE EXPERTENBEREICHE" }
+  title: { fr: "NOS PÔLES D'EXPERTISE", en: "OUR AREAS OF EXPERTISE", it: "I NOSTRI SETTORI DI COMPETENZA", de: "UNSERE EXPERTISE" }
   s1_t: { fr: "ENTRETIEN & RÉVISION", en: "MAINTENANCE & SERVICE", it: "MANUTENZIONE & REVISIONE", de: "WARTUNG & INSPEKTION" }
   s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs pour vos véhicules Porsche, Ferrari et sportives.", en: "Rigorous maintenance following manufacturer guidelines for your Porsche, Ferrari and sports vehicles.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore per i vostri veicoli Porsche, Ferrari e sportivi.", de: "Sorgfältige Wartung gemäß Herstellervorgaben für Ihre Porsche-, Ferrari- und Sportfahrzeuge." }
   s1_l1: { fr: "Vidange & Filtration OEM", en: "OEM Oil & Filter change", it: "Cambio olio e filtri OEM", de: "OEM Öl- und Filterwechsel" }
   s1_l2: { fr: "Diagnostic électronique", en: "Electronic diagnostics", it: "Diagnostica elettronica", de: "Elektronische Diagnose" }
   s1_l3: { fr: "Check-up sécurité complet", en: "Full safety check-up", it: "Controllo sicurezza completo", de: "Vollständiger Sicherheits-Check" }
   s1_btn: { fr: "Détails Entretien", en: "Service Details", it: "Dettagli Manutenzione", de: "Wartungsdetails" }
-  s2_t: { fr: "RÉFECTION MOTEUR / BOÎTE", en: "ENGINE & GEARBOX REBUILD", it: "REVISIONE MOTORE & CAMBIO", de: "MOTOR- & GETRIEBEÜBERHOLUNG" }
+  s2_t: { fr: "RÉFECTION MOTEUR / BOÎTE", en: "ENGINE & GEARBOX REBUILD", it: "REVISIONE MOTORE & CAMBIO", de: "MOTOR- & GETRIEBE REVISION" }
   s2_d: { fr: "Métrologie de précision et remise à neuf complète de mécaniques nobles (Flat-6, V8, V12).", en: "Precision metrology and complete overhaul of noble mechanics (Flat-6, V8, V12).", it: "Metrologia di precisione e revisione completa di meccaniche nobili (Flat-6, V8, V12).", de: "Präzisionsmetrologie und komplette Generalüberholung edler Mechanik (Flat-6, V8, V12)." }
   s2_l1: { fr: "Réfection complète à neuf", en: "Complete overhaul", it: "Revisione completa a nuovo", de: "Komplette Generalüberholung" }
   s2_l2: { fr: "Fiabilisation IMS et étanchéité", en: "IMS reliability & sealing", it: "Affidabilità IMS e tenuta", de: "IMS-Zuverlässigkeit & Abdichtung" }
