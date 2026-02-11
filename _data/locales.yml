@@ -300,3 +300,21 @@ legal_page:
     it: "Avete il diritto di accesso, rettifica e cancellazione delle informazioni che vi riguardano."
     de: "Sie haben ein Recht auf Auskunft, Berichtigung und Löschung der Sie betreffenden Informationen."
 
+# --- PAGE PRIVACY ---
+privacy_page:
+  title1: { fr: "POLITIQUE DE", en: "PRIVACY", it: "INFORMATIVA SULLA", de: "DATENSCHUTZ-" }
+  title2: { fr: "CONFIDENTIALITÉ", en: "POLICY", it: "PRIVACY", de: "ERKLÄRUNG" }
+  
+  sec1_t: { fr: "1. COLLECTE DES DONNÉES", en: "1. DATA COLLECTION", it: "1. RACCOLTA DATI", de: "1. DATENERHEBUNG" }
+  sec1_p: { fr: "Nous collectons les informations que vous nous transmettez via notre formulaire de contact (Nom, Prénom, Email, Téléphone) afin de répondre à vos demandes de devis ou de rendez-vous.", en: "We collect information you provide via our contact form (First Name, Last Name, Email, Phone) to respond to your quote or appointment requests.", it: "Raccogliamo le informazioni fornite tramite il nostro modulo di contatto (Nome, Cognome, Email, Telefono) per rispondere alle vostre richieste di preventivo o appuntamento.", de: "Wir sammeln Informationen, die Sie über unser Kontaktformular übermitteln (Vorname, Nachname, E-Mail, Telefon), um auf Ihre Angebots- oder Terminanfragen zu antworten." }
+  
+  sec2_t: { fr: "2. UTILISATION DES COOKIES", en: "2. USE OF COOKIES", it: "2. UTILIZZO DEI COOKIE", de: "2. VERWENDUNG VON COOKIES" }
+  sec2_p: { fr: "Ce site utilise des cookies essentiels à son bon fonctionnement et des outils d'analyse d'audience anonymes pour améliorer votre expérience utilisateur.", en: "This site uses cookies essential for its proper functioning and anonymous audience analysis tools to improve your user experience.", it: "Questo sito utilizza cookie essenziali per il suo corretto funzionamento e strumenti di analisi anonima dell'audience per migliorare la vostra esperienza utente.", de: "Diese Website verwendet Cookies, die für ihr ordnungsgemäßes Funktionieren unerlässlich sind, sowie anonyme Analyse-Tools, um Ihre Benutzererfahrung zu verbessern." }
+  
+  sec3_t: { fr: "3. CONSERVATION ET SÉCURITÉ", en: "3. STORAGE AND SECURITY", it: "3. CONSERVAZIONE E SICUREZZA", de: "3. AUFBEWAHRUNG UND SICHERHEIT" }
+  sec3_p: { fr: "Vos données sont conservées pour la durée nécessaire au traitement de votre demande et ne sont jamais revendues à des tiers.", en: "Your data is kept for the time necessary to process your request and is never resold to third parties.", it: "I vostri dati vengono conservati per il tempo necessario a elaborare la vostra richiesta e non vengono mai rivenduti a terzi.", de: "Ihre Daten werden so lange aufbewahrt, wie es für die Bearbeitung Ihrer Anfrage erforderlich ist, und werden niemals an Dritte weiterverkauft." }
+  
+  sec4_t: { fr: "4. VOS DROITS", en: "4. YOUR RIGHTS", it: "4. VOSTRI DIRITTI", de: "4. IHRE RECHTE" }
+  sec4_p1: { fr: "Conformément à la loi 'Informatique et Libertés', vous pouvez demander l'accès, la modification ou la suppression de vos données en nous contactant à :", en: "In accordance with data protection laws, you may request access to, modification of, or deletion of your data by contacting us at:", it: "In conformità con le leggi sulla protezione dei dati, è possibile richiedere l'accesso, la modifica o la cancellazione dei propri dati contattandoci all'indirizzo:", de: "In Übereinstimmung mit den Datenschutzgesetzen können Sie den Zugriff auf, die Änderung oder die Löschung Ihrer Daten beantragen, indem Sie uns kontaktieren unter:" }
+
+  
