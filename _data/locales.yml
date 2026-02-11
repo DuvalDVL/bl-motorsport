@@ -72,3 +72,28 @@ whatsapp:
     en: "Hello Bastien, I would like some information regarding my vehicle."
     it: "Buongiorno Bastien, vorrei informazioni per il mio veicolo."
     de: "Guten Tag Bastien, ich hätte gerne Informationen zu meinem Fahrzeug."
+
+# --- SERVICES SECTION ---
+services_section:
+  title: { fr: "NOS PÔLES D'EXPERTISE", en: "OUR AREAS OF EXPERTISE", it: "I NOSTRI SETTORI DI COMPETENZA", de: "UNSERE EXPERTENBEREICHE" }
+  # Carte 1
+  s1_t: { fr: "ENTRETIEN & RÉVISION", en: "MAINTENANCE & SERVICE", it: "MANUTENZIONE & REVISIONE", de: "WARTUNG & INSPEKTION" }
+  s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs.", en: "Rigorous maintenance following manufacturer guidelines.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore.", de: "Sorgfältige Wartung gemäß Herstellervorgaben." }
+  s1_btn: { fr: "Détails Entretien", en: "Service Details", it: "Dettagli Manutenzione", de: "Wartungsdetails" }
+  # Carte 2
+  s2_t: { fr: "RÉFECTION MOTEUR / BOÎTE", en: "ENGINE & GEARBOX REBUILD", it: "REVISIONE MOTORE & CAMBIO", de: "MOTOR- & GETRIEBEÜBERHOLUNG" }
+  s2_d: { fr: "Métrologie de précision et remise à neuf complète.", en: "Precision metrology and complete overhaul.", it: "Metrologia di precisione e revisione completa.", de: "Präzisionsmetrologie und komplette Generalüberholung." }
+  s2_btn: { fr: "Ingénierie Moteur", en: "Engine Engineering", it: "Ingegneria Motore", de: "Motorentechnik" }
+  # Carte 3
+  s3_t: { fr: "RESTAURATION CLASSIC", en: "CLASSIC RESTORATION", it: "RESTAURO CLASSIC", de: "CLASSIC RESTAURIERUNG" }
+  s3_d: { fr: "Préservation du patrimoine automobile et authenticité.", en: "Preservation of automotive heritage and authenticity.", it: "Preservazione del patrimonio automobilistico e autenticità.", de: "Bewahrung des automobilen Erbes und Authentizität." }
+  s3_btn: { fr: "Découvrir le Classic", en: "Discover Classic", it: "Scopri il Classic", de: "Classic entdecken" }
+  # Carte 4
+  s4_t: { fr: "DÉPARTEMENT RACING", en: "RACING DEPARTMENT", it: "REPARTO RACING", de: "RENNSPORT-ABTEILUNG" }
+  s4_d: { fr: "Optimisation performance et setup châssis Motorsport.", en: "Performance optimization and Motorsport chassis setup.", it: "Ottimizzazione delle prestazioni e setup telaio Motorsport.", de: "Leistungsoptimierung und Motorsport-Fahrwerksetup." }
+  s4_btn: { fr: "L'esprit Racing", en: "Racing Spirit", it: "Spirito Racing", de: "Racing-Geist" }
+
+# --- CTA ---
+cta_home:
+  title: { fr: "CONFIEZ-NOUS VOTRE MACHINE", en: "ENTRUST US WITH YOUR MACHINE", it: "AFFIDATECI LA VOSTRA MACCHINA", de: "VERTRAUEN SIE UNS IHR FAHRZEUG AN" }
+  sub: { fr: "L'atelier B.L Motorsport vous reçoit à Combloux.", en: "The B.L Motorsport workshop welcomes you in Combloux.", it: "L'officina B.L Motorsport vi riceve a Combloux.", de: "Die Werkstatt B.L Motorsport empfängt Sie in Combloux." }
