@@ -1,0 +1,139 @@
+---
+layout: default
+title: Restauro Porsche Classic & Collezione Megève | B.L Motorsport
+description: "Officina esperta nel restauro di Porsche Classic (911, 356) e auto d'epoca a Combloux. Regolazione carburatori, meccanica Aircooled e competenza WEC."
+permalink: /it/restauration-vehicules-collection/
+lang: it
+---
+
+<section class="hero-section" style="height: 70vh;">
+  <div class="hero-bg" style="background-image: url('{{ "/assets/img/restauration-porsche-classic-haute-savoie.jpg" | absolute_url }}');" role="img"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1 class="hero-title">
+      {{ site.data.locales.classic_page.hero_t1[page.lang] }} <br>
+      <span class="text-gradient">{{ site.data.locales.classic_page.hero_t2[page.lang] }}</span>
+    </h1>
+    <p class="hero-subtitle">{{ site.data.locales.classic_page.hero_sub[page.lang] }}</p>
+    <div class="hero-actions">
+      <a href="{{ site.company.whatsapp_link }}" class="btn btn-primary">{{ site.data.locales.classic_page.hero_btn[page.lang] }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="service-detail-section">
+  <div class="container">
+    <div class="service-grid-layout">
+      <div class="service-text">
+        <span class="service-subtitle">{{ site.data.locales.classic_page.her_sub[page.lang] }}</span>
+        <h2>{{ site.data.locales.classic_page.her_t[page.lang] }}</h2>
+        <p>{{ site.data.locales.classic_page.her_p1[page.lang] }}</p>
+        <p>{{ site.data.locales.classic_page.her_p2[page.lang] }}</p>
+        <ul class="check-list">
+          <li><strong>{{ site.data.locales.classic_page.l1_t[page.lang] }}</strong> {{ site.data.locales.classic_page.l1_d[page.lang] }}</li>
+          <li><strong>{{ site.data.locales.classic_page.l2_t[page.lang] }}</strong> {{ site.data.locales.classic_page.l2_d[page.lang] }}</li>
+          <li><strong>{{ site.data.locales.classic_page.l3_t[page.lang] }}</strong> {{ site.data.locales.classic_page.l3_d[page.lang] }}</li>
+        </ul>
+      </div>
+      <div class="service-image">
+        <div class="img-wrapper">
+          <img src="{{ '/assets/img/moteur-vintage.jpg' | absolute_url }}" alt="Moteur Vintage">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section" style="background-color: #050505; padding: 80px 0;">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>{{ site.data.locales.classic_page.grid_t[page.lang] }}</h2>
+      <div class="divider-yellow"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>{{ site.data.locales.classic_page.c1_t[page.lang] }}</h3>
+        <p>{{ site.data.locales.classic_page.c1_d | default: "Expertise mechanics." }}</p>
+        <ul class="check-list">
+          <li>{{ site.data.locales.classic_page.c1_l1[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c1_l2[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c1_l3[page.lang] }}</li>
+        </ul>
+      </div>
+      <div class="service-card featured">
+        <div class="card-badge">{{ site.data.locales.services_section.s2_badge[page.lang] | default: "SUR MESURE" }}</div>
+        <h3>{{ site.data.locales.classic_page.c2_t[page.lang] }}</h3>
+        <p>{{ site.data.locales.classic_page.c2_d | default: "Project management." }}</p>
+        <ul class="check-list">
+          <li>{{ site.data.locales.classic_page.c2_l1[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c2_l2[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c2_l3[page.lang] }}</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>{{ site.data.locales.classic_page.c3_t[page.lang] }}</h3>
+        <p>{{ site.data.locales.classic_page.c3_d | default: "Reliability." }}</p>
+        <ul class="check-list">
+          <li>{{ site.data.locales.classic_page.c3_l1[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c3_l2[page.lang] }}</li>
+          <li>{{ site.data.locales.classic_page.c3_l3[page.lang] }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" style="padding: 80px 0; background: #080808;">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 style="font-size: 2rem;">{{ site.data.locales.classic_page.real_t[page.lang] }}</h2>
+      <div class="divider-yellow"></div>
+      <p style="color: #666; margin-top: 20px; margin-bottom: 40px;">{{ site.data.locales.classic_page.real_sub[page.lang] }}</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="{{ '/assets/img/gallery-1.jpg' | absolute_url }}" alt="Gallery 1">
+        <div class="gallery-caption">{{ site.data.locales.classic_page.cap1[page.lang] }}</div>
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/img/gallery-2.jpg' | absolute_url }}" alt="Gallery 2">
+        <div class="gallery-caption">{{ site.data.locales.classic_page.cap2[page.lang] }}</div>
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/img/gallery-3.jpg' | absolute_url }}" alt="Gallery 3">
+        <div class="gallery-caption">{{ site.data.locales.classic_page.cap3[page.lang] }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 0; background: #050505;">
+  <div class="container text-center">
+    <h3 style="margin-bottom: 20px; color: white; text-align: center;">{{ site.data.locales.classic_page.icons_t[page.lang] }}</h3>
+    <div class="brand-flex-container">
+      <span class="brand-item">PORSCHE 356 / 911 / 912</span>
+      <span class="brand-item">FERRARI V8 / V12</span>
+      <span class="brand-item">JAGUAR TYPE-E</span>
+      <span class="brand-item">ALFA ROMEO GIULIA</span>
+      <span class="brand-item">BMW E9 / E30 / M1</span>
+    </div>
+    <p style="margin-top: 50px; color: #FFD700; font-style: italic; font-weight: bold; text-align: center; width: 100%;">
+      {{ site.data.locales.classic_page.icons_f[page.lang] }}
+    </p>
+  </div>
+</section>
+
+<section style="padding: 100px 0; background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url('{{ "/assets/img/hero-bg.jpg" | absolute_url }}'); background-size: cover; background-attachment: fixed; text-align: center; border-top: 1px solid #222;">
+  <div class="container">
+    <span style="color: #FFD700; font-weight: bold; letter-spacing: 2px; font-size: 0.9rem; text-transform: uppercase;">{{ site.data.locales.classic_page.cta_s[page.lang] }}</span>
+    <h2 style="font-size: 2.5rem; margin-top: 15px; margin-bottom: 20px;">{{ site.data.locales.classic_page.cta_t[page.lang] }}</h2>
+    <p style="color: #ccc; max-width: 700px; margin: 0 auto 40px auto; font-size: 1.1rem; line-height: 1.8;">
+      {{ site.data.locales.classic_page.cta_d[page.lang] }} <br>
+      {{ site.data.locales.cta_home.sub[page.lang] }}
+    </p>
+    <div class="hero-actions">
+      <a href="{{ site.company.whatsapp_link }}" class="btn btn-primary">{{ site.data.locales.classic_page.cta_b1[page.lang] }}</a>
+      <a href="{{ site.url }}/{{ page.lang }}/contact" class="btn btn-outline">{{ site.data.locales.classic_page.cta_b2[page.lang] }}</a>
+    </div>
+  </div>
+</section>
