@@ -1,0 +1,101 @@
+---
+layout: default
+title: Officina Porsche Combloux Megève | Contatto B.L Motorsport
+description: "Contatta la nostra officina specializzata Porsche e prestigio a Combloux (74). Appuntamenti per manutenzione, revisione motori e preparazione racing."
+permalink: /it/contact/
+lang: it
+---
+
+<section class="page-header-simple">
+  <div class="container">
+    <h1 class="page-title">{{ site.data.locales.contact_page.title[page.lang] }} <span class="text-gradient">{{ site.data.locales.contact_page.title_2[page.lang] }}</span></h1>
+    <div class="divider-yellow"></div>
+    <p style="color: #999; margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+      {{ site.data.locales.contact_page.subtitle[page.lang] }}
+    </p>
+  </div>
+</section>
+
+<section class="contact-section" style="padding: 80px 0; background-color: #050505;">
+  <div class="container">
+    <div class="contact-grid">
+      
+      <div class="contact-infos">
+        <h3 style="margin-bottom: 30px; color: white;">{{ site.data.locales.contact_page.info_title[page.lang] }}</h3>
+        
+        <div class="info-block">
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">{{ site.data.locales.contact_page.addr_title[page.lang] }}</h4>
+          <p style="color: #ccc; margin-bottom: 5px; font-weight: bold;">{{ site.company.name }}</p>
+          <p style="color: #999; line-height: 1.6;">
+            <a href="https://maps.google.com/?q={{ site.company.address | url_encode }}+{{ site.company.zip }}+{{ site.company.city }}" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+              {{ site.company.address }}<br>
+              {{ site.company.zip }} {{ site.company.city }}
+            </a>
+          </p>
+        </div>
+
+        <div class="info-block" style="margin-top: 40px;">
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">{{ site.data.locales.contact_page.comm_title[page.lang] }}</h4>
+          <p style="color: #999; margin-bottom: 15px;">
+            <strong style="color: white;">WhatsApp :</strong> <a href="{{ site.company.whatsapp_link }}" style="color: #FFD700; font-weight: bold;">{{ site.company.phone }}</a>
+          </p>
+          <p style="color: #999;">
+            <strong style="color: white;">Email :</strong> <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
+          </p>
+        </div>
+
+        <div class="info-block" style="margin-top: 40px;">
+          <h4 style="color: #FFD700; margin-bottom: 10px; letter-spacing: 1px;">{{ site.data.locales.contact_page.hours_title[page.lang] }}</h4>
+          <p style="color: #999; font-style: italic; line-height: 1.6;">
+            {{ site.data.locales.contact_page.hours_text[page.lang] }}
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3 style="margin-bottom: 30px; color: white;">{{ site.data.locales.contact_page.form_title[page.lang] }}</h3>
+        
+        <form action="https://formspree.io/f/xjgevoaj" method="POST" class="dark-form">
+          <div class="form-group">
+            <label for="name">{{ site.data.locales.contact_page.label_name[page.lang] }}</label>
+            <input type="text" id="name" name="name" required placeholder="{{ site.data.locales.contact_page.ph_name[page.lang] }}">
+          </div>
+
+          <div class="form-group">
+            <label for="email">{{ site.data.locales.contact_page.label_email[page.lang] }}</label>
+            <input type="email" id="email" name="email" required placeholder="{{ site.data.locales.contact_page.ph_email[page.lang] }}">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">{{ site.data.locales.contact_page.label_phone[page.lang] }}</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Phone">
+          </div>
+
+          <div class="form-group">
+            <label for="vehicle">{{ site.data.locales.contact_page.label_vehicle[page.lang] }}</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="{{ site.data.locales.contact_page.ph_vehicle[page.lang] }}">
+          </div>
+
+          <div class="form-group">
+            <label for="message">{{ site.data.locales.contact_page.label_msg[page.lang] }}</label>
+            <textarea id="message" name="message" rows="5" required placeholder="{{ site.data.locales.contact_page.ph_msg[page.lang] }}"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">{{ site.data.locales.contact_page.btn_send[page.lang] }}</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="map-section" style="height: 450px; width: 100%; position: relative; border-top: 1px solid #222;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.444738734063!2d6.63412357685519!3d45.92243767108428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478950005a5a5a5b%3A0x5a5a5a5a5a5a5a5a!2s679%20Rte%20du%20Plan%20Mouill%C3%A9%2C%2074920%20Combloux!5e0!3m2!1sfr!2sfr!4v1710000000000!5m2!1sfr!2sfr" 
+    width="100%" 
+    height="100%" 
+    style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2);" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</section>
