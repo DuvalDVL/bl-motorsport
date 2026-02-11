@@ -1,31 +1,49 @@
-# _data/locales.yml
+# --- HOMEPAGE ---
 
-header:
-  home: { fr: "Accueil", en: "Home", it: "Home", de: "Startseite" }
-  services: { fr: "Prestations", en: "Services", it: "Servizi", de: "Leistungen" }
-  service_1: { fr: "Entretien & Révision", en: "Maintenance & Service", it: "Manutenzione", de: "Wartung" }
-  service_2: { fr: "Réfection Moteur & Boîte", en: "Engine & Gearbox Rebuild", it: "Revisione Motore", de: "Motorüberholung" }
-  restoration: { fr: "Restauration", en: "Restoration", it: "Restauro", de: "Restaurierung" }
-  racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
-  gallery: { fr: "Galerie", en: "Gallery", it: "Galleria", de: "Galerie" }
-  contact: { fr: "Contact", en: "Contact", it: "Contatti", de: "Kontakt" }
+hero:
+  title_1: { fr: "L'EXIGENCE DU", en: "THE EXCELLENCE OF", it: "L'ECCELLENZA DEL", de: "DIE EXZELLENZ DES" }
+  title_2: { fr: "SPORT AUTOMOBILE", en: "MOTORSPORT", it: "MOTORSPORT", de: "MOTORSPORTS" }
+  subtitle:
+    fr: "Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition. Par Bastien Lefebvre."
+    en: "Specialized workshop: Prestige Maintenance, Classic & Racing Preparation. By Bastien Lefebvre."
+    it: "Officina specializzata: Manutenzione Prestige, Classic & Preparazione Racing. Di Bastien Lefebvre."
+    de: "Spezialisierte Werkstatt: Prestige-Wartung, Classic & Racing-Vorbereitung. Von Bastien Lefebvre."
+  btn_1: { fr: "Découvrir l'Atelier", en: "Discover the Workshop", it: "Scopri l'officina", de: "Werkstatt entdecken" }
+  btn_2: { fr: "Prendre Rendez-vous", en: "Book an Appointment", it: "Prenota un appuntamento", de: "Termin vereinbaren" }
 
-footer:
-  desc:
-    fr: "Atelier de mécanique de prestige. L'exigence du Sport Automobile au service de votre véhicule."
-    en: "Prestige mechanical workshop. Motorsport excellence for your vehicle."
-    it: "Officina meccanica di prestigio. L'eccellenza del motorsport al servizio del vostro veicolo."
-    de: "Prestige-Mechanikwerkstatt. Motorsport-Exzellenz im Dienste Ihres Fahrzeugs."
-  valet_info:
-    fr: "Service voiturier par chauffeur (Megève, Chamonix, Sallanches)."
-    en: "Valet service by driver (Megève, Chamonix, Sallanches)."
-    it: "Servizio di valletto con autista (Megève, Chamonix, Sallanches)."
-    de: "Valet-Service durch Fahrer (Megève, Chamonix, Sallanches)."
-  rights: { fr: "Tous droits réservés", en: "All rights reserved", it: "Tutti i diritti riservati", de: "Alle Rechte vorbehalten" }
+bio:
+  label: { fr: "DE LA PISTE À LA ROUTE", en: "FROM TRACK TO ROAD", it: "DALLA PISTA ALLA STRADA", de: "VON DER RENNSTRECKE AUF DIE STRASSE" }
+  title_1: { fr: "L'EXIGENCE DU MONDIAL", en: "WORLD-CLASS STANDARDS", it: "L'ECCELLENZA MONDIALE", de: "WELTKLASSE-STANDARDS" }
+  title_2: { fr: "À VOTRE SERVICE", en: "AT YOUR SERVICE", it: "AL VOSTRO SERVIZIO", de: "ZU IHREN DIENSTEN" }
+  intro:
+    fr: "Après 10 années au cœur du sport automobile international, Bastien a fondé B.L Motorsport pour offrir un niveau de technicité sans compromis."
+    en: "After 10 years at the heart of international motorsport, Bastien founded B.L Motorsport to offer an uncompromising level of technical expertise."
+    it: "Dopo 10 anni nel cuore del motorsport internazionale, Bastien ha fondato B.L Motorsport per offrire un livello di competenza tecnica senza compromessi."
+    de: "Nach 10 Jahren im Herzen des internationalen Motorsports gründete Bastien B.L Motorsport, um ein kompromissloses Maß an technischem Fachwissen anzubieten."
+  credentials:
+    fr: "Actuellement Responsable Voiture chez WRT en WEC, il collabore avec des pilotes de légende. Cette rigueur est désormais disponible à Combloux."
+    en: "Currently Car Chief at WRT in WEC, he works with legendary drivers. This rigour is now available in Combloux."
+    it: "Attualmente Car Chief presso WRT nel WEC, collabora con piloti leggendari. Questo rigore è ora disponibile a Combloux."
+    de: "Derzeit Car Chief bei WRT in der WEC, arbeitet er mit legendären Fahrern zusammen. Diese Strenge ist nun in Combloux verfügbar."
+  stat_1: { fr: "Ans de Motorsport", en: "Years in Motorsport", it: "Anni nel Motorsport", de: "Jahre im Motorsport" }
+  stat_2: { fr: "Expertise World Endurance", en: "World Endurance Expertise", it: "Esperienza World Endurance", de: "World Endurance Expertise" }
+  stat_3: { fr: "Responsable Voiture Team Officiel", en: "Car Chief Official Team", it: "Car Chief Team Ufficiale", de: "Car Chief Offizielles Team" }
 
-cookies:
-  text: { fr: "Ce site utilise des cookies...", en: "This site uses cookies...", it: "Questo sito utilizza i cookie...", de: "Diese Website verwendet Cookies..." }
-  btn: { fr: "Accepter", en: "Accept", it: "Accetta", de: "Akzeptieren" }
+process:
+  title: { fr: "LA MÉTHODE", en: "THE METHOD", it: "IL METODO", de: "DIE METHODE" }
+  step_1_t: { fr: "DIAGNOSTIC", en: "DIAGNOSIS", it: "DIAGNOSI", de: "DIAGNOSE" }
+  step_1_d: { fr: "Expertise visuelle et électronique complète.", en: "Full visual and electronic expertise.", it: "Esperienza visiva ed elettronica completa.", de: "Vollständige visuelle und elektronische Expertise." }
+  step_2_t: { fr: "INGÉNIERIE", en: "ENGINEERING", it: "INGEGNERIA", de: "ENGINEERING" }
+  step_2_d: { fr: "Outillage de précision et respect des couples.", en: "Precision tooling and torque compliance.", it: "Strumenti di precisione e rispetto delle coppie.", de: "Präzisionswerkzeuge und Einhaltung der Drehmomente." }
+  step_3_t: { fr: "VALIDATION", en: "VALIDATION", it: "VALIDAZIONE", de: "VALIDIERUNG" }
+  step_3_d: { fr: "Contrôle qualité final avant restitution.", en: "Final quality control before return.", it: "Controllo qualità finale prima della consegna.", de: "Abschließende Qualitätskontrolle vor der Rückgabe." }
+
+  # --- WHATSAPP STICKY BUTTON ---
 
 whatsapp:
-  message: { fr: "Bonjour Bastien, je souhaite un renseignement...", en: "Hello Bastien, I would like some information...", it: "Buongiorno Bastien, vorrei delle informazioni...", de: "Guten Tag Bastien, ich hätte gerne Informationen..." }
+  label: { fr: "Contacter par WhatsApp", en: "Contact via WhatsApp", it: "Contatta su WhatsApp", de: "Per WhatsApp kontaktieren" }
+  message: 
+    fr: "Bonjour Bastien, je souhaite un renseignement pour mon véhicule."
+    en: "Hello Bastien, I would like some information regarding my vehicle."
+    it: "Buongiorno Bastien, vorrei informazioni per il mio veicolo."
+    de: "Guten Tag Bastien, ich hätte gerne Informationen zu meinem Fahrzeug."
