@@ -1,0 +1,90 @@
+---
+layout: default
+title: Galerie | Porsche & Prestige Projekte | B.L Motorsport
+description: "Entdecken Sie unsere technische Exzellenz: WEC-Racing-Vorbereitung, mechanische Überholung und Prestige-Wartung in Bildern."
+lang: de
+---
+
+<section class="page-header-simple">
+  <div class="container">
+    <h1 class="page-title">OUR <span class="text-gradient">GALLERY</span></h1>
+    <div class="divider-yellow"></div>
+    <p style="color: #999; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+      The standards of competition applied to every detail. Discover the behind-the-scenes of our workshop interventions carried out by Bastien.
+    </p>
+  </div>
+</section>
+
+<section class="gallery-filters-section" style="background: #050505; padding: 20px 0;">
+  <div class="container">
+    <div class="gallery-filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="moteur">Engine & Gearbox</button>
+      <button class="filter-btn" data-filter="racing">Racing & Trackday</button>
+      <button class="filter-btn" data-filter="classic">Classic Restoration</button>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-grid-section" style="padding: 60px 0; background: #050505;">
+  <div class="container">
+    <div class="main-gallery-grid">
+      
+      <div class="gallery-card" data-category="moteur">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/moteur-porsche.jpg' | relative_url }}" alt="Porsche Flat-6 engine rebuild by Bastien">
+          <div class="gallery-overlay">
+            <span class="category-tag">Engine & Gearbox</span>
+            <h3>Manual & sequential gearbox rebuild</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-category="racing">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/setup-atelier.jpg' | relative_url }}" alt="Workshop-based chassis optimization in Combloux">
+          <div class="gallery-overlay">
+            <span class="category-tag">Racing</span>
+            <h3>In-workshop chassis optimization</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card" data-category="classic">
+        <div class="gallery-img-container">
+          <img src="{{ '/assets/img/galerie/classic-porsche.jpg' | relative_url }}" alt="Porsche Classic restoration in Haute-Savoie">
+          <div class="gallery-overlay">
+            <span class="category-tag">Classic</span>
+            <h3>Aircooled icon restoration</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-simple" style="padding: 100px 0; text-align: center; background: #080808; border-top: 1px solid #111;">
+  <div class="container">
+    <h2>YOUR PROJECT STARTS HERE</h2>
+    <p style="color: #666; margin-bottom: 30px;">Entrust your vehicle to Bastien's expertise, specialist in sports mechanics.</p>
+    <a href="{{ site.baseurl }}/en/contact" class="btn btn-primary">Book an appointment</a>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.filter-btn.active').classList.remove('active');
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      document.querySelectorAll('.gallery-card').forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
