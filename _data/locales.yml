@@ -19,15 +19,19 @@ hero:
   title_1: { fr: "L'EXIGENCE DU", en: "THE EXCELLENCE OF", it: "L'ECCELLENZA DEL", de: "DIE EXZELLENZ DES" }
   title_2: { fr: "SPORT AUTOMOBILE", en: "MOTORSPORT", it: "MOTORSPORT", de: "MOTORSPORTS" }
   subtitle: { fr: "Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition. Par Bastien Lefebvre.", en: "Specialized workshop: Prestige Maintenance, Classic & Racing Preparation. By Bastien Lefebvre.", it: "Officina specializzata: Manutenzione Prestige, Classic & Preparazione Racing. Di Bastien Lefebvre.", de: "Spezialisierte Werkstatt: Prestige-Wartung, Classic & Racing-Vorbereitung. Von Bastien Lefebvre." }
+  role: { fr: "Responsable Voiture en Championnat du Monde (WEC)", en: "Car Chief in the World Endurance Championship (WEC)", it: "Car Chief nel Campionato del Mondo Endurance (WEC)", de: "Car Chief in der Langstrecken-Weltmeisterschaft (WEC)" }
   btn_1: { fr: "Découvrir l'Atelier", en: "Discover the Workshop", it: "Scopri l'officina", de: "Werkstatt entdecken" }
   btn_2: { fr: "Prendre Rendez-vous", en: "Book an Appointment", it: "Prenota un appuntamento", de: "Termin vereinbaren" }
 
 bio:
   label: { fr: "DE LA PISTE À LA ROUTE", en: "FROM TRACK TO ROAD", it: "DALLA PISTA ALLA STRADA", de: "VON DER RENNSTRECKE AUF DIE STRASSE" }
-  title_1: { fr: "L'EXPERTISE MONDIALE", en: "WORLD-CLASS EXPERTISE", it: "L'ECCELLENZA MONDIALE", de: "WELTWEITE EXPERTISE" }
-  title_2: { fr: "À COMBLOUX", en: "IN COMBLOUX", it: "A COMBLOUX", de: "IN COMBLOUX" }
+  title: { fr: "L'EXPERTISE MONDIALE À COMBLOUX", en: "WORLD-CLASS EXPERTISE IN COMBLOUX", it: "L'ECCELLENZA MONDIALE A COMBLOUX", de: "WELTKLASSE-EXPERTISE IN COMBLOUX" }
   intro: { fr: "Fort de plus de 10 années d'expérience dans le sport automobile de haut niveau, Bastien applique la rigueur de la compétition à votre véhicule personnel.", en: "With over 10 years of experience in high-level motorsport, Bastien applies racing rigour to your personal vehicle.", it: "Con oltre 10 anni di esperienza nel motorsport di alto livello, Bastien applica il rigore delle corse al vostro veicolo personale.", de: "Mit über 10 Jahren Erfahrung im hochklassigen Motorsport überträgt Bastien die Strenge des Rennsports auf Ihr privates Fahrzeug." }
-  desc: { fr: "Actuellement Responsable Voiture en WEC au sein de l'écurie officielle WRT, Bastien collabore avec des pilotes de légende. Cette expertise technique est désormais disponible à l'atelier de Combloux.", en: "Currently Car Chief in WEC with the official WRT team, Bastien works with legendary drivers. This technical expertise is now available at the Combloux workshop.", it: "Attualmente Car Chief nel WEC con il team ufficiale WRT, Bastien collabora con piloti leggendari. Questa competenza tecnica è ora disponibile presso l'officina di Combloux.", de: "Derzeit Car Chief in der WEC beim offiziellen WRT-Team, arbeitet Bastien mit legendären Fahrern zusammen. Diese technische Expertise ist nun in der Werkstatt von Combloux verfügbar." }
+  desc_full:
+    fr: "Actuellement Responsable Voiture en WEC (World Endurance Championship) au sein de l'écurie officielle WRT, Bastien collabore avec des pilotes de légende tels que Valentino Rossi, Maxime Martin, Augusto Farfus... Cette expertise technique est désormais disponible pour l'entretien et la performance de votre voiture à l'atelier de Combloux."
+    en: "Currently Car Chief in WEC (World Endurance Championship) within the official WRT team, Bastien works with legendary drivers such as Valentino Rossi, Maxime Martin, Augusto Farfus... This technical expertise is now available for the maintenance and performance of your car at the Combloux workshop."
+    it: "Attualmente Car Chief nel WEC (World Endurance Championship) con il team ufficiale WRT, Bastien collabora con piloti leggendari come Valentino Rossi, Maxime Martin, Augusto Farfus... Questa competenza tecnica è ora disponibile per la manutenzione e le prestazioni della vostra auto presso l'officina di Combloux."
+    de: "Derzeit Car Chief in der WEC (World Endurance Championship) beim offiziellen WRT-Team, arbeitet Bastien mit legendären Fahrern wie Valentino Rossi, Maxime Martin, Augusto Farfus zusammen... Diese technische Expertise steht nun für die Wartung und Leistung Ihres Autos in der Werkstatt von Combloux zur Verfügung."
 
 bio_stats:
   s1_l: { fr: "Ans d'expérience", en: "Years of experience", it: "Anni di esperienza", de: "Jahre Erfahrung" }
@@ -36,48 +40,51 @@ bio_stats:
 
 services_section:
   title: { fr: "NOS PÔLES D'EXPERTISE", en: "OUR AREAS OF EXPERTISE", it: "I NOSTRI SETTORI DI COMPETENZA", de: "UNSERE EXPERTENBEREICHE" }
+  # Service 1
   s1_t: { fr: "ENTRETIEN & RÉVISION", en: "MAINTENANCE & SERVICE", it: "MANUTENZIONE & REVISIONE", de: "WARTUNG & INSPEKTION" }
-  s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs pour vos véhicules Porsche et GT.", en: "Rigorous maintenance following manufacturer guidelines for your Porsche and GT vehicles.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore per i vostri veicoli Porsche e GT.", de: "Sorgfältige Wartung gemäß Herstellervorgaben für Ihre Porsche- und GT-Fahrzeuge." }
+  s1_d: { fr: "Maintenance rigoureuse et respect des plans constructeurs pour vos véhicules Porsche, Ferrari et sportives.", en: "Rigorous maintenance following manufacturer guidelines for your Porsche, Ferrari and sports vehicles.", it: "Manutenzione rigorosa e rispetto dei piani del costruttore per i vostri veicoli Porsche, Ferrari e sportivi.", de: "Sorgfältige Wartung gemäß Herstellervorgaben für Ihre Porsche-, Ferrari- und Sportfahrzeuge." }
   s1_l1: { fr: "Vidange & Filtration OEM", en: "OEM Oil & Filter change", it: "Cambio olio e filtri OEM", de: "OEM Öl- und Filterwechsel" }
   s1_l2: { fr: "Diagnostic électronique", en: "Electronic diagnostics", it: "Diagnostica elettronica", de: "Elektronische Diagnose" }
   s1_l3: { fr: "Check-up sécurité complet", en: "Full safety check-up", it: "Controllo sicurezza completo", de: "Vollständiger Sicherheits-Check" }
   s1_btn: { fr: "Détails Entretien", en: "Service Details", it: "Dettagli Manutenzione", de: "Wartungsdetails" }
+  # Service 2
   s2_t: { fr: "RÉFECTION MOTEUR / BOÎTE", en: "ENGINE & GEARBOX REBUILD", it: "REVISIONE MOTORE & CAMBIO", de: "MOTOR- & GETRIEBEÜBERHOLUNG" }
   s2_d: { fr: "Métrologie de précision et remise à neuf complète de mécaniques nobles (Flat-6, V8, V12).", en: "Precision metrology and complete overhaul of noble mechanics (Flat-6, V8, V12).", it: "Metrologia di precisione e revisione completa di meccaniche nobili (Flat-6, V8, V12).", de: "Präzisionsmetrologie und komplette Generalüberholung edler Mechanik (Flat-6, V8, V12)." }
   s2_l1: { fr: "Réfection complète à neuf", en: "Complete overhaul", it: "Revisione completa a nuovo", de: "Komplette Generalüberholung" }
-  s2_l2: { fr: "Fiabilisation IMS", en: "IMS reliability", it: "Affidabilità IMS", de: "IMS-Zuverlässigkeit" }
-  s2_l3: { fr: "Révision boîtes de vitesses", en: "Gearbox service", it: "Revisione cambi", de: "Getriebeüberholung" }
+  s2_l2: { fr: "Fiabilisation IMS et étanchéité", en: "IMS reliability & sealing", it: "Affidabilità IMS e tenuta", de: "IMS-Zuverlässigkeit & Abdichtung" }
+  s2_l3: { fr: "Révision boîtes manuelles et séquentielles", en: "Manual & sequential gearbox service", it: "Revisione cambi manuali e sequenziali", de: "Getriebeüberholung (Manuell & Sequenziell)" }
   s2_btn: { fr: "Ingénierie Moteur", en: "Engine Engineering", it: "Ingegneria Motore", de: "Motorentechnik" }
+  # Service 3
   s3_t: { fr: "RESTAURATION CLASSIC", en: "CLASSIC RESTORATION", it: "RESTAURO CLASSIC", de: "CLASSIC RESTAURIERUNG" }
-  s3_d: { fr: "Préservation du patrimoine automobile, de la remise en route à la restauration intégrale.", en: "Preservation of automotive heritage, from restarting to full restoration.", it: "Preservazione del patrimonio automobilistico, dalla rimessa in strada al restauro completo.", de: "Bewahrung des automobilen Erbes, von der Wiederinbetriebnahme bis zur Vollrestaurierung." }
-  s3_l1: { fr: "Respect de l'authenticité", en: "Respect for authenticity", it: "Rispetto dell'autenticità", de: "Einhaltung der Authentizität" }
-  s3_l2: { fr: "Réglages carburation", en: "Carburetion tuning", it: "Messa a punto carburazione", de: "Vergaser-Tuning" }
+  s3_d: { fr: "Préservation du patrimoine automobile, de la remise en route à la restauration intégrale concours.", en: "Preservation of automotive heritage, from restarting to full concours restoration.", it: "Preservazione del patrimonio automobilistico, dalla rimessa in strada al restauro completo da concorso.", de: "Bewahrung des automobilen Erbes, von der Wiederinbetriebnahme bis zur Vollrestaurierung." }
+  s3_l1: { fr: "Respect strict de l'authenticité", en: "Strict respect for authenticity", it: "Rispetto dell'autenticità", de: "Strikte Einhaltung der Authentizität" }
+  s3_l2: { fr: "Réglages carburation & allumage", en: "Carburetion & ignition tuning", it: "Messa a punto carburazione", de: "Vergaser- & Zündungstuning" }
   s3_l3: { fr: "Gestion de projet Classic", en: "Classic project management", it: "Gestione progetti Classic", de: "Classic-Projektmanagement" }
   s3_btn: { fr: "Découvrir le Classic", en: "Discover Classic", it: "Scopri il Classic", de: "Classic entdecken" }
+  # Service 4
   s4_t: { fr: "DÉPARTEMENT RACING", en: "RACING DEPARTMENT", it: "REPARTO RACING", de: "RENNSPORT-ABTEILUNG" }
   s4_d: { fr: "Optimisation performance et setup châssis par un professionnel du Motorsport international.", en: "Performance optimization and chassis setup by a Motorsport professional.", it: "Ottimizzazione delle prestazioni e setup telaio da un professionista del Motorsport.", de: "Leistungsoptimierung und Fahrwerksetup durch einen Motorsport-Profi." }
-  s4_l1: { fr: "Poids par roue & Géo", en: "Corner weights & Geo", it: "Pesi per ruota e geometria", de: "Radlasten & Geometrie" }
-  s4_l2: { fr: "Préparation Trackday", en: "Trackday preparation", it: "Preparazione Trackday", de: "Trackday-Vorbereitung" }
-  s4_l3: { fr: "Setup Compétition", en: "Competition Setup", it: "Setup competizione", de: "Wettbewerbs-Setup" }
+  s4_l1: { fr: "Poids par roue & Géométrie", en: "Corner weights & Geometry", it: "Pesi per ruota e geometria", de: "Radlasten & Geometrie" }
+  s4_l2: { fr: "Préparation Trackday & Compétition", en: "Trackday & Competition prep", it: "Preparazione Trackday", de: "Trackday-Vorbereitung" }
   s4_btn: { fr: "L'esprit Racing", en: "Racing Spirit", it: "Spirito Racing", de: "Racing-Geist" }
 
 process:
   title: { fr: "LA MÉTHODE", en: "THE METHOD", it: "IL METODO", de: "DIE METHODE" }
-  sub: { fr: "Nous appliquons les procédures de contrôle du sport automobile à chaque véhicule.", en: "We apply motorsport control procedures to every vehicle.", it: "Applichiamo le procedure di controllo del motorsport a ogni veicolo.", de: "Wir wenden Motorsport-Kontrollverfahren auf jedes Fahrzeug an." }
+  sub: { fr: "Nous appliquons les procédures de contrôle du sport automobile à chaque véhicule entrant à l'atelier.", en: "We apply motorsport control procedures to every vehicle entering the workshop.", it: "Applichiamo le procedure di controllo del motorsport a ogni veicolo che entra in officina.", de: "Wir wenden Motorsport-Kontrollverfahren auf jedes Fahrzeug an, das in die Werkstatt kommt." }
   s1_t: { fr: "DIAGNOSTIC TECHNIQUE", en: "TECHNICAL DIAGNOSIS", it: "DIAGNOSI TECNICA", de: "TECHNISCHE DIAGNOSE" }
-  s1_d: { fr: "Check-up visuel et électronique complet avant toute intervention.", en: "Full visual and electronic check-up before any work.", it: "Controllo visivo ed elettronico completo prima di ogni lavoro.", de: "Vollständiger visueller und elektronischer Check-up vor jedem Eingriff." }
+  s1_d: { fr: "Check-up visuel et électronique complet avant toute intervention mécanique.", en: "Full visual and electronic check-up before any work.", it: "Controllo visivo ed elettronico completo prima di ogni lavoro.", de: "Vollständiger visueller und elektronischer Check-up vor jedem Eingriff." }
   s2_t: { fr: "INTERVENTION EXPERTE", en: "EXPERT INTERVENTION", it: "INTERVENTO ESPERTO", de: "EXPERTEN-EINGRIFF" }
-  s2_d: { fr: "Outillage de précision et respect strict des couples constructeur.", en: "Precision tools and strict compliance with manufacturer torques.", it: "Strumenti di precisione e rigoroso rispetto delle coppie del costruttore.", de: "Präzisionswerkzeuge und strikte Einhaltung der Herstellervorgaben." }
+  s2_d: { fr: "Outillage de précision et respect strict des couples de serrage constructeur.", en: "Precision tools and strict compliance with manufacturer torques.", it: "Strumenti di precisione e rigoroso rispetto delle coppie del costruttore.", de: "Präzisionswerkzeuge und strikte Einhaltung der Herstellervorgaben." }
   s3_t: { fr: "CONTRÔLE QUALITÉ", en: "QUALITY CONTROL", it: "CONTROLLO QUALITÀ", de: "QUALITÄTSKONTROLLE" }
-  s3_d: { fr: "Validation dynamique et double contrôle avant la restitution.", en: "Dynamic validation and double check before return.", it: "Validazione dinamica e doppio controllo prima della consegna.", de: "Dynamische Validierung und Doppelkontrolle vor der Rückgabe." }
+  s3_d: { fr: "Validation dynamique et double contrôle avant la restitution du véhicule.", en: "Dynamic validation and double check before return.", it: "Validazione dinamica e doppio controllo prima della consegna.", de: "Dynamische Validierung und Doppelkontrolle vor der Rückgabe." }
 
 bio_detail:
   label: { fr: "L'EXPERTISE AU SOMMET", en: "EXPERTISE AT THE TOP", it: "L'ECCELLENZA AL VERTICE", de: "SPITZENKOMPETENZ" }
-  title: { fr: "BASTIEN : L'EXIGENCE DU WEC AU SERVICE DE VOTRE MACHINE", en: "BASTIEN: THE RIGOUR OF WEC AT THE SERVICE OF YOUR MACHINE", it: "BASTIEN: IL RIGORE DEL WEC AL SERVIZIO DELLA VOSTRA MACCHINA", de: "BASTIEN: DIE STRENGE DER WEC IM DIENSTE IHRER MASCHINE" }
-  p1: { fr: "Actuellement Responsable Voiture en WEC au sein du team officiel WRT, il collabore avec des pilotes de renommée mondiale. Cette expertise est désormais accessible à Combloux.", en: "Currently Car Chief in WEC within the official WRT team, he works with world-renowned drivers. This expertise is now accessible in Combloux.", it: "Attualmente Car Chief nel WEC con il team ufficiale WRT, collabora con piloti di fama mondiale. Questa competenza è ora accessibile a Combloux.", de: "Derzeit Car Chief in der WEC im offiziellen WRT-Team, arbeitet er mit weltbekannten Fahrern zusammen. Dieses Fachwissen ist nun in Combloux verfügbar." }
-  f1: { fr: "Philosophie Race to Road : Standards de compétition appliqués à la route.", en: "Race to Road Philosophy: Competition standards applied to the road.", it: "Filosofia Race to Road: Standard competitivi applicati alla strada.", de: "Race to Road Philosophie: Wettbewerbsstandards für die Straße." }
-  f2: { fr: "Proximité : Service sur-mesure pour Megève, Chamonix et Sallanches.", en: "Proximity: Tailor-made service for Megève, Chamonix and Sallanches.", it: "Prossimità: Servizio su misura per Megève, Chamonix e Sallanches.", de: "Nähe: Maßgeschneiderter Service für Megève, Chamonix und Sallanches." }
-  f3: { fr: "Authenticité : Passion pure pour les mécaniques nobles et restaurations d'icônes.", en: "Authenticity: Pure passion for noble mechanics and icon restorations.", it: "Autenticità: Pura passione per meccanica nobile e restauro di icone.", de: "Authentizität: Leidenschaft für edle Mechanik und Ikonen-Restaurierungen." }
+  title_1: { fr: "BASTIEN : L'EXIGENCE DU ", en: "BASTIEN: THE RIGOUR OF ", it: "BASTIEN: IL RIGORE DEL ", de: "BASTIEN: DIE STRENGE DER " }
+  title_2: { fr: " AU SERVICE DE VOTRE MACHINE", en: " AT THE SERVICE OF YOUR MACHINE", it: " AL SERVIZIO DELLA VOSTRA MACCHINA", de: " IM DIENSTE IHRER MASCHINE" }
+  f1: { fr: "Philosophie Race to Road : Les standards de contrôle de la compétition appliqués à la route.", en: "Race to Road Philosophy: Competition control standards applied to the road.", it: "Filosofia Race to Road: Standard di controllo della competizione applicati alla strada.", de: "Race to Road Philosophie: Wettbewerbskontrollstandards für die Straße." }
+  f2: { fr: "Proximité : Un service sur-mesure pour les propriétaires de Megève, Chamonix et Sallanches.", en: "Proximity: A tailor-made service for owners in Megève, Chamonix and Sallanches.", it: "Prossimità: Un servizio su misura per i proprietari di Megève, Chamonix e Sallanches.", de: "Nähe: Ein maßgeschneiderter Service für Besitzer in Megève, Chamonix und Sallanches." }
+  f3: { fr: "Authenticité : Une passion pure pour les mécaniques nobles et les restaurations d'icônes.", en: "Authenticity: A pure passion for noble mechanics and icon restorations.", it: "Autenticità: Una pura passione per la meccanica nobile e il restauro di icone.", de: "Authentizität: Eine pure Leidenschaft für edle Mechanik und Ikonen-Restaurierungen." }
 
 cta_home:
   title: { fr: "CONFIEZ-NOUS VOTRE MACHINE", en: "ENTRUST US WITH YOUR MACHINE", it: "AFFIDATECI LA VOSTRA MACCHINA", de: "VERTRAUEN SIE UNS IHR FAHRZEUG AN" }
