@@ -399,3 +399,33 @@ whatsapp:
 cta_home:
   title: { fr: "CONFIEZ-NOUS VOTRE MACHINE", en: "ENTRUST US WITH YOUR MACHINE", it: "AFFIDATECI LA VOSTRA MACCHINA", de: "VERTRAUEN SIE UNS IHR FAHRZEUG AN" }
   sub: { fr: "L'atelier B.L Motorsport vous reçoit à Combloux pour un service sur-mesure.", en: "The B.L Motorsport workshop welcomes you in Combloux for a tailor-made service.", it: "L'officina B.L Motorsport vi riceve a Combloux per un servizio su misura.", de: "Die Werkstatt B.L Motorsport empfängt Sie in Combloux für einen maßgeschneiderten Service." }
+
+# --- PAGE GALERIE ---
+gallery_page:
+  title: { fr: "NOTRE", en: "OUR", it: "LA NOSTRA", de: "UNSERE" }
+  title_2: { fr: "GALERIE", en: "GALLERY", it: "GALLERIA", de: "GALERIE" }
+  subtitle:
+    fr: "L'exigence de la compétition appliquée à chaque détail. Découvrez les coulisses de nos interventions réalisées par Bastien."
+    en: "The standards of competition applied to every detail. Discover the behind-the-scenes of our workshop interventions carried out by Bastien."
+    it: "Gli standard della competizione applicati a ogni dettaglio. Scoprite il dietro le quinte dei nostri interventi eseguiti da Bastien."
+    de: "Wettbewerbsstandards bis ins kleinste Detail. Entdecken Sie die Kulissen unserer von Bastien durchgeführten Werkstattarbeiten."
+  
+  # Filtres
+  f_all: { fr: "Tous", en: "All", it: "Tutti", de: "Alle" }
+  f_engine: { fr: "Moteur & Boîte", en: "Engine & Gearbox", it: "Motore & Cambio", de: "Motor & Getriebe" }
+  f_racing: { fr: "Racing & Trackday", en: "Racing & Trackday", it: "Racing & Trackday", de: "Racing & Trackday" }
+  f_classic: { fr: "Restauration Classic", en: "Classic Restoration", it: "Restauro Classic", de: "Classic Restaurierung" }
+
+  # Cartes
+  tag_engine: { fr: "Moteur & Boîte", en: "Engine & Gearbox", it: "Motore & Cambio", de: "Motor & Getriebe" }
+  desc_engine: { fr: "Réfection moteur & boîte de vitesses", en: "Manual & sequential gearbox rebuild", it: "Revisione motore e cambio", de: "Motor- & Getriebeüberholung" }
+  
+  tag_racing: { fr: "Racing", en: "Racing", it: "Racing", de: "Racing" }
+  desc_racing: { fr: "Optimisation châssis en atelier", en: "In-workshop chassis optimization", it: "Ottimizzazione telaio in officina", de: "Fahrwerksoptimierung in der Werkstatt" }
+  
+  tag_classic: { fr: "Classic", en: "Classic", it: "Classic", de: "Classic" }
+  desc_classic: { fr: "Restauration d'icônes Aircooled", en: "Aircooled icon restoration", it: "Restauro icone Aircooled", de: "Restaurierung von Aircooled-Ikonen" }
+
+  # CTA
+  cta_t: { fr: "VOTRE PROJET COMMENCE ICI", en: "YOUR PROJECT STARTS HERE", it: "IL VOSTRO PROGETTO INIZIA QUI", de: "IHR PROJEKT BEGINNT HIER" }
+  cta_s: { fr: "Confiez votre véhicule à l'expertise de Bastien, spécialiste en mécanique de pointe.", en: "Entrust your vehicle to Bastien's expertise, specialist in high-end mechanics.", it: "Affidate il vostro veicolo alla competenza di Bastien, specialista in meccanica d'eccellenza.", de: "Vertrauen Sie Ihr Fahrzeug der Expertise von Bastien an, dem Spezialisten für Hochleistungsmechanik." }
