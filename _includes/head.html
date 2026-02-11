@@ -75,5 +75,11 @@
   <meta property="twitter:description" content="{{ page.description }}">
   <meta property="twitter:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
 
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}/fr{{ page.url | replace: '/en/', '/' | replace: '/it/', '/' | replace: '/de/', '/' | replace: '/fr/', '/' }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url | replace: '/fr/', '/' | replace: '/it/', '/' | replace: '/de/', '/' | replace: '/en/', '/' }}" />
+  <link rel="alternate" hreflang="it" href="{{ site.url }}/it{{ page.url | replace: '/fr/', '/' | replace: '/en/', '/' | replace: '/de/', '/' | replace: '/it/', '/' }}" />
+  <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ page.url | replace: '/fr/', '/' | replace: '/en/', '/' | replace: '/it/', '/' | replace: '/de/', '/' }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/fr/" />
+  
   {% include analytics.html %}
 </head>
