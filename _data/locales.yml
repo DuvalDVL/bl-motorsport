@@ -204,32 +204,38 @@ contact_page:
 
 # --- PAGE ENTRETIEN & RÉVISION ---
 maintenance_page:
-  # ... (conserver le reste)
-  # Correction titre allemand (débordement mobile)
+  title: { fr: "ENTRETIEN & RÉVISION", en: "MAINTENANCE &", it: "MANUTENZIONE &", de: "WARTUNG &" }
+  title_2: { fr: "PRESTIGE", en: "PRESTIGE SERVICE", it: "REVISIONE PRESTIGE", de: "PRESTIGE-INSPEKTION" }
+  subtitle:
+    fr: "La maintenance d'un véhicule d'exception ne souffre d'aucune approximation. Nous appliquons les protocoles de la haute compétition à votre voiture de route."
+    en: "The maintenance of an exceptional vehicle suffers no approximation. We apply high-competition protocols to your road car."
+    it: "La manutenzione di un veicolo eccezionale non ammette approssimazioni. Applichiamo i protocolli dell'alta competizione alla vostra auto stradale."
+    de: "Die Wartung eines außergewöhnlichen Fahrzeugs duldet keine Kompromisse. Wir wenden Hochleistungs-Protokolle aus dem Rennsport auf Ihr Straßenfahrzeug an."
+
+  # Savoir-faire
+  sf_sub: { fr: "SAVOIR-FAIRE MOTORSPORT", en: "MOTORSPORT KNOW-HOW", it: "SAVOIR-FAIRE MOTORSPORT", de: "MOTORSPORT-KNOW-HOW" }
   sf_t: { fr: "PRÉSERVER VOS PERFORMANCES D'ORIGINE", en: "PRESERVE YOUR ORIGINAL PERFORMANCE", it: "PRESERVARE LE PRESTAZIONI ORIGINALI", de: "IHRE PERFORMANCE <br>BEWAHREN" }
+  sf_p: { fr: "Basé à Combloux, l'atelier B.L Motorsport assure la maintenance complète de votre GT ou Supercar. Chaque intervention est documentée et respecte scrupuleusement les préconisations des constructeurs.", en: "Based in Combloux, the B.L Motorsport workshop provides complete maintenance for your GT or Supercar. Every intervention is documented and strictly follows manufacturer recommendations.", it: "Con sede a Combloux, l'officina B.L Motorsport garantisce la manutenzione completa della vostra GT o Supercar. Ogni intervento è documentato e rispetta scrupolosamente le raccomandazioni dei costruttori.", de: "Die Werkstatt B.L Motorsport in Combloux bietet umfassende Wartung für Ihren GT oder Ihr Supercar. Jeder Eingriff wird dokumentiert und folgt strikt den Herstellervorgaben." }
   
-  # Correction coquille "Zünduna" -> "Zündung"
+  # List items
+  l1_t: { fr: "Vidange & Fluides :", en: "Oil & Fluids:", it: "Cambio olio e fluidi:", de: "Ölwechsel & Flüssigkeiten:" }
+  l1_d: { fr: "Utilisation d'huiles homologuées haute performance (Motul, Mobil 1).", en: "Use of high-performance approved oils (Motul, Mobil 1).", it: "Utilizzo di oli omologati ad alte prestazioni (Motul, Mobil 1).", de: "Verwendung von zugelassenen Hochleistungsölen (Motul, Mobil 1)." }
+  l2_t: { fr: "Filtration OEM :", en: "OEM Filtration:", it: "Filtrazione OEM:", de: "OEM-Filtration:" }
+  l2_d: { fr: "Remplacement systématique par des composants d'origine constructeur.", en: "Systematic replacement with original manufacturer components.", it: "Sostituzione sistematica con componenti originali del produttore.", de: "Systematischer Austausch durch Original-Herstellerkomponenten." }
   l3_t: { fr: "Allumage & Injection :", en: "Ignition & Injection:", it: "Accensione e Iniezione:", de: "Zündung & Einspritzung:" }
+  l3_d: { fr: "Contrôle et remplacement bougies/bobines selon plan d'entretien spécifique.", en: "Check and replacement of spark plugs/coils according to specific maintenance plan.", it: "Controllo e sostituzione candele/bobine secondo il piano di manutenzione specifico.", de: "Prüfung und Austausch von Zündkerzen/Spulen gemäß spezifischem Wartungsplan." }
+  l4_t: { fr: "Diagnostic Avancé :", en: "Advanced Diagnostics:", it: "Diagnostica avanzata:", de: "Erweiterte Diagnose:" }
+  l4_d: { fr: "Lecture complète des calculateurs et effacement des codes défauts.", en: "Full ECU reading and clearing of fault codes.", it: "Lettura completa delle centraline e cancellazione dei codici errore.", de: "Vollständiges Auslesen der Steuergeräte und Löschen von Fehlercodes." }
+  btn_plan: { fr: "Planifier une Révision", en: "Schedule a Service", it: "Pianifica una revisione", de: "Inspektion planen" }
 
-  # Descriptions complètes pour les 3 cartes du bas
-  c1_d:
-    fr: "Contrôle rigoureux de l'usure des pneumatiques, vérification des trains roulants (rotules, silentblocs, amortisseurs) et réglage de la géométrie pour une précision de conduite optimale. Montage de pneus slicks ou semi-slicks."
-    en: "Rigorous control of tire wear, check of running gear (ball joints, bushings, shock absorbers) and geometry adjustment for optimal driving precision. Mounting of slick or semi-slick tires."
-    it: "Controllo rigoroso dell'usura degli pneumatici, verifica del carrello (snodi, silentblock, ammortizzatori) e regolazione della geometria per una precisione di guida ottimale. Montaggio di pneumatici slick o semi-slick."
-    de: "Strenge Kontrolle des Reifenverschleißes, Prüfung des Fahrwerks (Gelenke, Buchsen, Stoßdämpfer) und Einstellung der Geometrie für optimale Fahrpräzision. Montage von Slick- oder Semi-Slick-Reifen."
+  # 360 Section
+  grid_t: { fr: "UNE MAINTENANCE À 360°", en: "A 360° MAINTENANCE", it: "UNA MANUTENZIONE A 360°", de: "EINE 360°-WARTUNG" }
+  c1_t: { fr: "LIAISON AU SOL", en: "GROUND LINKS", it: "TENUTA DI STRADA", de: "FAHRWERKSTECHNIK" }
+  c1_d: { fr: "Contrôle rigoureux de l'usure des pneumatiques, vérification des trains roulants (rotules, silentblocs, amortisseurs) et réglage de la géométrie pour une précision de conduite optimale. Montage de pneus slicks ou semi-slicks.", en: "Rigorous control of tire wear, check of running gear (ball joints, bushings, shock absorbers) and geometry adjustment for optimal driving precision. Mounting of slick or semi-slick tires.", it: "Controllo rigoroso dell'usura degli pneumatici, verifica del carrello (snodi, silentblock, ammortizzatori) e regolazione della geometria per una precisione di guida ottimale. Montaggio di pneumatici slick o semi-slick.", de: "Strenge Kontrolle des Reifenverschleißes, Prüfung des Fahrwerks (Gelenke, Buchsen, Stoßdämpfer) und Einstellung der Geometrie für optimale Fahrpräzision. Montage von Slick- oder Semi-Slick-Reifen." }
+  c2_t: { fr: "SYSTÈME DE FREINAGE", en: "BRAKING SYSTEM", it: "SISTEMA FRENANTE", de: "BREMSSYSTEM" }
+  c2_d: { fr: "Inspection approfondie des disques et plaquettes (acier ou carbone-céramique). Purge du liquide de frein avec liquide haute température type RBF.", en: "In-depth inspection of discs and pads (steel or carbon-ceramic). Brake fluid flush with high-temperature fluid like RBF.", it: "Ispezione approfondita di dischi e pastiglie (acciaio o carboceramica). Spurgo del liquido freni con liquido ad alta temperatura tipo RBF.", de: "Eingehende Prüfung von Scheiben und Belägen (Stahl oder Keramik). Bremsflüssigkeitswechsel mit Hochtemperatur-Flüssigkeit (Typ RBF)."c3_t: { fr: "CHECK-UP 'RACE READY'", en: " 'RACE READY' CHECK-UP", it: "CHECK-UP 'RACE READY'", de: "'RACE READY' CHECK-UP" }
+  c3_d: { fr: "Un examen visuel complet du soubassement et des organes de sécurité, hérité de nos procédures de contrôle en Championnat du Monde d'Endurance (WEC).", en: "A complete visual examination of the underbody and safety components, inherited from our control procedures in the World Endurance Championship (WEC).", it: "Un esame visivo completo del sottoscocca e dei componenti di sicurezza, ereditato dalle nostre procedure di controllo nel Campionato del Mondo Endurance (WEC).", de: "Eine vollständige visuelle Prüfung des Unterbodens und der Sicherheitskomponenten, übernommen aus unseren Kontrollverfahren in der Langstrecken-Weltmeisterschaft (WEC)." }
   
-  c2_d:
-    fr: "Inspection approfondie des disques et plaquettes (acier ou carbone-céramique). Purge du liquide de frein avec liquide haute température type RBF."
-    en: "In-depth inspection of discs and pads (steel or carbon-ceramic). Brake fluid flush with high-temperature fluid like RBF."
-    it: "Ispezione approfondita di dischi e pastiglie (acciaio o carboceramica). Spurgo del liquido freni con liquido ad alta temperatura tipo RBF."
-    de: "Eingehende Prüfung von Scheiben und Belägen (Stahl oder Keramik). Bremsflüssigkeitswechsel mit Hochtemperatur-Flüssigkeit (Typ RBF)."
-
-  c3_d:
-    fr: "Un examen visuel complet du soubassement et des organes de sécurité, hérité de nos procédures de contrôle en Championnat du Monde d'Endurance (WEC)."
-    en: "A complete visual examination of the underbody and safety components, inherited from our control procedures in the World Endurance Championship (WEC)."
-    it: "Un esame visivo completo del sottoscocca e dei componenti di sicurezza, ereditato dalle nostre procedure di controllo nel Campionato del Mondo Endurance (WEC)."
-    de: "Eine vollständige visuelle Prüfung des Unterbodens und der Sicherheitskomponenten, übernommen aus unseren Kontrollverfahren in der Langstrecken-Weltmeisterschaft (WEC)."
-
   # Brands
   brands_t: { fr: "VÉHICULES PRIS EN CHARGE", en: "SUPPORTED VEHICLES", it: "VEICOLI SUPPORTATI", de: "UNTERSTÜTZTE FAHRZEUGE" }
   brands_sub: { fr: "Expertise multi-marques spécialisée dans les motorisations de pointe.", en: "Multi-brand expertise specialized in high-end engines.", it: "Esperienza multimarca specializzata in motori di fascia alta.", de: "Markenübergreifende Expertise, spezialisiert auf Hochleistungs-Motoren." }
