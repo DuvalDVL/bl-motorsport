@@ -1125,29 +1125,39 @@ input, textarea {
   }
 }
 
-/* Positionnement de la nouvelle image de fond Hero */
 .hero-section {
     position: relative;
+    width: 100%;
+    min-height: 80vh; /* Force la section à occuper 80% de l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    background-color: #000; /* Fond de secours noir */
 }
 
 .hero-img-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit tout sans se déformer */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Derrière l'overlay et le texte */
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garantit que l'image remplit tout l'espace sans se déformer */
-    z-index: -1; /* Place l'image derrière tout le reste */
-    pointer-events: none; /* Empêche l'image de gêner les clics sur les boutons */
-}
-
-/* On s'assure que le contenu reste au-dessus */
-.hero-overlay {
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.5); /* Vérifie que ce n'est pas "rgba(0,0,0,1)" qui serait opaque */
+    z-index: 2;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 3; /* Le texte doit être au-dessus de tout */
 }
