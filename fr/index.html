@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: B.L Motorsport | Atelier Mécanique Porsche & Prestige Combloux Megève
@@ -7,10 +8,7 @@ lang: fr
 ---
 
 <section class="hero-section">
-  <img src="{{ '/assets/img/hero-bg.jpg' | absolute_url }}" 
-       alt="Voiture de sport dans un atelier de mécanique de précision" 
-       class="hero-img-bg" 
-       fetchpriority="high">
+  <div class="hero-bg" role="img" aria-label="Voiture de sport dans un atelier de mécanique de précision"></div>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <h1 class="hero-title">
@@ -161,11 +159,7 @@ lang: fr
     
     <div class="bio-image">
       <div class="img-wrapper">
-        <img src="{{ '/assets/img/bastien-portrait.jpg' | absolute_url }}" 
-         alt="Bastien, expert mécanique WEC à l'atelier B.L Motorsport"
-         loading="lazy"
-         width="600"
-         height="800">
+        <img src="{{ '/assets/img/bastien-portrait.jpg' | relative_url }}" alt="Bastien, expert mécanique WEC à l'atelier B.L Motorsport">
       </div>
     </div>
 
@@ -209,17 +203,19 @@ lang: fr
 <section class="brand-strip">
   <div class="container">
     <div class="brand-grid">
-  <a href="https://www.fia.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
-    <img src="{{ '/assets/img/logos/fia-logo.png' | absolute_url }}" alt="FIA Official Website" width="120" height="80" loading="lazy">
-  </a>
+      
+      <a href="https://www.fia.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
+        <img src="{{ '/assets/img/logos/fia-logo.png' | relative_url }}" alt="FIA Official Website">
+      </a>
 
-  <a href="https://www.fiawec.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
-    <img src="{{ '/assets/img/logos/wec-logo.png' | absolute_url }}" alt="WEC - World Endurance Championship" width="150" height="60" loading="lazy">
-  </a>
+      <a href="https://www.fiawec.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
+        <img src="{{ '/assets/img/logos/wec-logo.png' | relative_url }}" alt="WEC - World Endurance Championship">
+      </a>
 
-  <a href="https://www.w-racingteam.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
-    <img src="{{ '/assets/img/logos/wrt-logo.png' | absolute_url }}" alt="WRT - W Racing Team" width="140" height="50" loading="lazy">
-  </a>
-</div>
+      <a href="https://www.w-racingteam.com/" target="_blank" rel="noopener noreferrer" class="brand-item-logo">
+        <img src="{{ '/assets/img/logos/wrt-logo.png' | relative_url }}" alt="WRT - W Racing Team">
+      </a>
+
+    </div>
   </div>
 </section>
