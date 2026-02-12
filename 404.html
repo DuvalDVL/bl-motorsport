@@ -1,0 +1,24 @@
+---
+layout: none
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // Détection de la langue dans l'URL
+    var path = window.location.pathname;
+    var lang = "fr"; // Langue par défaut
+    
+    if (path.indexOf("/en/") !== -1) { lang = "en"; }
+    else if (path.indexOf("/it/") !== -1) { lang = "it"; }
+    else if (path.indexOf("/de/") !== -1) { lang = "de"; }
+    
+    // Redirection vers la page 404 localisée
+    window.location.href = "{{ site.baseurl }}/" + lang + "/404/";
+  </script>
+</head>
+<body>
+  <p>Redirecting / Redirection...</p>
+</body>
+</html>
