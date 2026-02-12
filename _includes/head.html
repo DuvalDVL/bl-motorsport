@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#050505">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title><link rel="preload" as="image" href="{{ '/assets/img/hero-bg.webp' | absolute_url }}" fetchpriority="high">{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
