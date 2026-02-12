@@ -1,79 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'fr' }}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | absolute_url }}">
-</head>
+
+{% include head.html %}
+
 <body>
+    
+    {% include header.html %}
+    
+    <main>
+        {{ content }}
+    </main>
 
-  <header class="site-header">
-    <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0;">
-      <a href="{{ site.baseurl }}/{{ page.lang }}/" class="logo">
-        <img src="{{ '/assets/img/logo-bl.png' | absolute_url }}" alt="B.L Motorsport" style="height: 60px;">
-      </a>
-      <nav class="main-nav">
-        <ul class="nav-list" style="display: flex; list-style: none; gap: 30px; margin: 0;">
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/" style="color: white; text-decoration: none;">{{ site.data.locales.header.home[page.lang] }}</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/prestations/" style="color: white; text-decoration: none;">{{ site.data.locales.header.services[page.lang] }}</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/galerie/" style="color: white; text-decoration: none;">{{ site.data.locales.header.gallery[page.lang] }}</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/contact/" style="color: white; text-decoration: none; border: 1px solid #FFD700; padding: 8px 20px; border-radius: 4px;">{{ site.data.locales.header.contact[page.lang] }}</a></li>
-        </ul>
-      </nav>
-      <div class="lang-switcher" style="display: flex; gap: 10px;">
-        <a href="{{ site.baseurl }}/fr{{ page.url | remove_first: '/en' | remove_first: '/it' | remove_first: '/de' | replace: '//', '/' }}" style="color: {% if page.lang == 'fr' %}#FFD700{% else %}#666{% endif %}; text-decoration: none; font-weight: bold;">FR</a>
-        <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/fr' | remove_first: '/it' | remove_first: '/de' | replace: '//', '/' }}" style="color: {% if page.lang == 'en' %}#FFD700{% else %}#666{% endif %}; text-decoration: none; font-weight: bold;">EN</a>
-        <a href="{{ site.baseurl }}/it{{ page.url | remove_first: '/fr' | remove_first: '/en' | remove_first: '/de' | replace: '//', '/' }}" style="color: {% if page.lang == 'it' %}#FFD700{% else %}#666{% endif %}; text-decoration: none; font-weight: bold;">IT</a>
-        <a href="{{ site.baseurl }}/de{{ page.url | remove_first: '/fr' | remove_first: '/en' | remove_first: '/it' | replace: '//', '/' }}" style="color: {% if page.lang == 'de' %}#FFD700{% else %}#666{% endif %}; text-decoration: none; font-weight: bold;">DE</a>
-      </div>
-    </div>
-  </header>
+    {% include footer.html %}
 
-  <main>{{ content }}</main>
+    {% include cta-whatsapp.html %} 
 
-  <footer class="site-footer" style="background: #000; padding: 80px 0 40px 0; border-top: 1px solid #222; color: #ccc;">
-    <div class="container">
-      <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 60px;">
-        
-        <div class="footer-col">
-          <img src="{{ '/assets/img/logo-bl.png' | absolute_url }}" alt="Logo B.L Motorsport" style="height: 50px; margin-bottom: 25px;">
-          <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">{{ site.data.locales.footer.desc[page.lang] }}</p>
-          <p style="color: #FFD700; font-style: italic; font-size: 0.85rem;">{{ site.data.locales.footer.valet_info[page.lang] }}</p>
-        </div>
-
-        <div class="footer-col">
-          <h4 style="color: #fff; font-family: 'Oswald'; font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 1px;">{{ site.data.locales.header.services[page.lang] | upcase }}</h4>
-          <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/entretien-prestige-combloux/" style="color: #999; text-decoration: none; transition: color 0.3s;">{{ site.data.locales.header.service_1[page.lang] }}</a></li>
-            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.service_2[page.lang] }}</a></li>
-            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/restauration-vehicules-collection/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.restoration[page.lang] }}</a></li>
-            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/competition-racing-trackday/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.racing[page.lang] }}</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 style="color: #fff; font-family: 'Oswald'; font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 1px;">CONTACT</h4>
-          <p style="margin-bottom: 15px;">{{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}</p>
-          <p style="margin-bottom: 8px;"><strong>WhatsApp:</strong> <span style="color: #FFD700;">{{ site.company.phone }}</span></p>
-          <p><strong>Email:</strong> <a href="mailto:{{ site.company.email }}" style="color: #999; text-decoration: none;">{{ site.company.email }}</a></p>
-        </div>
-      </div>
-
-      <div class="footer-bottom" style="margin-top: 60px; padding-top: 30px; border-top: 1px solid #111; text-align: center; color: #666; font-size: 0.85rem;">
-        <p style="margin-bottom: 15px;">&copy; {{ "now" | date: "%Y" }} {{ site.company.name }}. {{ site.data.locales.footer.rights[page.lang] }}.</p>
-        <div>
-          <a href="{{ site.baseurl }}/{{ page.lang }}/mentions-legales/" style="color: #666; text-decoration: none;">{{ site.data.locales.footer.legal[page.lang] }}</a>
-          <span style="margin: 0 10px;">|</span>
-          <a href="{{ site.baseurl }}/{{ page.lang }}/politique-de-confidentialite/" style="color: #666; text-decoration: none;">{{ site.data.locales.footer.privacy[page.lang] }}</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 </body>
 </html>
