@@ -22,14 +22,15 @@
       </ul>
     </nav>
 
-    <div class="lang-switcher">
-  {% assign clean_url = page.url | remove_first: '/fr' | remove_first: '/en' | remove_first: '/it' | remove_first: '/de' %}
-  
-  <a href="{{ site.baseurl }}/fr{{ clean_url }}" class="{% if page.lang == 'fr' %}active{% endif %}">FR</a>
-  <a href="{{ site.baseurl }}/en{{ clean_url }}" class="{% if page.lang == 'en' %}active{% endif %}">EN</a>
-  <a href="{{ site.baseurl }}/it{{ clean_url }}" class="{% if page.lang == 'it' %}active{% endif %}">IT</a>
-  <a href="{{ site.baseurl }}/de{{ clean_url }}" class="{% if page.lang == 'de' %}active{% endif %}">DE</a>
-</div>
+    <div class="lang-switch">
+      <a href="{{ site.baseurl }}/fr/" class="{% if page.lang == 'fr' %}active{% endif %}">FR</a>
+      <span class="sep">|</span>
+      <a href="{{ site.baseurl }}/en/" class="{% if page.lang == 'en' %}active{% endif %}">EN</a>
+      <span class="sep">|</span>
+      <a href="{{ site.baseurl }}/it/" class="{% if page.lang == 'it' %}active{% endif %}">IT</a>
+      <span class="sep">|</span>
+      <a href="{{ site.baseurl }}/de/" class="{% if page.lang == 'de' %}active{% endif %}">DE</a>
+    </div>
 
     <button class="mobile-toggle" aria-label="Menu">
       <span class="bar"></span>
