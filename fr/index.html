@@ -7,16 +7,23 @@ lang: fr
 ---
 
 <section class="hero-section">
-  <div class="hero-bg" role="img" aria-label="Voiture de sport dans un atelier de mécanique de précision"></div>
+  <img src="{{ '/assets/img/hero-bg.webp' | absolute_url }}" 
+       alt="Voiture de sport dans un atelier de mécanique de précision" 
+       class="hero-img-bg" 
+       fetchpriority="high"
+       width="1920" 
+       height="1080">
+  
   <div class="hero-overlay"></div>
+  
   <div class="container hero-content">
     <h1 class="hero-title">
-      L'EXIGENCE DU <br>
-      <span class="text-gradient">SPORT AUTOMOBILE</span>
+      {{ site.data.locales.hero.title_1[page.lang] | default: "L'EXIGENCE DU" }} <br>
+      <span class="text-gradient">{{ site.data.locales.hero.title_2[page.lang] | default: "SPORT AUTOMOBILE" }}</span>
     </h1>
     <p class="hero-subtitle">
-      Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition.<br>
-      Par Bastien Lefebvre, <strong>Responsable Voiture en Championnat du Monde (WEC)</strong>.
+      {{ site.data.locales.hero.subtitle[page.lang] | default: "Garage spécialisé : Entretien Prestige, Collection & Préparation Compétition." }}<br>
+      Par Bastien Lefebvre, <strong>{{ site.data.locales.hero.role[page.lang] | default: "Responsable Voiture en Championnat du Monde (WEC)" }}</strong>.
     </p>
     <div class="hero-actions">
       <a href="{{ site.baseurl }}/fr/prestations" class="btn btn-primary">Découvrir l'Atelier</a>
