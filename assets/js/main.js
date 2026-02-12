@@ -1,18 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 1. Gestion du Scroll (Header)
+    // 1. GESTION DU SCROLL (Optimisée pour éviter le Forced Reflow)
     const header = document.querySelector('.site-header');
-    if(header) {
+    let ticking = false;
+
+    if (header) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
-        });
+        }, { passive: true }); // "passive" booste la performance au scroll
     }
 
-    // 2. Menu Mobile
+    // 2. MENU MOBILE
     const toggle = document.querySelector('.mobile-toggle');
     const overlay = document.querySelector('.mobile-nav-overlay');
     
@@ -20,21 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
         toggle.addEventListener('click', () => {
             toggle.classList.toggle('active');
             overlay.classList.toggle('open');
+            // Bloque le scroll quand le menu est ouvert
+            document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
         });
     }
 
-    // 3. EFFET "AUTO-FOCUS" (MOBILE)
-    // S'applique aux Cartes Services ET à la Galerie Photo
+    // 3. EFFET "AUTO-FOCUS" MOBILE (Intersection Observer)
     if (window.innerWidth < 900) {
-        
-        // C'EST ICI LA MODIFICATION : On sélectionne les cartes ET les images de galerie
         const elementsToAnimate = document.querySelectorAll('.service-card, .gallery-item');
         
         const observerOptions = {
             root: null,
-            // Zone de déclenchement très étroite au centre de l'écran (45% de marge haut/bas)
-            // Cela force l'effet uniquement quand l'élément est VRAIMENT au milieu
-            rootMargin: '-45% 0px -45% 0px', 
+            rootMargin: '-40% 0px -40% 0px', // Légèrement élargi pour plus de souplesse
             threshold: 0
         };
 
@@ -48,25 +53,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        elementsToAnimate.forEach(el => {
-            observer.observe(el);
+        elementsToAnimate.forEach(el => observer.observe(el));
+    }
+
+    // 4. GESTION DES COOKIES
+    const cookiePopup = document.getElementById("cookie-popup");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    if (cookiePopup && !localStorage.getItem("cookiesAccepted")) {
+        setTimeout(() => {
+            cookiePopup.style.display = "block";
+        }, 3000); 
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener("click", function() {
+            localStorage.setItem("cookiesAccepted", "true");
+            cookiePopup.style.display = "none";
         });
     }
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const cookiePopup = document.getElementById("cookie-popup");
-  const acceptBtn = document.getElementById("accept-cookies");
-
-  // Vérifie si le consentement est déjà stocké
-  if (!localStorage.getItem("cookiesAccepted")) {
-    setTimeout(() => {
-      cookiePopup.style.display = "block";
-    }, 2000); // Apparaît après 2 secondes
-  }
-
-  acceptBtn.addEventListener("click", function() {
-    localStorage.setItem("cookiesAccepted", "true");
-    cookiePopup.style.display = "none";
-  });
 });
