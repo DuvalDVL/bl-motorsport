@@ -36,38 +36,41 @@
 
   <main>{{ content }}</main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" style="background: #000; padding: 60px 0 30px 0; border-top: 1px solid #222;">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-column footer-about">
-          <img src="{{ '/assets/img/logo-bl.png' | absolute_url }}" alt="B.L Motorsport" class="footer-logo">
-          <p>{{ site.data.locales.footer.desc[page.lang] }}</p>
-          <p class="valet-tag" style="color: #FFD700; font-style: italic; font-size: 0.85rem; margin-top: 10px;">
-            {{ site.data.locales.footer.valet_info[page.lang] }}
-          </p>
-        </div>
+      <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px;">
+        
         <div class="footer-column">
-          <h4 class="footer-title">{{ site.data.locales.header.services[page.lang] | uppercase }}</h4>
-          <ul class="footer-links">
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/entretien-prestige-combloux/">{{ site.data.locales.header.service_1[page.lang] }}</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/">{{ site.data.locales.header.service_2[page.lang] }}</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/restauration-vehicules-collection/">{{ site.data.locales.header.restoration[page.lang] }}</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/competition-racing-trackday/">{{ site.data.locales.header.racing[page.lang] }}</a></li>
+          <img src="{{ '/assets/img/logo-bl.png' | absolute_url }}" alt="Logo B.L Motorsport" style="height: 50px; margin-bottom: 20px;">
+          <p style="color: #999; line-height: 1.6;">{{ site.data.locales.footer.desc[page.lang] }}</p>
+          <p style="color: #FFD700; font-style: italic; font-size: 0.85rem; margin-top: 15px;">{{ site.data.locales.footer.valet_info[page.lang] }}</p>
+        </div>
+
+        <div class="footer-column">
+          <h4 style="color: #fff; margin-bottom: 25px; font-family: 'Oswald';">{{ site.data.locales.header.services[page.lang] | upcase }}</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/entretien-prestige-combloux/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.service_1[page.lang] }}</a></li>
+            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/refection-moteur-boite-prestige/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.service_2[page.lang] }}</a></li>
+            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/restauration-vehicules-collection/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.restoration[page.lang] }}</a></li>
+            <li style="margin-bottom: 12px;"><a href="{{ site.baseurl }}/{{ page.lang }}/competition-racing-trackday/" style="color: #999; text-decoration: none;">{{ site.data.locales.header.racing[page.lang] }}</a></li>
           </ul>
         </div>
+
         <div class="footer-column">
-          <h4 class="footer-title">CONTACT</h4>
-          <p>{{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}</p>
-          <p><strong>WhatsApp:</strong> {{ site.company.phone }}</p>
-          <p><strong>Email:</strong> <a href="mailto:{{ site.company.email }}" style="color: inherit;">{{ site.company.email }}</a></p>
+          <h4 style="color: #fff; margin-bottom: 25px; font-family: 'Oswald';">CONTACT</h4>
+          <p style="color: #999; line-height: 1.6; margin-bottom: 10px;">
+            {{ site.company.address }}<br>{{ site.company.zip }} {{ site.company.city }}
+          </p>
+          <p style="color: #999;"><strong>WhatsApp :</strong> <span style="color: #FFD700;">{{ site.company.phone }}</span></p>
+          <p style="color: #999;"><strong>Email :</strong> <a href="mailto:{{ site.company.email }}" style="color: #999;">{{ site.company.email }}</a></p>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom" style="text-align: center; border-top: 1px solid #111; padding-top: 30px; color: #666; font-size: 0.9rem;">
         <p>&copy; {{ "now" | date: "%Y" }} {{ site.company.name }}. {{ site.data.locales.footer.rights[page.lang] }}.</p>
-        <div class="footer-legal-links">
-          <a href="{{ site.baseurl }}/{{ page.lang }}/mentions-legales/">{{ site.data.locales.footer.legal[page.lang] }}</a> | 
-          <a href="{{ site.baseurl }}/{{ page.lang }}/politique-de-confidentialite/">{{ site.data.locales.footer.privacy[page.lang] }}</a>
+        <div style="margin-top: 10px;">
+          <a href="{{ site.baseurl }}/{{ page.lang }}/mentions-legales/" style="color: #666;">{{ site.data.locales.footer.legal[page.lang] }}</a> | 
+          <a href="{{ site.baseurl }}/{{ page.lang }}/politique-de-confidentialite/" style="color: #666;">{{ site.data.locales.footer.privacy[page.lang] }}</a>
         </div>
       </div>
     </div>
