@@ -53,7 +53,7 @@ lang: de
     <div class="services-grid">
       <div class="service-card">
         <h3>{{ site.data.locales.classic_page.c1_t[page.lang] }}</h3>
-        <p>{{ site.data.locales.classic_page.c1_d | default: "Expertise mechanics." }}</p>
+        <p>{{ site.data.locales.classic_page.c1_d[page.lang] }}</p>
         <ul class="check-list">
           <li>{{ site.data.locales.classic_page.c1_l1[page.lang] }}</li>
           <li>{{ site.data.locales.classic_page.c1_l2[page.lang] }}</li>
@@ -63,7 +63,7 @@ lang: de
       <div class="service-card featured">
         <div class="card-badge">{{ site.data.locales.services_section.s2_badge[page.lang] | default: "SUR MESURE" }}</div>
         <h3>{{ site.data.locales.classic_page.c2_t[page.lang] }}</h3>
-        <p>{{ site.data.locales.classic_page.c2_d | default: "Project management." }}</p>
+        <p>{{ site.data.locales.classic_page.c2_d[page.lang] }}</p>
         <ul class="check-list">
           <li>{{ site.data.locales.classic_page.c2_l1[page.lang] }}</li>
           <li>{{ site.data.locales.classic_page.c2_l2[page.lang] }}</li>
@@ -72,7 +72,7 @@ lang: de
       </div>
       <div class="service-card">
         <h3>{{ site.data.locales.classic_page.c3_t[page.lang] }}</h3>
-        <p>{{ site.data.locales.classic_page.c3_d | default: "Reliability." }}</p>
+        <p>{{ site.data.locales.classic_page.c3_d[page.lang] }}</p>
         <ul class="check-list">
           <li>{{ site.data.locales.classic_page.c3_l1[page.lang] }}</li>
           <li>{{ site.data.locales.classic_page.c3_l2[page.lang] }}</li>
