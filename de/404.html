@@ -1,23 +1,17 @@
 ---
 layout: default
 title: Seite nicht gefunden - B.L Motorsport
-permalink: /de/404.html
 lang: de
+permalink: /de/404/
 ---
-
-<section class="hero-section" style="height: 100vh;">
-  <div class="hero-bg" style="background-image: url('{{ "/assets/img/hero-bg.jpg" | absolute_url }}'); opacity: 0.3;"></div>
-  <div class="container hero-content">
-    <span style="color: #FFD700; font-weight: bold; font-size: 5rem; font-family: 'Oswald';">404</span>
-    <h1 class="hero-title">{{ site.data.locales.p404.h1[page.lang] }}</h1>
-    <div class="divider-yellow"></div>
-    <p class="hero-subtitle" style="margin-top: 30px;">
-      {{ site.data.locales.p404.text[page.lang] }}
-    </p>
-
+<section class="page-404-section" style="padding: 100px 0; text-align: center;">
+  <div class="container">
+    <h1 style="font-size: 8rem; color: #FFD700; margin: 0;">404</h1>
+    <h2 style="font-size: 2rem; margin-bottom: 20px;">{{ site.data.locales.p404.h1[page.lang] }}</h2>
+    <p style="color: #999; margin-bottom: 40px;">{{ site.data.locales.p404.text[page.lang] }}</p>
     <div class="hero-actions">
-      <a href="{{ site.url }}/{{ page.lang }}/" class="btn btn-primary">{{ site.data.locales.p404.btn_home[page.lang] }}</a>
-      <a href="{{ site.url }}/{{ page.lang }}/contact" class="btn btn-outline">{{ site.data.locales.p404.btn_contact[page.lang] }}</a>
+      <a href="{{ site.baseurl }}/de/" class="btn btn-primary">{{ site.data.locales.p404.btn_home[page.lang] }}</a>
+      <a href="{{ site.baseurl }}/de/contact/" class="btn btn-outline">{{ site.data.locales.p404.btn_contact[page.lang] }}</a>
     </div>
   </div>
 </section>
