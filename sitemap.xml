@@ -1,0 +1,17 @@
+---
+layout: none
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.html_pages %}
+    {% unless page.url contains '404' or page.url contains 'assets' %}
+    <url>
+      <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>{% if page.url == "/" or page.url contains "fr/" %}1.0{% else %}0.8{% endif %}</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>
