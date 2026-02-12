@@ -1,0 +1,9 @@
+---
+layout: none
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+
+# Emplacement du sitemap
+Sitemap: {{ site.url }}/sitemap.xml
