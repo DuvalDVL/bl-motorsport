@@ -333,7 +333,7 @@ rebuild_page:
   l4_t: { fr: "Transmissions :", en: "Transmissions:", it: "Trasmissioni:", de: "Getriebe:" }
   l4_d: { fr: "Révision complète des boîtes manuelles et séquentielles.", en: "Complete overhaul of manual and sequential gearboxes.", it: "Revisione completa di cambi manuali e sequenziali.", de: "Komplette Überholung von Schalt- und sequenziellen Getrieben." }
   btn_expert: { fr: "Expertiser ma Mécanique", en: "Expertise my Engine", it: "Perizia del mio motore", de: "Motor-Expertise anfragen" }
-  spec_t: { fr: "SPÉCIALISATIONS MOTEURS", en: "ENGINE SPECIALIZATIONS", it: "SPECIALIZZAZIONI MOTORI", de: "MOTOR-SPEZIALISIERUNGEN" }
+  spec_t: { fr: "SPÉCIALISATIONS MOTEURS", en: "ENGINE SPECIALIZATIONS", it: "SPECIALIZZAZIONI MOTORI", de: "MOTOR-SPEZIALI<br>SIERUNGEN" }
   c1_t: { fr: "PORSCHE FLAT-6", en: "PORSCHE FLAT-6", it: "PORSCHE FLAT-6", de: "PORSCHE FLAT-6" }
   c1_d: { fr: "Réfection complète moteurs Aircooled (911 F, G, 964, 993) et blocs modernes. Remplacement IMS, chemisage cylindres et étanchéité.", en: "Complete rebuild of Aircooled engines (911 F, G, 964, 993) and modern blocks. IMS replacement, cylinder sleeving, and sealing.", it: "Revisione completa motori Aircooled (911 F, G, 964, 993) e blocchi moderni. Sostituzione IMS, incamiciatura cilindri e tenuta.", de: "Komplette Überholung von Aircooled-Motoren (911 F, G, 964, 993) und modernen Blöcken. IMS-Lager-Austausch, Zylinderlaufbahnen und Abdichtung." }
   c2_t: { fr: "V8 & V12 ITALIENS", en: "ITALIAN V8 & V12", it: "V8 & V12 ITALIANI", de: "ITALIENISCHE V8 & V12" }
@@ -369,7 +369,7 @@ classic_page:
   c1_d: { fr: "Expertise sur les motorisations atmosphériques complexes et les mécaniques Porsche Refroidies par Air (Aircooled).", en: "Expertise in complex naturally aspirated engines and Aircooled Porsche mechanics.", it: "Esperienza su motori aspirati complessi e meccaniche Porsche raffreddate ad aria (Aircooled).", de: "Expertise für komplexe Saugmotoren und luftgekühlte Porsche-Mechanik (Aircooled)." }
   c1_l1: { fr: "Réglage précis Carburateurs", en: "Precise Carburetor tuning", it: "Regolazione precisa carburatori", de: "Präzise Vergasereinstellung" }
   c1_l2: { fr: "Calage Allumage & Distribution", en: "Ignition & Timing setup", it: "Messa in fase accensione", de: "Zündungs- & Steuerzeiteneinstellung" }
-  c1_l3: { fr: "Étanchéité moteur & boîte", en: "Engine & gearbox sealing", it: "Tenuta motore e cambio", de: "Motor- & Getriebeabdichtung" }
+  c1_l3: { fr: "Étanchéité moteur & boîte", en: "Engine & gearbox sealing", it: "Tenuta motore e cambio", de: "Motor- & Getriebe<br>abdichtung" }
   c2_t: { fr: "GESTION DE PROJET", en: "PROJECT MANAGEMENT", it: "GESTIONE PROGETTI", de: "PROJEKTMANAGEMENT" }
   c2_d: { fr: "Nous coordonnons des partenaires d'excellence sélectionnés pour une restauration 'clés en main' sans compromis.", en: "We coordinate selected partners of excellence for a 'turnkey' restoration without compromise.", it: "Coordiniamo partner d'eccellenza selezionati per un restauro 'chiavi in mano' senza compromessi.", de: "Wir koordinieren ausgewählte exzellente Partner für eine kompromisslose 'schlüsselfertige' Restaurierung." }
   c2_l1: { fr: "Carrosserie & Peinture", en: "Bodywork & Paint", it: "Carrozzeria e verniciatura", de: "Karosserie & Lackierung" }
